@@ -15,7 +15,6 @@ define('LARAVEL_START', microtime(true));
 | instead of starting the framework, which could cause an exception.
 |
 */
-echo __DIR__;
 
 if (file_exists($maintenance = __DIR__.'/storage/framework/maintenance.php')) {
     require $maintenance;
