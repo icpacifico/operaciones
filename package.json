@@ -10,5 +10,16 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^3.0.0"
+    },
+    "dependencies": {
+        "aos": "^2.3.4",
+        "bootstrap": "^5.2.2",
+        "fancybox": "^3.0.1",
+        "fontawesome-free-v6": "^1.0.1",
+        "jquery-touchswipe": "^1.6.19",
+        "perfect-scrollbar": "^1.5.5",
+        "sweetalert2": "^11.4.37",
+        "toastr": "^2.1.4",
+        "unitegallery": "^1.7.28"
     }
 }
