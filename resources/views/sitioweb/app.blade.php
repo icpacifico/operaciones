@@ -7,26 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">
-
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('node_modules/bootstrap/dist/css/bootstrap.min.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('node_modules/aos/dist/aos.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/css/bootstrap-touch-slider.css')}}"/>
-	
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('node_modules/sweetalert2/dist/sweetalert2.min.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('node_modules/fontawesome-free-v6/css/all.min.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/css/app.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/css/style.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/css/main.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/css/home.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/sliders/slider4.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/sliders/slider_proyecto.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/css/animate.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('node_modules/unitegallery/dist/css/unite-gallery.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('resources/css/headers1-10.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="{{Vite::asset('node_modules/fancybox/dist/css/jquery.fancybox.css')}}"/>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-	<!-- <link href="{{ Vite::asset('resources/sliders/slick-theme.css') }}" rel="stylesheet"> -->
+	@vite('resources/js/app.js')
 	@yield('style')
 </head>
 <body>
@@ -105,14 +86,7 @@
 </header>
 
 @section('content')
-
     @show
-
-
-
-
-
-
 <footer>
 <div class="container">
     <div class="row">
@@ -197,12 +171,6 @@
     </div>
 </div>
 </section>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-
-
 <script src="{{Vite::asset('node_modules/jquery/dist/jquery.min.js')}}"></script>
 <script src="{{Vite::asset('node_modules/@popperjs/core/dist/umd/popper.min.js')}}"></script>
 <script src="{{Vite::asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}"></script>
@@ -227,86 +195,86 @@
 <!-- <script src="./plugins/slimScroll/jquery.slimscroll.min.js"></script> -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
-$(document).ready(function(){		
-	$('.slider2').slick({
-		dots: true,
-		  infinite: true,
-		  slidesToShow: 1,
-		  adaptiveHeight: true
+	$(document).ready(function(){		
+		$('.slider2').slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 1,
+			adaptiveHeight: true
+		});
+		function agendarVideoLlamada(){
+			dataLayer.push({'event': 'agenda-click'});
+			$.fancybox.open({
+				src : 'https://calendly.com/icpacifico/reunion-virtual',
+				type : 'iframe',
+				opts : {
+					iframe : {
+						css : {
+							width: '100%'
+						},
+						attr : {
+							scrolling : 'no'
+						}
+					},
+					afterClose : function() {
+
+					}
+				}
+			});
+		}
+
+		$(document).ready(function() {		
+			
+			setTimeout(
+			function() 
+			{
+				$( ".unico" ).addClass( "fademio" );
+			
+			}, 50);
+
+
+			$(document).on("click", ".click_caja", function() {
+				$("div.click_caja").addClass("oculta");
+			});
+		});
+		//Fix header while scroll
+		// ============================================================== 
+		var wind = $(window);
+		wind.on("load", function () {
+			var bodyScroll = wind.scrollTop(),
+				navbar = $(".topbar");
+			if (bodyScroll > 100) {
+				navbar.addClass("fixed-header animated slideInDown")
+			} else {
+				navbar.removeClass("fixed-header animated slideInDown")
+			}
+		});
+
+		$(function () {
+			$(".preloader").fadeOut();
+		});
+
+		$(window).scroll(function () {
+			if ($(window).scrollTop() >= 100) {
+				$('.topbar').addClass('fixed-header animated slideInDown');
+				// $('.bt-top').addClass('visible');
+			} else {
+				$('.topbar').removeClass('fixed-header animated slideInDown');
+				// $('.bt-top').removeClass('visible');
+			}
+		});
+
+		AOS.init({
+			easing: 'ease-in-out-sine'
+		});
+
 	});
-	function agendarVideoLlamada(){
-		dataLayer.push({'event': 'agenda-click'});
-	    $.fancybox.open({
-	        src : 'https://calendly.com/icpacifico/reunion-virtual',
-	        type : 'iframe',
-	        opts : {
-	            iframe : {
-	                css : {
-	                    width: '100%'
-	                },
-	                attr : {
-	                    scrolling : 'no'
-	                }
-	            },
-	            afterClose : function() {
-
-	            }
-	        }
-	    });
-	}
-
-	$(document).ready(function() {		
-		
-		setTimeout(
-		  function() 
-		  {
-		    $( ".unico" ).addClass( "fademio" );
-		   
-		  }, 50);
-
-
-	    $(document).on("click", ".click_caja", function() {
-	    	$("div.click_caja").addClass("oculta");
-	    });
-	});
-	//Fix header while scroll
-    // ============================================================== 
-    var wind = $(window);
-    wind.on("load", function () {
-        var bodyScroll = wind.scrollTop(),
-            navbar = $(".topbar");
-        if (bodyScroll > 100) {
-            navbar.addClass("fixed-header animated slideInDown")
-        } else {
-            navbar.removeClass("fixed-header animated slideInDown")
-        }
-    });
-
 	$(function () {
-        $(".preloader").fadeOut();
-    });
-
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= 100) {
-            $('.topbar').addClass('fixed-header animated slideInDown');
-            // $('.bt-top').addClass('visible');
-        } else {
-            $('.topbar').removeClass('fixed-header animated slideInDown');
-            // $('.bt-top').removeClass('visible');
-        }
-    });
-
-	AOS.init({
-        easing: 'ease-in-out-sine'
-      });
-
-});
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip({
-    container: 'body'
-  })
-})
- @yield('script')       
+	$('[data-toggle="tooltip"]').tooltip({
+		container: 'body'
+	})
+	})
+	@yield('script')       
 </script>
 </body>
 </html>
