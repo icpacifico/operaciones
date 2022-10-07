@@ -92,7 +92,7 @@
         <div class="row">
 			<div class="col-md-12">				
 				<div class="ratio ratio-4x3" data-aos="fade-in">
-				  	<iframe  src="https://www.youtube.com/embed/h5Du3LqHl2k?autoplay=0&rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  	<iframe  src="{{ 'https://www.youtube.com/embed/h5Du3LqHl2k' }}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 			
