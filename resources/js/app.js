@@ -19,7 +19,7 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.min';
 import '../../node_modules/sweetalert2/dist/sweetalert2.min';
 import './slide';
 import '../../node_modules/perfect-scrollbar/dist/perfect-scrollbar.min';
-import '../../node_modules/jquery-touchSwipe/jquery.touchSwipe.min';
+import '../../node_modules/jquery-touchswipe/jquery.touchSwipe.min';
 import '../../node_modules/fancybox/dist/js/jquery.fancybox';
 import '../../node_modules/unitegallery/dist/js/unitegallery.min';
 import '../../node_modules/toastr/toastr';

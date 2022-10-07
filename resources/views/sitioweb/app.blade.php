@@ -6,8 +6,7 @@
     <title>@yield('title','Inmobiliaria Costanera Pacífico - La Serena - Chile') </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">
-	{{-- <script type="text/javascript" src="{{ asset ('js/app.min.js') }}" ></script> --}}
+    <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">	
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 
 	@yield('style')
@@ -35,10 +34,7 @@
 					<ul class="navbar-nav text-center mt-2">
 						<li id="act_" class="nav-item ml-md-2">
 							<a class="nav-link" href="./"><i class="fa-solid fa-house"></i></a>
-						</li>
-						<!-- <li id="act_proyectos" class="nav-item ml-md-2">
-							<a class="nav-link" href="./proyectos/1/pacifico-2800">El Proyecto</a>
-						</li> -->
+						</li>						
 						<li id="act_proyectos" class="nav-item dropdown ml-md-1">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Proyectos en Venta <i class="fas fa-angle-down"></i>
@@ -46,8 +42,7 @@
 							<ul class="b-none dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="./proyectos/7/distrito-verde-etapa-1">Distrito Verde | Etapa I</a></li>
 								<li><a class="dropdown-item" href="./proyectos/5/pacifico-3100-etapa-2">Pacífico 3100 | Etapa II</a></li>
-								<li class="vendido"><a class="dropdown-item" href="./proyectos/3/pacifico-3100-etapa-1">Pacífico 3100 | Etapa I</a></li>
-								<!--<li class="vendido"><a class="dropdown-item disabled" aria-disabled="true" title="100% VENIDO" href="./proyectos/2/pacifico-2800-etapa-2">Pacífico 2800 | Etapa II</a></li>-->
+								<li class="vendido"><a class="dropdown-item" href="./proyectos/3/pacifico-3100-etapa-1">Pacífico 3100 | Etapa I</a></li>								
 								<li class="vendido"><a class="dropdown-item disabled" aria-disabled="true" title="100% VENIDO">Pacífico 2800 | Etapa II</a></li>
 								<li class="vendido"><a class="dropdown-item disabled" aria-disabled="true" title="100% VENIDO">Pacífico 2800 | Etapa I</a></li>
 							</ul>
@@ -61,19 +56,10 @@
 								<li><a class="dropdown-item" href="./operaciones">Equipo de Operaciones</a></li>
 								<li><a class="dropdown-item" href="./postventa">Equipo Post Venta</a></li>
 							</ul>
-						</li>
-						<!--<li id="act_equipo" class="nav-item ml-md-2">
-							<a class="nav-link" href="./equipo">Equipo de Ventas</a>
-						</li>-->
+						</li>						
 						<li id="act_ais" class="nav-item ml-md-2">
 							<a class="nav-link" href="./ais">Ais ®</a>
-						</li>
-						<!-- <li id="act_noticias" class="nav-item ml-md-2">
-							<a class="nav-link" href="./noticias">Noticias</a>
-						</li> -->
-						<!-- <li id="act_arriendos" class="nav-item ml-md-2">
-							<a class="nav-link" href="./arriendos">Arriendos</a>
-						</li> -->
+						</li>						
 						<li id="act_nosotros" class="nav-item ml-md-2">
 							<a class="nav-link" href="./nosotros">Nosotros</a>
 						</li>
@@ -123,9 +109,7 @@
                 <li><a href="./proyectos/7/distrito-verde-etapa-1">Distrito Verde</a></li>
     			<li><a href="./proyectos/2/pacifico-2800-etapa-2">Pacífico 2800</a></li>
                 <li><a href="./proyectos/3/pacifico-3100-etapa-1">Pacífico 3100</a></li>
-    			<li><a href="./ais">Ais ®</a></li>
-    			<!-- <li><a href="./noticias">Noticias</a></li> -->
-    			<!-- <li><a href="./arriendos">Arriendos</a></li> -->
+    			<li><a href="./ais">Ais ®</a></li>    			
     			<li><a href="./nosotros">Nosotros</a></li>
     			<li><a href="./contacto">Contáctenos</a></li>
     		</ul>
@@ -161,8 +145,6 @@
     	</div>
     </div>
 </div>
-<!-- <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"1dcf1a21c87d82ad19000315ebd3dad7"})});</script> -->
-
 </footer>
 <section id="last_pie">
 <div class="container">
@@ -227,13 +209,7 @@
 			} else {
 				navbar.removeClass("fixed-header animated slideInDown")
 			}
-		});
-         
-		
-		// $(function () {
-			
-		// });
-
+		}); 
 		$(window).scroll(function () {
 			if ($(window).scrollTop() >= 100) {
 				$('.topbar').addClass('fixed-header animated slideInDown');
