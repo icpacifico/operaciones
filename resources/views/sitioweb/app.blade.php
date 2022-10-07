@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">
-	@vite('resources/js/app.js')
+	{{-- <script type="text/javascript" src="{{ asset ('js/app.min.js') }}" ></script> --}}
+	@vite(['resources/css/app.css', 'resources/js/app.js'])
+
 	@yield('style')
 </head>
 <body>
@@ -171,31 +173,12 @@
     </div>
 </div>
 </section>
-<script src="{{Vite::asset('node_modules/jquery/dist/jquery.min.js')}}"></script>
-<script src="{{Vite::asset('node_modules/@popperjs/core/dist/umd/popper.min.js')}}"></script>
-<script src="{{Vite::asset('node_modules/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<!-- <script src="./js/ie10-viewport-bug-workaround.js"></script> -->
-<script src="{{Vite::asset('node_modules/sweetalert2/dist/sweetalert2.min.js')}}"></script>
-<script src="{{Vite::asset('resources/js/slide.js')}}"></script>
-<!-- This is for the animation -->
-<script src="{{Vite::asset('node_modules/aos/dist/aos.js')}}"></script>
-<script src="{{Vite::asset('node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js')}}"></script>
+<script  src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="  crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" charset="utf-8"></script>
+<script>	
 
+	$(".preloader").fadeOut();
 
-<script type="text/javascript" src="{{Vite::asset('node_modules/jquery-touchSwipe/jquery.touchSwipe.min.js')}}"></script>
-<!-- <script src="./node_modules/bootstrap-touch-slider/bootstrap-touch-slider.js"></script> -->
-<!-- <script type="text/javascript" src="./js/notify.js"></script> -->
-<script type="text/javascript" src="{{Vite::asset('node_modules/fancybox/dist/js/jquery.fancybox.js')}}"></script>
-
-<script type="text/javascript" src="{{Vite::asset('node_modules/unitegallery/dist/js/unitegallery.min.js')}}"></script>
-<script type="text/javascript" src="{{Vite::asset('node_modules/unitegallery/dist/themes/slider/ug-theme-slider.js')}}"></script>
-<script type="text/javascript" src="{{Vite::asset('node_modules/toastr/toastr.js')}}"></script>
-<!-- Slimscroll -->
-<!-- <script src="./plugins/slimScroll/jquery.slimscroll.min.js"></script> -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-	$(document).ready(function(){		
 		$('.slider2').slick({
 			dots: true,
 			infinite: true,
@@ -221,11 +204,8 @@
 					}
 				}
 			});
-		}
-
-		$(document).ready(function() {		
-			
-			setTimeout(
+		}							
+		   setTimeout(
 			function() 
 			{
 				$( ".unico" ).addClass( "fademio" );
@@ -236,9 +216,8 @@
 			$(document).on("click", ".click_caja", function() {
 				$("div.click_caja").addClass("oculta");
 			});
-		});
-		//Fix header while scroll
-		// ============================================================== 
+		
+		
 		var wind = $(window);
 		wind.on("load", function () {
 			var bodyScroll = wind.scrollTop(),
@@ -249,32 +228,25 @@
 				navbar.removeClass("fixed-header animated slideInDown")
 			}
 		});
-
-		$(function () {
-			$(".preloader").fadeOut();
-		});
+         
+		
+		// $(function () {
+			
+		// });
 
 		$(window).scroll(function () {
 			if ($(window).scrollTop() >= 100) {
 				$('.topbar').addClass('fixed-header animated slideInDown');
-				// $('.bt-top').addClass('visible');
+			
 			} else {
 				$('.topbar').removeClass('fixed-header animated slideInDown');
-				// $('.bt-top').removeClass('visible');
+			
 			}
-		});
-
-		AOS.init({
-			easing: 'ease-in-out-sine'
-		});
-
-	});
-	$(function () {
-	$('[data-toggle="tooltip"]').tooltip({
-		container: 'body'
-	})
-	})
+		});		
+	
+	
 	@yield('script')       
 </script>
+
 </body>
 </html>

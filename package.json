@@ -4,12 +4,12 @@
         "dev": "vite",
         "build": "vite build"
     },
-    "devDependencies": {
+    "devDependencies": {       
         "axios": "^0.27",
         "laravel-vite-plugin": "^0.6.0",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
-        "vite": "^3.0.4"
+        "vite": "^3.1.6"
     },
     "dependencies": {
         "aos": "^2.3.4",
