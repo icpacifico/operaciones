@@ -142,8 +142,8 @@
     }
 }
 
-#presenta .flotante_virtual{
-    position: absolute;
+.flotante_virtual{
+    position: relative;
     cursor: pointer;
     z-index: 10;
     width: 280px;
@@ -154,11 +154,11 @@
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
-    right: -140px;
+    /* right: -140px; */
     background-color: rgba(255,255,255,.9);
 }
 
-#presenta .flotante_virtual.click_caja.oculta{
+.flotante_virtual.click_caja.oculta{
     bottom: -75px;
     right: -140px;
     cursor: default;
@@ -166,7 +166,7 @@
 }
 
 .bajo_recor{
-    margin-top: -5px;
+    margin-top: -419px;
 }
 
 #presenta .verde_360{
@@ -185,7 +185,7 @@
     }
 }
 
-#presenta .flotante_virtual p{
+.flotante_virtual p{
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 1rem;

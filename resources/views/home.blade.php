@@ -70,14 +70,19 @@
   	              <iframe class="frames" width = "100%" src = " https://my.matterport.com/show/?m=DmtQBSUXc2U" frameborder = "0" allowfullscreen allowvr="yes"> </iframe>
 				</div>
         		
-        		<div class="flotante_virtual d-none d-md-flex align-items-center click_caja"><p>Visita nuestros pilotos virtuales desde cualquier parte del mundo</p></div>
+        		
+				
         	</div>
         	<div class="col-md-6 cols">
 				<div class="ratio ratio-1x1">
     	    		<iframe class="frames render" width="100%" src=" https://my.matterport.com/show/?m=4Sbr7iLm1CY" frameborder = "0" allowfullscreen allowvr="yes"> </iframe>
 				</div>
         	</div>
+
+			
+			{{-- <div class="flotante_virtual click_caja"><p>Visita nuestros pilotos virtuales desde cualquier parte del mundo</p></div> --}}
         	<div class="bajo_recor col-md-12 d-flex justify-content-center">
+				
         		<div class="ver_recor d-flex align-items-center"><p>Ver Recorrido Virtual</p></div>
         		<div class="verde_360"><img src="{{ Vite::asset('resources/img/360n.png') }}" width="96" class="img-fluid"></div>
         		<div class="ver_recor d-none d-md-flex align-items-center"><p>Ver Recorrido Virtual</p></div>
