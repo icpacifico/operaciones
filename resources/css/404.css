@@ -1,0 +1,43 @@
+/*--------------------*/
+/* 404 page */
+/*--------------------*/
+html{
+  font-size: 15px;
+}
+
+#errorpage{
+  padding: 60px 0;
+}
+
+.error_page_content {
+  text-align: center;
+}
+
+.error_page_content h1 {
+  display: inline-block;  
+  font-size: 5rem;
+  font-weight: 400;
+  vertical-align: middle;  
+}
+
+.error_page_content h2 {
+  color: #c1c0b4;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.error_page_content h3 {
+  font-size: 1rem;
+  margin-top: 35px;
+}
+.error_page_content p { 
+  font-size: 1rem;
+  line-height: 31px;
+  margin: 36px auto 0;
+  max-width: 630px;
+  padding: 9px 0 8px;
+}
+
+.error_page_content p>a{
+  color: #798992;
+  text-decoration: none;
+}

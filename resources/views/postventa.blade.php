@@ -2,7 +2,7 @@
 
 @section('style')
 <style>
-	#banner-top {
+#banner-top {
 	    background-color: #89816B;
 	    /* min-height: 50vh; */
 	    padding-top: 128px;
@@ -16,7 +16,7 @@
 	    color: #67c42b;
 	}
 
-	#presenta h3{
+	#postventa h3{
 		font-size: 2.5rem;
 		color: #9dbc55;
 		line-height: 1;
@@ -24,7 +24,7 @@
 		padding-bottom: 1rem;
 		position: relative;
 	}
-	#presenta h3::after{
+	#postventa h3::after{
 		content: '';
 		width: 20%;
 		height: 3px;
@@ -33,11 +33,11 @@
 		left: 0;
 		bottom: 5px;
 	}
-	#presenta h3 span{
+	#postventa h3 span{
 		font-weight: 600;
 	}
 
-	#presenta {
+	#postventa {
 		padding-bottom: 20px;
 		padding-top: 100px;
 		background-color: #ededed;
@@ -48,7 +48,7 @@
 	}
 
 	.bg_lines{
-		background-image: url(images/fondoequipo.png);
+		background-image: url({{Vite::asset('resources/img/equipo/fondoequipo.png')}});
 		background-position: center top;
 		background-repeat: no-repeat;
 		-webkit-background-size: 70%;
@@ -56,14 +56,14 @@
 		padding-top: 30px;
 	}
 
-	#presenta h2 {
+	#postventa h2 {
 	    text-align: center;
 	    font-weight: 300;
 	    color: #9dbc55;
 	    margin-bottom: 1rem;
 	    font-size: 2.5rem;
 	}
-	#presenta h2 span{
+	#postventa h2 span{
 		font-weight: 600;
 	}
 	.titulo{
@@ -99,7 +99,7 @@
 	p.links{
 		margin: 15px 0;
 	}
-	#presenta2 {
+	#postventa2 {
 		padding-bottom: 80px;
 		padding-top: 60px;
 	}
@@ -197,7 +197,7 @@
 			margin-top: 70%;
 			padding: 0 .5rem;
 		}
-		#presenta h2 {
+		#postventa h2 {
 		    text-align: center;
 		    font-weight: 300;
 		    color: #9dbc55;
@@ -208,7 +208,7 @@
 	}
 	
 	@media (max-width: 650px) {
-		#presenta h2 {
+		#postventa h2 {
 		    font-size: 1.5rem;
 		    line-height: 1;
 		}
@@ -223,11 +223,12 @@
 
 	}
 
+
 </style>
 @endsection
 @section('content')
 @parent
-<div id="presenta">
+<div id="postventa">
 	<div class="bg_lines">
 	    <div class="container">
 	        <!-- row  -->
@@ -238,10 +239,7 @@
 					es apoyarte en caso de cualquier imprevisto</h2>
 				</div>
 			</div>
-			<div class="row justify-content-center align-items-center">
-	        	<!--<div class="col-12">
-	        		<img src="https://icpacifico.cl/images/equipo_completo.png" class="img-fluid mb-2">
-				</div>-->
+			<div class="row justify-content-center align-items-center">	        	
 				<div class="col-12 col-lg-4">
 					<div class="imagen">
 						<img src="https://icpacifico.cl/images/equipo/wanda.png" class="img-fluid">

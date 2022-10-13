@@ -1,0 +1,169 @@
+/* @import url(../../scss/icons/themify-icons/themify-icons.css); */
+/************** Banner Top **************************/	
+/* Half Page Height Carousel Customization */
+#banner-top{
+    background-color: #89816B;
+    /*min-height: 50vh;*/
+    padding-top: 128px;
+    padding-bottom: 32px;
+    background-image: url(../img/bg-interior.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-attachment: fixed;
+}
+/* Extra Small devices (phones) */
+@media (max-width: 767px) { 
+    #banner-top{
+        background-color: #89816B;
+        /*min-height: 50vh;*/
+        padding-top: 128px;
+        padding-bottom: 32px;
+        background-image: url(../img/bg-interior.jpg);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-attachment: normal;
+    }
+}
+
+#banner-top h2{
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+
+/*#presenta*/
+#presenta{
+    padding-top: 40px;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+#presenta .caja{
+    background-size: 100%;
+    width: 100%;
+    height: 253px;
+    overflow: hidden;
+    background-position: 0px 0px;
+    transition: background-size .3s ease-in;
+    -moz-transition: background-size .3s ease-in;
+    -ms-transition: background-size .3s ease-in;
+    -o-transition: background-size .3s ease-in;
+    -webkit-transition: background-size .3s ease-in;
+}
+
+@media (max-width: 760px) {
+    #presenta .caja{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 190px;
+        overflow: hidden;
+        background-position: 0px 0px;
+        transition: background-size .3s ease-in;
+    -moz-transition: background-size .3s ease-in;
+    -ms-transition: background-size .3s ease-in;
+    -o-transition: background-size .3s ease-in;
+    -webkit-transition: background-size .3s ease-in;
+    }
+}
+
+#presenta .caja:hover{
+    background-size: 104%;
+    cursor: pointer;
+    /*background-position: -5px 0px;*/
+}
+
+#presenta .caja.uno{
+    background-image: url(../img/caja_1.jpg);
+}
+
+#presenta .caja.dos{
+    background-image: url(../img/caja_2.jpg);
+}
+
+/*novedades*/
+#bienve{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 760px) {
+    #bienve{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#bienve .item h3{
+    font-size: 1.12rem;
+    line-height: 1.4rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#bienve .item h3 a{
+    color: #c80085;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#bienve .item h3 a:hover{
+    color: #5B003D;
+}
+
+#bienve .item h6{
+    font-size: .75rem;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    color: #BFBFBF;
+}
+#bienve .item p{
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+#slide_proyecto{
+    overflow-x: hidden;
+}
+
+
+.antialias{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Extra Small devices (phones) */
+@media (max-width: 767px) { 
+  
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+}
+
+/* medium devices (desktop and up) */
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
+
+	
+}
+
+@media (min-width: 1500px) {
+
+	
+}

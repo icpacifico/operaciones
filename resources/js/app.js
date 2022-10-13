@@ -7,6 +7,11 @@ import '../css/app.css';
 import '../css/style.css';
 import '../css/main.css';
 import '../css/home.css';
+import '../css/404.css';
+import '../css/ficha-3100.css';
+import '../css/ficha.css';
+import '../css/interior.css';
+import '../css/loader.css';
 import '../sliders/slider4.css';
 import '../sliders/slider_proyecto.css';
 import '../css/animate.css';
@@ -22,7 +27,7 @@ import '../../node_modules/perfect-scrollbar/dist/perfect-scrollbar.min';
 import '../../node_modules/jquery-touchswipe/jquery.touchSwipe.min';
 import '../../node_modules/fancybox/dist/js/jquery.fancybox';
 import '../../node_modules/unitegallery/dist/js/unitegallery.min';
-import '../../node_modules/toastr/toastr';
+import '../../node_modules/toastr/build/toastr.min';
 
 import.meta.glob([
     '../img/**',

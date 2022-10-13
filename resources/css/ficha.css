@@ -1,0 +1,348 @@
+/* @import url(../../scss/icons/themify-icons/themify-icons.css); */
+/************** Banner Top **************************/	
+/* Half Page Height Carousel Customization */
+#banner-top{
+    /*background-color: #89816B;*/
+    /*min-height: 50vh;*/
+    padding-top: 125px;
+    padding-bottom: 0px;
+}
+
+
+#banner-top .galeria{
+    max-height: 290px;
+    overflow-y: hidden;
+}
+
+@media (max-width: 767px) { 
+    #banner-top{
+        /*background-color: #89816B;*/
+        /*min-height: 50vh;*/
+        padding-top: 108px;
+    }
+
+    #banner-top .galeria{
+        max-height: 700px;
+        overflow-y: hidden;
+    }
+}
+
+#banner-top .azul{
+    background-color: #59a4d3;
+}  
+
+#banner-top .morado{
+    background-color: #ff008d;
+}  
+
+#banner-top .verde{
+    background-color: #9bc34c;
+}
+
+#banner-top h3{
+    font-size: 2rem;
+    padding-top: 25px;
+    font-weight: 400;
+    padding-bottom: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767px) { 
+    #banner-top h3{
+        font-size: 1rem;
+        padding-top: 4px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+
+/*#presenta*/
+#presenta{
+    padding-top: 60px;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+#presenta .detalles{
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.tabcontent-border {
+    border: 1px solid #ddd;
+    border-top: 0px;
+    box-shadow: 1px 1px 4px rgba(136, 136, 136, .5);
+}
+
+#presenta .nav-tabs .nav-link.active,
+#presenta .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+#presenta .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: rgba(0,0,0,.05);
+    color: #495057;
+}
+
+#presenta h2,
+#modelos h2,
+#ubicacion h2,
+#cotizacion h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+/*Virtuales*/
+#virtual{
+    padding-top: 20px;
+    text-align: justify;
+
+}
+
+#virtual .flotante_virtual{
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    width: 280px;
+    min-height: 120px;
+    text-align: center;
+    padding: 10px 15px;
+    bottom: 6px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    right: -140px;
+    background-color: rgba(255,255,255,.9);
+}
+
+#virtual .flotante_virtual.click_caja.oculta{
+    bottom: -75px;
+    right: -140px;
+    cursor: default;
+    min-height: 74px;
+}
+
+.bajo_recor{
+    margin-top: -5px;
+}
+
+#virtual .verde_360{
+    background-color: #8dbe44;
+    width: 280px;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+@media (max-width: 768px) {
+    #virtual .verde_360{
+        background-color: #8dbe44;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0px;
+    }
+}
+
+#virtual .flotante_virtual p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#virtual .ver_recor{
+    padding: 10px 38px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+#virtual .ver_recor p{
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+#virtual .virtuales iframe.frames{
+    height: 410px;
+}
+
+@media (max-width: 768px) {
+    #virtual .virtuales iframe.frames{
+        height: 200px;
+    }
+}
+
+/*modelos*/
+#modelos{
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+#modelos .nav-tabs .nav-link.active, #modelos .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    font-size: 1.3rem;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+#modelos .nav-tabs .nav-link {
+    color: #aaaaaa;
+    background-color: #fff;
+    font-size: 1.3rem;
+    border-color: #dee2e6 #dee2e6 #dee2e6;
+}
+
+#modelos .btn.sub{
+    background: #67c42b;
+    border: 0px;
+    border-radius: 0;
+    padding: 14px 32px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#modelos p strong{
+    font-weight: 500;
+}
+
+#ubicacion{
+    padding-bottom: 40px;
+}
+
+#sectionmap{
+    padding-bottom: 0px;
+    background-color: #f8f8f8;
+}
+
+#sectionmap .row{
+    background-color: #f8f8f8;
+}
+
+#sectionmap .map{
+    height: 430px;
+}
+
+@media (max-width: 767px) { 
+    #sectionmap .map{
+        height: 330px;
+    }
+}
+
+#cotizacion{
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+
+#cotizacion .cmxform .espacio {
+        margin-bottom: 6px;
+    }
+
+#cotizacion .cmxform label.error {
+    font-size: .8rem;
+    color: #c80085;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#cotizacion .btn-success-gradiant {
+    background: #67c42b;
+    border-radius: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 0px;
+    margin-top: 10px;
+}
+
+/* Extra Small devices (phones) */
+@media (max-width: 767px) { 
+    #cotizacion .sala{
+        margin-top: 30px;
+    }
+}
+
+#sectionmap .sala{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#sectionmap .sala .contiene{
+    /*padding: 30px;*/
+    width: 80%;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    #sectionmap .sala .contiene{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#sectionmap .sala h2{
+    font-size: 1.4rem; 
+    font-weight: 300;
+}
+
+#sectionmap .sala h4{
+    font-size: 1.3rem; 
+    font-weight: 300;
+    color: #73bae7;
+}
+
+#sectionmap .sala p{
+    font-size: 1rem; 
+    font-weight: 300;
+}
+
+#sectionmap .sala p a.link{
+    font-size: 1rem; 
+    font-weight: 400;
+    color:#9cc44c;
+}
+
+.antialias{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Extra Small devices (phones) */
+@media (max-width: 767px) { 
+  
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+}
+
+/* medium devices (desktop and up) */
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
+
+	
+}
+
+@media (min-width: 1500px) {
+
+	
+}

@@ -195,10 +195,10 @@
         <div class="col-md-9">
             <ul id="navbarpro" class="nav nav-pills justify-content-end">
                 <li class="nav-item nombre_proyecto">
-                    <img src="https://icpacifico.cl/images/iso_3100.png" class="img-fluid" width="40">
+                    <img src="{{Vite::asset('resources/img/iso_3100.png')}}" class="img-fluid" width="40">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link sub" href="#banner-top">Presentación</a>
+                    <a class="nav-link sub" href="#banner-top">presentación</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link sub" href="#presenta">Información</a>
@@ -241,7 +241,7 @@
             	<div class="carousel-item active unico">
                     <!-- Slide Background -->
                     <img style="" src="https://icpacifico.cl/archivo/proyecto/portada2/7/bdistrito.png" alt="ICpacifico" class="slide-image d-none d-md-block" />
-                    <img style="height: 100%;" src="https://icpacifico.cl/images/portada2_proyectodv_xs.jpg" alt="ICpacifico" class="slide-image d-block d-md-none" />                                
+                    <img style="height: 100%;" src="{{Vite::asset('resources/img/portada2_proyectodv_xs.jpg')}}" alt="ICpacifico" class="slide-image d-block d-md-none" />                                
                     
                         
                     
@@ -251,13 +251,7 @@
         </div>
         <!-- End Slider -->
     </section>
-</div>
-		<div class="row">
-			<!-- <div class="col-12 px-0 px-md-2">
-				<img src="/archivo/proyecto/portada2//" class="img-fluid d-none d-md-block">
-				<img src="/images/portada2_proyecto_xs.jpg" class="img-fluid d-block d-md-none">
-			</div> -->
-					</div>
+</div>		
 	</div>
 </div>
 
@@ -276,9 +270,9 @@
         	</div>
         	<div class="col-md-6 mt-md-4">
         		<ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab"><span class="">Departamentos</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab"><span class="">El Condominio</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link verde" data-toggle="tab" href="#ecology" role="tab"><span class="">Sustentabilidad y Atributos</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true"><span class="">Departamentos</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false"><span class="">El Condominio</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link verde" data-bs-toggle="tab" data-bs-target="#ecology" role="tab" aria-controls="ecology" aria-selected="false"><span class="">Sustentabilidad y Atributos</span></a> </li>
                                     </ul>
                 <!-- Tab panes -->
                 <div class="tab-content tabcontent-border">
@@ -286,11 +280,11 @@
                         <div class="p-30 detalles">
                             <div class="row">
                             	<div class="col-sm-12">
-                            		<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> 1 y 2 dormitorios <br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Cocina americana amoblada y equipada con encimeras, horno y campana<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Conexión para lavadora<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Piso vinílico<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Estacionamiento y bodega
+                            		<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 1 y 2 dormitorios <br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Cocina americana amoblada y equipada con encimeras, horno y campana<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Conexión para lavadora<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piso vinílico<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Estacionamiento y bodega
 
                             		<!-- <hr> -->
                             		<!-- <b>Precio Desde: UF 2.637.-</b> -->
@@ -302,18 +296,18 @@
                     	<div class="p-30 detalles">
                             <div class="row">
                             	<div class="col-sm-12">
-                            		<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> 8 edificios <br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Un ascensor por edificio<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Acceso controlado las 24 horas<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Sistema de seguridad con cámaras de vigilancia<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Piscina adultos<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Piscina niños<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Juegos Infantiles<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> 2 salones de uso múltiple y coworking<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Lavanderia<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Cicloparking<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Motoparking<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Zona de quinchos
+                            		<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 8 edificios <br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Un ascensor por edificio<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Acceso controlado las 24 horas<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Sistema de seguridad con cámaras de vigilancia<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piscina adultos<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piscina niños<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Juegos Infantiles<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 2 salones de uso múltiple y coworking<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Lavanderia<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Cicloparking<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Motoparking<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Zona de quinchos
 									
 									
 									
@@ -326,12 +320,12 @@
                             <div class="row">
                             	<div class="col-sm-12">
                             		<!--<h4 class="mb-3" style="color: #a3bd33;">Atributos</h4>-->
-                            		<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Circuito de Pump Track<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Sector para yoga y calistenia<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Circuito de trote con variaciones<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Punto limpio<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Generación EERR alimentando zonas comunes<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Eficiencia hídrica
+                            		<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Circuito de Pump Track<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Sector para yoga y calistenia<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Circuito de trote con variaciones<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Punto limpio<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Generación EERR alimentando zonas comunes<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Eficiencia hídrica
                             	</div>
                             </div>
                         </div>
@@ -367,7 +361,7 @@
 	    	</div>
 	    	<div class="bajo_recor col-md-12 d-flex justify-content-center">
 	    		<div class="ver_recor d-flex align-items-center"><p></p></div>
-	    		<div class="verde_360"><img src="https://icpacifico.cl/images/360n.png" width="86" class="img-fluid"></div>
+	    		<div class="verde_360"><img src="{{Vite::asset('resources/img/360n.png')}}" width="86" class="img-fluid"></div>
 	    		<div class="ver_recor d-none d-md-flex align-items-center"><p></p></div>
 	    	</div>
 	    </div>

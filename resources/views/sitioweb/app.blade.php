@@ -95,9 +95,9 @@
     		<h5>Navegación</h5>
     		<ul>
     			<li><a href="{{ route('/')}}">Inicio</a></li>
-                <li><a href="./proyectos/7/distrito-verde-etapa-1">Distrito Verde</a></li>
-    			<li><a href="./proyectos/2/pacifico-2800-etapa-2">Pacífico 2800</a></li>
-                <li><a href="./proyectos/3/pacifico-3100-etapa-1">Pacífico 3100</a></li>
+                <li><a href="{{route('proyectos.distrito-verde-etapa-1')}}">Distrito Verde</a></li>
+    			<li><a href="{{route('proyectos.pacifico-3100-etapa-2')}}">Pacífico 2800</a></li>
+                <li><a href="{{route('proyectos.pacifico-3100-etapa-1')}}">Pacífico 3100</a></li>
     			<li><a href="{{ route('ais')}}">Ais ®</a></li>    			
     			<li><a href="{{ route('nosotros')}}">Nosotros</a></li>
     			<li><a href="{{ route('contacto')}}">Contáctenos</a></li>
@@ -191,8 +191,8 @@
 		});		
 	
 	
-	@yield('script')       
+	    
 </script>
-
+@yield('script')   
 </body>
 </html>

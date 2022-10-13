@@ -2,21 +2,8 @@
 
 @section('style')
 <style>
-	#banner-top {
-	    background-color: #89816B;
-	    /* min-height: 50vh; */
-	    padding-top: 128px;
-	    padding-bottom: 32px;
-	    background: none;
-	}
 
-	#banner-top h2 {
-	    text-align: center;
-	    font-weight: 400;
-	    color: #67c42b;
-	}
-
-	#presenta h3{
+	#operaciones h3{
 		font-size: 1.5rem;
 		color: #9dbc55;
 		line-height: 1;
@@ -24,7 +11,7 @@
 		padding-bottom: 1rem;
 		position: relative;
 	}
-	#presenta h3::after{
+	#operaciones h3::after{
 		content: '';
 		width: 40%;
 		height: 3px;
@@ -33,42 +20,36 @@
 		left: 0;
 		bottom: 5px;
 	}
-	#presenta h3 span{
+	#operaciones h3 span{
 		font-weight: 600;
 	}
 
-	#presenta {
-		padding-bottom: 20px;
-		padding-top: 100px;
+	#operaciones {					
 		background-color: #ededed;
-		/*background-image: url(images/bg_equipo.jpg);
-		background-size: cover;
-		background-position: left top;
-		border-bottom: 3px solid #f8f8f8;*/
+		
 	}
 
 	.bg_lines{
-		background-image: url(images/fondoequipo.png);
+		background-image: url({{Vite::asset('resources/img/equipo/fondoequipo.png')}});
 		background-position: center top;
 		background-repeat: no-repeat;
 		-webkit-background-size: 70%;
 		background-size: 70%;
-		padding-top: 30px;
+		padding-top: 125px;
+		padding-bottom:20px;
 	}
 
-	#presenta h2 {
+	#operaciones h2 {
 	    text-align: center;
 	    font-weight: 300;
 	    color: #9dbc55;
 	    margin-bottom: 1rem;
 	    font-size: 2.5rem;
 	}
-	#presenta h2 span{
+	#operaciones h2 span{
 		font-weight: 600;
 	}
-	.titulo{
-		padding-bottom: 0;
-	}
+	
 	.caja1{
 		padding: 0;
 		margin-top: 40%;
@@ -106,7 +87,7 @@
 	p.links{
 		margin: 15px 0;
 	}
-	#presenta2 {
+	#operaciones2 {
 		padding-bottom: 80px;
 		padding-top: 60px;
 	}
@@ -147,10 +128,6 @@
 		font-style: italic;
 	}
 
-	p.links img{
-		/*height: 25px;*/
-	}
-
 	@media (min-width: 992px) {
 		.borde{
 			margin: 0 .1rem;
@@ -176,7 +153,7 @@
 			margin-top: 70%;
 			padding: 0 .5rem;
 		}
-		#presenta h2 {
+		#operaciones h2 {
 		    text-align: center;
 		    font-weight: 300;
 		    color: #9dbc55;
@@ -191,7 +168,7 @@
 		}
 	}
 	@media (max-width: 650px) {
-		#presenta h2 {
+		#operaciones h2 {
 		    font-size: 1.5rem;
 		    line-height: 1;
 		}
@@ -210,22 +187,18 @@
 @endsection
 @section('content')
 @parent
-<div id="presenta">
+<div id="operaciones">
 	<div class="bg_lines">
-	    <div class="container">
-	        <!-- row  -->
+	    <div class="container">	        
 	        <div class="row justify-content-center">
 	        	<div class="col-12 titulo">
-	        		<p class="bajada">Equipo de Operaciones</p>
-					<h2>Nuestra <span>misión</span> es acompañarte en el proceso de la escrituración de tu departamento</h2>
-				</div>
-	        	<!--<div class="col-12">
-	        		<img src="https://icpacifico.cl/images/equipo_completo.png" class="img-fluid mb-2">
-				</div>-->
+	        		<p class="lead text-center">Equipo de Operaciones</p>
+					<h1 class="verde display-6 text-center" style="color: #9dbc55;">Nuestra <span style="font-weight: 600;">misión</span> es acompañarte en el proceso de la escrituración de tu departamento</h1>
+				</div>	        	
 				<div class="col-12 col-lg-2 caja1">
-					<div class="p-relative borde">
+					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="https://icpacifico.cl/images/equipo/sara.png" class="img-fluid">
+							<img src="{{Vite::asset('resources/img/equipo/sara.png')}}" class="img-fluid">
 						</div>
 						<div class="info">
 							<h3><span>Sara</span><br>
@@ -234,17 +207,17 @@
 							<p>+56 9 54115855</p>
 							<p>saraya@icpacifico.cl</p>
 							<p class="links">
-								<a href="https://www.facebook.com/Sara.icpacifico" target="_blank"><img src="https://icpacifico.cl/images/equipo/facebook.png" class="img-fluid"/></a>
-								<a href="https://www.instagram.com/Sara.icpacifico/" target="_blank"><img src="https://icpacifico.cl/images/equipo/instagram.png" class="img-fluid"/></a>
-								<a href="https://wa.me/56954115855" target="_blank"><img src="https://icpacifico.cl/images/equipo/whatsapp.png" class="img-fluid"/></a>
+								<a href="https://www.facebook.com/Sara.icpacifico" target="_blank"><img src="{{Vite::asset('resources/img/equipo/facebook.png')}}" class="img-fluid"/></a>
+								<a href="https://www.instagram.com/Sara.icpacifico/" target="_blank"><img src="{{Vite::asset('resources/img/equipo/instagram.png')}}" class="img-fluid"/></a>
+								<a href="https://wa.me/56954115855" target="_blank"><img src="{{Vite::asset('resources/img/equipo/whatsapp.png')}}" class="img-fluid"/></a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-lg-2 caja1">
-					<div class="p-relative borde">
+					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="https://icpacifico.cl/images/equipo/margot.png" class="img-fluid">
+							<img src="{{Vite::asset('resources/img/equipo/margot.png')}}" class="img-fluid">
 						</div>
 						<div class="info">
 							<h3><span>Margot Andrea</span><br>
@@ -253,9 +226,9 @@
 							<p>+56 9 54126929</p>
 							<p>mmoya@icpacifico.cl</p>
 							<p class="links">
-								<a href="https://www.facebook.com/ICPANDREA" target="_blank"><img src="https://icpacifico.cl/images/equipo/facebook.png" class="img-fluid"/></a>
-								<a href="https://www.instagram.com/andrea_icpacifico/" target="_blank"><img src="https://icpacifico.cl/images/equipo/instagram.png" class="img-fluid"/></a>
-								<a href="https://wa.me/56954126929"  target="_blank"><img src="https://icpacifico.cl/images/equipo/whatsapp.png" class="img-fluid d-inline"/></a>
+								<a href="https://www.facebook.com/ICPANDREA" target="_blank"><img src="{{Vite::asset('resources/img/equipo/facebook.png')}}" class="img-fluid"/></a>
+								<a href="https://www.instagram.com/andrea_icpacifico/" target="_blank"><img src="{{Vite::asset('resources/img/equipo/instagram.png')}}" class="img-fluid"/></a>
+								<a href="https://wa.me/56954126929"  target="_blank"><img src="{{Vite::asset('resources/img/equipo/whatsapp.png')}}" class="img-fluid d-inline"/></a>
 							</p>
 						</div>
 					</div>
@@ -265,5 +238,5 @@
 	   	</div>
    	</div>
 </div>
-
 @endsection
+

@@ -1,0 +1,473 @@
+/* @import url(../../scss/icons/themify-icons/themify-icons.css); */
+/************** Banner Top **************************/	
+/* Half Page Height Carousel Customization */
+#banner-top{
+    /*background-color: #89816B;*/
+    /*min-height: 50vh;*/
+    padding-top: 145px;
+    padding-bottom: 0px;
+}
+
+#banner-top .carousel{
+    height: 73vh;
+}
+
+#banner-top .carousel-inner {
+    height: 100%;
+}
+
+#banner-top .carousel .carousel-item {
+  height: 74vh;
+  background-color: #e8e8e8;
+}
+
+#banner-top .carousel .carousel-item img{
+  max-width: 100%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #banner-top .carousel{
+        height: 30vh;
+    }
+
+    #banner-top .carousel-inner {
+        height: 100%;
+    }
+
+    #banner-top .carousel .carousel-item {
+      height: 30vh;
+      background-color: #e8e8e8;
+    }
+
+}
+
+/*solo si se carga como fondo*/
+#banner-top .fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #banner-top .fill {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+}
+
+
+#banner-top #carouselweb .carousel-caption {
+    position: absolute;
+    right: 4%;
+    left: auto;
+    top: 20px;
+    color:#333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    z-index: 12;
+    width: 210px;
+}
+
+@media (max-width: 760px) {
+    #banner-top #carouselweb .carousel-caption h3{
+        background-color: rgba(0, 0, 0, .7);
+        padding: 10px 5px;
+    }
+
+    #banner-top #carouselweb .carousel-caption {
+        width: 95%;
+    }
+}
+
+#banner-top #carouselweb .carousel-caption h3{
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.45rem;
+}
+
+#banner-top #carouselweb .carousel-caption p{
+  font-size: .95rem;
+  text-align: justify;
+}
+
+
+#banner-top .carousel-item #textos{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    #banner-top .container-fluid{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+
+#banner-top .galeria{
+    max-height: 290px;
+    overflow-y: hidden;
+}
+
+@media (max-width: 767px) { 
+    #banner-top{
+        /*background-color: #89816B;*/
+        /*min-height: 50vh;*/
+        padding-top: 108px;
+    }
+
+    #banner-top .galeria{
+        max-height: 700px;
+        overflow-y: hidden;
+    }
+}
+
+#banner-top .azul{
+    background-color: #59a4d3;
+}  
+
+#banner-top .morado{
+    background-color: #ff008d;
+}  
+
+#banner-top .verde{
+    background-color: #a3bd33;
+}
+
+#banner-top h3{
+    font-size: 2rem;
+    padding-top: 25px;
+    font-weight: 400;
+    padding-bottom: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767px) { 
+    #banner-top h3{
+        font-size: 1rem;
+        padding-top: 4px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+
+/*#presenta*/
+#presenta{
+    padding-top: 60px;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+#presenta .detalles{
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.tabcontent-border {
+    border: 1px solid #ddd;
+    border-top: 0px;
+    box-shadow: 1px 1px 4px rgba(136, 136, 136, .5);
+}
+
+#presenta .nav-tabs .nav-link.active,
+#presenta .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+#presenta .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: rgba(0,0,0,.05);
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+    #presenta .nav-tabs .nav-link {
+        display: block;
+        padding: 0.5rem .4rem;
+        font-size: 14px;
+    }
+}
+
+#presenta .nav-tabs .nav-link.verde {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: rgba(163,189,51,.3);
+    color: #495057;
+}
+
+#presenta h2,
+#modelos h2,
+#ubicacion h2,
+#cotizacion h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+/*Virtuales*/
+#virtual{
+    padding-top: 20px;
+    text-align: justify;
+
+}
+
+#virtual .flotante_virtual{
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    width: 280px;
+    min-height: 120px;
+    text-align: center;
+    padding: 10px 15px;
+    bottom: 6px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    right: -140px;
+    background-color: rgba(255,255,255,.9);
+}
+
+#virtual .flotante_virtual.click_caja.oculta{
+    bottom: -75px;
+    right: -140px;
+    cursor: default;
+    min-height: 74px;
+}
+
+.bajo_recor{
+    margin-top: -5px;
+}
+
+#virtual .verde_360{
+    background-color: #a3bd33;
+    width: 280px;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+@media (max-width: 768px) {
+    #virtual .verde_360{
+        background-color: #a3bd33;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0px;
+    }
+}
+
+#virtual .flotante_virtual p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#virtual .ver_recor{
+    padding: 10px 38px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+#virtual .ver_recor p{
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
+#virtual .virtuales iframe.frames{
+    height: 410px;
+}
+
+@media (max-width: 768px) {
+    #virtual .virtuales iframe.frames{
+        height: 200px;
+    }
+}
+
+/*modelos*/
+#modelos{
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+#modelos .nav-tabs .nav-link.active, #modelos .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    font-size: 1.3rem;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+#modelos .nav-tabs .nav-link {
+    color: #aaaaaa;
+    background-color: #fff;
+    font-size: 1.3rem;
+    border-color: #dee2e6 #dee2e6 #dee2e6;
+}
+
+#modelos .btn.sub{
+    background: #a3bd33;
+    border: 0px;
+    border-radius: 0;
+    padding: 14px 32px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#modelos p strong{
+    font-weight: 500;
+}
+
+#ubicacion{
+    padding-bottom: 40px;
+}
+
+#sectionmap{
+    padding-bottom: 0px;
+    background-color: #f8f8f8;
+}
+
+#sectionmap .row{
+    background-color: #f8f8f8;
+}
+
+#sectionmap .map{
+    height: 430px;
+}
+
+@media (max-width: 767px) { 
+    #sectionmap .map{
+        height: 330px;
+    }
+}
+
+#cotizacion{
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+
+#cotizacion .cmxform .espacio {
+        margin-bottom: 6px;
+    }
+
+#cotizacion .cmxform label.error {
+    font-size: .8rem;
+    color: #c80085;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#cotizacion .btn-success-gradiant {
+    background: #a3bd33;
+    border-radius: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 0px;
+    margin-top: 10px;
+}
+
+/* Extra Small devices (phones) */
+@media (max-width: 767px) { 
+    #cotizacion .sala{
+        margin-top: 30px;
+    }
+}
+
+#sectionmap .sala{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#sectionmap .sala .contiene{
+    /*padding: 30px;*/
+    width: 80%;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    #sectionmap .sala .contiene{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#sectionmap .sala h2{
+    font-size: 1.4rem; 
+    font-weight: 300;
+}
+
+#sectionmap .sala h4{
+    font-size: 1.3rem; 
+    font-weight: 300;
+    color: #73bae7;
+}
+
+#sectionmap .sala p{
+    font-size: 1rem; 
+    font-weight: 300;
+}
+
+#sectionmap .sala p a.link{
+    font-size: 1rem; 
+    font-weight: 400;
+    color:#9cc44c;
+}
+
+.antialias{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Extra Small devices (phones) */
+@media (max-width: 767px) { 
+  
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+}
+
+/* medium devices (desktop and up) */
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
+
+	
+}
+
+@media (min-width: 1500px) {
+
+	
+}
