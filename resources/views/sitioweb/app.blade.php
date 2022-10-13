@@ -38,14 +38,14 @@
 								<li id="act_" class="nav-item ml-md-2 {{ request()->path() == "/" ? 'active' : '' }}" >
 									<a class="nav-link" href="{{ route('/') }}"><i class="fa-solid fa-building"></i></a> 
 								</li>						
-								<li id="act_proyectos" class="nav-item dropdown ml-md-1">
+								<li id="act_proyectos" class="nav-item dropdown ml-md-1 {{ (request()->path() == "proyectos/distrito-verde-etapa-1" || request()->path() == "proyectos/pacifico-3100-etapa-2" || request()->path() == "proyectos/pacifico-3100-etapa-1") ? 'active' : '' }}">
 									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										Proyectos en Venta <i class="fas fa-angle-down"></i>
 									</a>
 									<ul class="b-none dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item {{ request()->path() == "proyectos.distrito-verde-etapa-1" ? 'active' : '' }}" href="{{route('proyectos.distrito-verde-etapa-1')}}">Distrito Verde | Etapa I</a></li>
-										<li><a class="dropdown-item" href="./proyectos/5/pacifico-3100-etapa-2">Pacífico 3100 | Etapa II</a></li>
-										<li class="vendido"><a class="dropdown-item" href="./proyectos/3/pacifico-3100-etapa-1">Pacífico 3100 | Etapa I</a></li>								
+										<li><a class="dropdown-item {{ request()->path() == "proyectos/distrito-verde-etapa-1" ? 'active' : '' }}" href="{{route('proyectos.distrito-verde-etapa-1')}}">Distrito Verde | Etapa I</a></li>
+										<li><a class="dropdown-item {{ request()->path() == "proyectos/pacifico-3100-etapa-2" ? 'active' : '' }}" href="{{route('proyectos.pacifico-3100-etapa-2')}}">Pacífico 3100 | Etapa II</a></li>
+										<li class="vendido"><a class="dropdown-item {{ request()->path() == "proyectos/pacifico-3100-etapa-1" ? 'active' : '' }}" href="{{route('proyectos.pacifico-3100-etapa-1')}}">Pacífico 3100 | Etapa I</a></li>								
 										<li class="vendido"><a class="dropdown-item disabled" aria-disabled="true" title="100% VENIDO">Pacífico 2800 | Etapa II</a></li>
 										<li class="vendido"><a class="dropdown-item disabled" aria-disabled="true" title="100% VENIDO">Pacífico 2800 | Etapa I</a></li>
 									</ul>

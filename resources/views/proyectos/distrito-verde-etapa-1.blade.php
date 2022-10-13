@@ -90,7 +90,7 @@
 	.ug-thumb-wrapper.ug-tile.ug-tile-clickable.ug-thumb-ratio-set img{
 	opacity: 0.3;
     transition: opacity 1s ease-in-out !important;
-}
+	}
 
 	.ug-thumb-wrapper.ug-tile.ug-tile-clickable.ug-thumb-ratio-set.ug-thumb-over img{
 		opacity: 1;
