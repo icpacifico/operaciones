@@ -1,9 +1,7 @@
 /* @import url(../../scss/icons/themify-icons/themify-icons.css); */
 /************** Banner Top **************************/	
 /* Half Page Height Carousel Customization */
-#banner-top{
-    /*background-color: #89816B;*/
-    /*min-height: 50vh;*/
+#banner-top{    
     padding-top: 145px;
     padding-bottom: 0px;
 }

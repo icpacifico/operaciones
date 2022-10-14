@@ -1,7 +1,450 @@
 @extends('sitioweb.app')
 
 @section('style')
-<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.min.css" integrity="sha512-EViDct/SXnZMMG2ZDK7E2r3o/rDIwocOkVYpEvbMM/4Mr3on8V70n7dLcLdOrVyPuvEFyqQzya1YPNV1DFlf0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+<style>	
+	#banner-pac3100-1{    
+		padding-top: 145px;
+		padding-bottom: 0px;
+	}
+
+	#banner-pac3100-1 .carousel{
+		height: 73vh;
+	}
+
+	#banner-pac3100-1 .carousel-inner {
+		height: 100%;
+	}
+
+	#banner-pac3100-1 .carousel .carousel-item {
+	height: 74vh;
+	background-color: #e8e8e8;
+	}
+
+	#banner-pac3100-1 .carousel .carousel-item img{
+	max-width: 100%;
+	}
+
+	/* Small devices (tablets, 768px and up) */
+	@media (max-width: 768px) {
+		#banner-pac3100-1 .carousel{
+			height: 30vh;
+		}
+
+		#banner-pac3100-1 .carousel-inner {
+			height: 100%;
+		}
+
+		#banner-pac3100-1 .carousel .carousel-item {
+		height: 30vh;
+		background-color: #e8e8e8;
+		}
+
+	}
+
+	/*solo si se carga como fondo*/
+	#banner-pac3100-1 .fill {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-position: center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+	@media (min-width: 768px) {
+	#banner-pac3100-1 .fill {
+		width: 65%;
+		height: 100%;
+		position: absolute;
+		background-position: center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+	}
+
+
+	#banner-pac3100-1 #carouselweb .carousel-caption {
+		position: absolute;
+		right: 4%;
+		left: auto;
+		top: 20px;
+		color:#333333;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: left;
+		z-index: 12;
+		width: 210px;
+	}
+
+	@media (max-width: 760px) {
+		#banner-pac3100-1 #carouselweb .carousel-caption h3{
+			background-color: rgba(0, 0, 0, .7);
+			padding: 10px 5px;
+		}
+
+		#banner-pac3100-1 #carouselweb .carousel-caption {
+			width: 95%;
+		}
+	}
+
+	#banner-pac3100-1 #carouselweb .carousel-caption h3{
+	display: inline-block;
+	font-size: 1.1rem;
+	line-height: 1.45rem;
+	}
+
+	#banner-pac3100-1 #carouselweb .carousel-caption p{
+	font-size: .95rem;
+	text-align: justify;
+	}
+
+
+	#banner-pac3100-1 .carousel-item #textos{
+		position: absolute;
+		z-index: 10;
+		right: 0;
+	}
+
+	@media (max-width: 768px) {
+		#banner-pac3100-1 .container-fluid{
+			padding-right: 0 !important;
+			padding-left: 0 !important;
+		}
+	}
+
+
+	#banner-pac3100-1 .galeria{
+		max-height: 290px;
+		overflow-y: hidden;
+	}
+
+	@media (max-width: 767px) { 
+		#banner-pac3100-1{
+			/*background-color: #89816B;*/
+			/*min-height: 50vh;*/
+			padding-top: 108px;
+		}
+
+		#banner-pac3100-1 .galeria{
+			max-height: 700px;
+			overflow-y: hidden;
+		}
+	}
+
+	#banner-pac3100-1 .azul{
+		background-color: #59a4d3;
+	}  
+
+	#banner-pac3100-1 .morado{
+		background-color: #ff008d;
+	}  
+
+	#banner-pac3100-1 .verde{
+		background-color: #a3bd33;
+	}
+
+	#banner-pac3100-1 h3{
+		font-size: 2rem;
+		padding-top: 25px;
+		font-weight: 400;
+		padding-bottom: 21px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+	@media (max-width: 767px) { 
+		#banner-pac3100-1 h3{
+			font-size: 1rem;
+			padding-top: 4px;
+			font-weight: 400;
+			text-align: center;
+			line-height: 20px;
+			color: #FFFFFF;
+		}
+	}
+
+	/*#presenta*/
+	#presenta{
+		padding-top: 60px;
+		text-align: justify;
+		padding-bottom: 40px;
+	}
+
+	#presenta .detalles{
+		font-weight: 300;
+		font-size: .9rem;
+	}
+
+	.tabcontent-border {
+		border: 1px solid #ddd;
+		border-top: 0px;
+		box-shadow: 1px 1px 4px rgba(136, 136, 136, .5);
+	}
+
+	#presenta .nav-tabs .nav-link.active,
+	#presenta .nav-tabs .nav-item.show .nav-link {
+		color: #495057;
+		background-color: #fff;
+		border-color: #dee2e6 #dee2e6 #fff;
+	}
+
+	#presenta .nav-tabs .nav-link {
+		border: 1px solid transparent;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
+		background-color: rgba(0,0,0,.05);
+		color: #495057;
+	}
+
+	@media (max-width: 768px) {
+		#presenta .nav-tabs .nav-link {
+			display: block;
+			padding: 0.5rem .4rem;
+			font-size: 14px;
+		}
+	}
+
+	#presenta .nav-tabs .nav-link.verde {
+		border: 1px solid transparent;
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
+		background-color: rgba(163,189,51,.3);
+		color: #495057;
+	}
+
+	#presenta h2,
+	#modelos h2,
+	#ubicacion h2,
+	#cotizacion h2{
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.8rem;
+		font-weight: 300;
+		text-align: center;
+		color: #5E5E5E;
+	}
+
+	/*Virtuales*/
+	#virtual{
+		padding-top: 20px;
+		text-align: justify;
+
+	}
+
+	#virtual .flotante_virtual{
+		position: absolute;
+		cursor: pointer;
+		z-index: 10;
+		width: 280px;
+		min-height: 120px;
+		text-align: center;
+		padding: 10px 15px;
+		bottom: 6px;
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		transition: all 0.4s;
+		right: -140px;
+		background-color: rgba(255,255,255,.9);
+	}
+
+	#virtual .flotante_virtual.click_caja.oculta{
+		bottom: -75px;
+		right: -140px;
+		cursor: default;
+		min-height: 74px;
+	}
+
+	.bajo_recor{
+		margin-top: -5px;
+	}
+
+	#virtual .verde_360{
+		background-color: #a3bd33;
+		width: 280px;
+		text-align: center;
+		padding: 12px 0px;
+	}
+
+	@media (max-width: 768px) {
+		#virtual .verde_360{
+			background-color: #a3bd33;
+			width: 100%;
+			text-align: center;
+			padding: 12px 0px;
+		}
+	}
+
+	#virtual .flotante_virtual p{
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 1rem;
+	}
+
+	#virtual .ver_recor{
+		padding: 10px 38px;
+		background-color: #FFFFFF;
+		text-align: center;
+	}
+
+	#virtual .ver_recor p{
+		margin-bottom: 0;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 1.15rem;
+	}
+
+	#virtual .virtuales iframe.frames{
+		height: 410px;
+	}
+
+	@media (max-width: 768px) {
+		#virtual .virtuales iframe.frames{
+			height: 200px;
+		}
+	}
+
+	/*modelos*/
+	#modelos{
+		padding-bottom: 40px;
+		padding-top: 50px;
+	}
+
+	#modelos .nav-tabs .nav-link.active, #modelos .nav-tabs .nav-item.show .nav-link {
+		color: #495057;
+		background-color: #fff;
+		font-size: 1.3rem;
+		border-color: #dee2e6 #dee2e6 #fff;
+	}
+
+	#modelos .nav-tabs .nav-link {
+		color: #aaaaaa;
+		background-color: #fff;
+		font-size: 1.3rem;
+		border-color: #dee2e6 #dee2e6 #dee2e6;
+	}
+
+	#modelos .btn.sub{
+		background: #a3bd33;
+		border: 0px;
+		border-radius: 0;
+		padding: 14px 32px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		margin-top: 20px;
+	}
+
+	#modelos p strong{
+		font-weight: 500;
+	}
+
+	#ubicacion{
+		padding-bottom: 40px;
+	}
+
+	#sectionmap{
+		padding-bottom: 0px;
+		background-color: #f8f8f8;
+	}
+
+	#sectionmap .row{
+		background-color: #f8f8f8;
+	}
+
+	#sectionmap .map{
+		height: 430px;
+	}
+
+	@media (max-width: 767px) { 
+		#sectionmap .map{
+			height: 330px;
+		}
+	}
+
+	#cotizacion{
+		padding-bottom: 40px;
+		padding-top: 50px;
+	}
+
+
+	#cotizacion .cmxform .espacio {
+			margin-bottom: 6px;
+		}
+
+	#cotizacion .cmxform label.error {
+		font-size: .8rem;
+		color: #c80085;
+		font-weight: 500;
+		font-style: italic;
+	}
+
+	#cotizacion .btn-success-gradiant {
+		background: #a3bd33;
+		border-radius: 0;
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.2rem;
+		font-weight: 400;
+		border: 0px;
+		margin-top: 10px;
+	}
+
+	/* Extra Small devices (phones) */
+	@media (max-width: 767px) { 
+		#cotizacion .sala{
+			margin-top: 30px;
+		}
+	}
+
+	#sectionmap .sala{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#sectionmap .sala .contiene{
+		/*padding: 30px;*/
+		width: 80%;
+		background-color: #fff;
+	}
+
+	@media (max-width: 768px) {
+		#sectionmap .sala .contiene{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	#sectionmap .sala h2{
+		font-size: 1.4rem; 
+		font-weight: 300;
+	}
+
+	#sectionmap .sala h4{
+		font-size: 1.3rem; 
+		font-weight: 300;
+		color: #73bae7;
+	}
+
+	#sectionmap .sala p{
+		font-size: 1rem; 
+		font-weight: 300;
+	}
+
+	#sectionmap .sala p a.link{
+		font-size: 1rem; 
+		font-weight: 400;
+		color:#9cc44c;
+	}
+
+	.antialias{
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
 	#presenta div.social a.whatsapp {
 	    font-size: 1.8rem;
 	    color: #A8A8A8;
@@ -212,7 +655,7 @@
                     <img src="https://icpacifico.cl/images/iso_3100.png" class="img-fluid" width="40">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link sub" href="#banner-top">Presentación</a>
+                    <a class="nav-link sub" href="#banner-pac3100-1">Presentación</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link sub" href="#presenta">Información</a>
@@ -239,62 +682,40 @@
 @endsection
 @section('content')
 @parent
-<div id="banner-top">
+<div id="banner-pac3100-1">
 	<div class="container-fluid">
 		<div class="">
     <section id="slider-sec" class="slider5">
-        <div id="slider5" class="carousel bs-slider slide carousel-fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="7000">
-            <ol class="carousel-indicators">
+        <div id="slider5" class="carousel bs-slider slide carousel-fade control-round indicators-line" data-bs-ride="carousel" data-pause="hover" data-interval="7000">
+            {{-- <ol class="carousel-indicators">
             	<li data-target="#slider5" data-slide-to="0" class="active"></li>
-            	<li data-target="#slider5" data-slide-to="1"></li>
-            	<!-- <li data-target="#slider5" data-slide-to="2"></li> -->
-            </ol>
-            <!-- Wrapper For Slides -->
+            	<li data-target="#slider5" data-slide-to="1"></li>            
+            </ol> --}}        
             <div class="carousel-inner" role="listbox">
-            	<div class="carousel-item active unico">
-                    <!-- Slide Background -->
+            	<div class="carousel-item active unico">                
                     <img src="https://icpacifico.cl/archivo/proyecto/portada2/3/portada2_proyecto.jpg" alt="ICpacifico" class="slide-image d-none d-md-block" />
                     <img src="https://icpacifico.cl/images/portada2_proyecto3100_xs.jpg" alt="ICpacifico" class="slide-image d-block d-md-none" />
-                    <div class="bs-slider-overlay d-none d-md-block"></div>
-                    <!-- Slide Text Layer -->
-                   <!--  <div class="slide-text row justify-content-center">
-                        <div class="col-md-9 col-lg-6 bg_texto">
-
-                            <h2 class="title mb-md-0 animatitulo"></h2>
-                        </div>
-                    </div> -->
+                    <div class="bs-slider-overlay d-none d-md-block"></div>                    
                 </div>
-                <div class="carousel-item unico">
-                    <!-- Slide Background -->
+                <div class="carousel-item unico">                   
                     <img src="https://icpacifico.cl/archivo/proyecto/portada2/3/portada2_proyecto_2.jpg" alt="ICpacifico" class="slide-image d-none d-md-block" />
                     <img src="https://icpacifico.cl/images/portada2_proyecto3100_b_xs.jpg" alt="ICpacifico" class="slide-image d-block d-md-none" />
-                    <div class="bs-slider-overlay d-none d-md-block"></div>
-                    <!-- Slide Text Layer -->
-                   <!--  <div class="slide-text row justify-content-center">
-                        <div class="col-md-9 col-lg-6 bg_texto">
-
-                            <h2 class="title mb-md-0 animatitulo"></h2>
-                        </div>
-                    </div> -->
-                </div>
-
-                <div class="slider-control d-none d-md-block">
-                    <!-- Left Control -->
-                    <a class="left carousel-control-prev text-white font-14" href="#slider5" role="button" data-slide="prev"> <span class="ti-arrow-left" aria-hidden="true"></span> <b class="sr-only font-normal">Previous</b> </a>
-                    <!-- Right Control -->
-                    <a class="right carousel-control-next text-white font-14" href="#slider5" role="button" data-slide="next"> <span class="ti-arrow-right" aria-hidden="true"></span> <b class="sr-only font-normal">Next</b> </a>
-                </div>
-                <!-- End of Slider Control -->
+                    <div class="bs-slider-overlay d-none d-md-block"></div>                    
+                </div>                              
             </div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#slider5" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#slider5" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
         </div>
         <!-- End Slider -->
     </section>
 </div>
-		<div class="row">
-			<!-- <div class="col-12 px-0 px-md-2">
-				<img src="/archivo/proyecto/portada2//" class="img-fluid d-none d-md-block">
-				<img src="/images/portada2_proyecto_xs.jpg" class="img-fluid d-block d-md-none">
-			</div> -->
+		<div class="row">			
 						<div class="col-12 verde"><H3 class="text-center">ETAPA I ENTREGA 1er Trimestre 2022</H3></div>
 					</div>
 	</div>
@@ -317,11 +738,10 @@
         	</div>
         	<div class="col-md-6 mt-md-4">
         		<ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab"><span class="">Departamentos</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab"><span class="">El Condominio</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link verde" data-toggle="tab" href="#ecology" role="tab"><span class="">Sustentabilidad</span></a> </li>
-                    					<!-- <li class="nav-item"> <a class="nav-link" href="/Folleto_P2800_EtapaII_VB.pdf" target="_blank" role="button"><span class=""><i class="fas fa-file-pdf" style="color: #FF001C"></i> Folleto PDF</span></a> </li> -->
-					                </ul>
+                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true"><span class="">Departamentos</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false"><span class="">El Condominio</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link verde" data-bs-toggle="tab" data-bs-target="#ecology" role="tab" aria-controls="ecology" aria-selected="false"><span class="">Sustentabilidad y Atributos</span></a> </li>				
+				</ul>
                 <!-- Tab panes -->
                 <div class="tab-content tabcontent-border">
                     <div class="tab-pane active tab_describe" id="home" role="tabpanel">
@@ -400,7 +820,7 @@
 		<div class="row virtuales align-items-center">
 	    	<div class="col-md-6 cols">
 	    		<iframe id="frameprueba" class="frames" width = "100%" src = " https://my.matterport.com/show/?m=DmtQBSUXc2U" frameborder = "0" allowfullscreen allow = "vr"> </iframe>
-	    		<div class="flotante_virtual d-none d-md-flex align-items-center click_caja"><p>Visita nuestros pilotos virtuales desde cualquier parte del mundo</p></div>
+	    		{{-- <div class="flotante_virtual d-none d-md-flex align-items-center click_caja"><p>Visita nuestros pilotos virtuales desde cualquier parte del mundo</p></div> --}}
 	    	</div>
 	    	<div class="col-md-6 cols">
 	    		<iframe class="frames" width = "100%" src = " https://my.matterport.com/show/?m=4Sbr7iLm1CY" frameborder = "0" allowfullscreen allow = "vr" class="render"> </iframe>
@@ -419,9 +839,9 @@
         <div class="row">
         	<div class="col-12">
         		<ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#mod-a" role="tab"><span class="">Modelo A</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mod-b" role="tab"><span class="">Modelo B</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#mod-c" role="tab"><span class="">Estudio</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#mod-a" role="tab" aria-controls="mod-a" aria-selected="true"><span class="">Modelo A</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" data-bs-target="#mod-b" role="tab" aria-controls="mod-b" aria-selected="false"><span class="">Modelo B</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" data-bs-target="#mod-c" role="tab" aria-controls="mod-c" aria-selected="false"><span class="">Estudio</span></a> </li>
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content tabcontent-border">
@@ -501,8 +921,8 @@ Sup. Total: 56,37&nbsp;m2</p>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<div class="embed-responsive embed-responsive-4by3" data-aos="fade-up">
-				  	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h5Du3LqHl2k?autoplay=0&rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="ratio ratio-4x3" data-aos="fade-up">
+				  	<iframe src="https://www.youtube.com/embed/h5Du3LqHl2k?autoplay=0&rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col-md-7 pl-md-0 pt-md-4">
@@ -554,57 +974,290 @@ Sup. Total: 56,37&nbsp;m2</p>
 		</div>
 	</div>
 </section>
-<!--<section id="cotizacion">
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col-md-7">
-				<h2>Cotización</h2>
-				<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1473626&conversionId=1469745&fmt=gif" />
-				<div class="form pt-md-3">
-	        		<form class="cmxform row" id="commentForm" method="post" action="https://icpacifico.cl/graba_cotizacion.php" >
-	    				<input id="proyectoid" type="hidden" name="proyectoid" value="3">
-	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
+@endsection
+@section('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js" integrity="sha512-q0Tx9njjBh0TfH3nPC2HfQbLXRyq27yx22U9zdj7nwH97SfIbnvAwTqpjwowq2dDZBe2k84sx/GdEZwzHsDqUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.min.js" integrity="sha512-wJ77CqWvHxl0VZkkTXIlwy931rh4p7CnmdvYEz1XZJHAfl4xhktuokGnk+2rUgoMKRjyywx0tbPMyoxVz99LAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js" integrity="sha512-tpaozUhiemCplwPy+SorWM3CcHW5HF2dGoqdFEm49MOnui4tzhjwIAV05dMUVHNRbSURl+R3sOSLfOfNFYwrjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+		function agendarVideoLlamada(){
+		dataLayer.push({'event': 'agenda-click'});
+	    $.fancybox.open({
+	        src : 'https://calendly.com/icpacifico/reunion-virtual',
+	        type : 'iframe',
+	        opts : {
+	            iframe : {
+	                css : {
+	                    width: '100%'
+	                },
+	                attr : {
+	                    scrolling : 'no'
+	                }
+	            },
+	            afterClose : function() {
 
-	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut"></div>
+	            }
+	        }
+	    });
+	}
 
-	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail"></div>
+    jQuery(document).ready(function(){
 
-	    				<div class="col-12 col-md-6 espacio"><input id="fonocon" type="text" name="fonocon" class="form-control numero" placeholder="Teléfono"></div>
+    	
 
-	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion"></div>
+    	$(document).on("click", ".click_caja", function() {
+	    	$("div.click_caja").addClass("oculta");
+	    });
 
-	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad"></div>
 
-	    				<div class="col-12 col-md-6 espacio">
-	    					<select name="modelo" id="modelo" class="form-control">
-	    						<option value="" selected>Modelo de Departamento</option>
-	    						<option value="A">Modelo A 2 dorm. 2 baños</option>
-	    						<option value="ESTUDIO">Modelo ESTUDIO 2 dorm. 2 baños</option>
-	    						<option value="B">Modelo B 3 dorm. 2 baños</option>
-	    					</select>
-	    				</div>
+		$('a.nav-link.sub').click(function() {
+            // alert("aaaa");
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top-150
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
 
-	    				<div class="col-12 col-md-6 espacio">
-	    					<select name="medio" id="medio" class="form-control">
-	    						<option value="" selected>Cómo llegó a nosotros</option>
-	    						<option value="Diario el Día">Diario el Día</option>
-	    						<option value="Radio">Radio</option>
-	    						<option value="Facebook">Facebook</option>
-	    						<option value="Expo. Inmobiliaria">Expo. Inmobiliaria</option>
-	    						<option value="Recomendación">Recomendación</option>
-	    						<option value="Buscador Web">Buscador Web</option>
-	    						<option value="Letrero">Letrero</option>
-	    					</select>
-	    				</div>
-	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario"></textarea></div>
-	        			<div class="col-12 text-center" id="contenedor-boton">
-	        				<button type="submit" onclick="onPixel()" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>
-	        				<!-- <input class="btn btn-default" type="submit" value="Enviar" name="button" id="button"/> 
-	        			</div>
-	        		</form>
-	        	</div>
-			</div>
-		</div>
-	</div>
-</section>-->
+    	// galeria proyecto
+        jQuery("#gallery").unitegallery({
+	        gallery_theme: "slider",
+	        gallery_play_interval: 3000,
+	        gallery_width:900,							//gallery width		
+			gallery_height:650,	
+	        slider_enable_bullets: false,
+	        slider_enable_fullscreen_button: true,
+	        slider_enable_text_panel: false
+	        // slider_textpanel_title_font_size: 12,
+	        // slider_textpanel_title_bold:false	        
+	    });
+	    // $("#gallery").css({"height":"auto"});
+	    // setTimeout(function(){
+    	// 	$('.ug-tiles-preloader').css( "opacity", "0" );
+    	// }, 100);
+
+
+    	jQuery("#entorno").unitegallery({
+			gallery_theme: "tiles",
+			// gallery_background_color: "#FFFFFF",
+			tiles_type: "justified",
+			tile_enable_image_effect:false,
+			// tile_image_effect_type: "sepia",
+			tile_enable_overlay:false,
+			tile_enable_icons:false,
+			tile_enable_textpanel: true,
+			tile_textpanel_title_font_size: 11,
+			tiles_nested_optimal_tile_width: 150,	// tiles optimal width
+			tiles_justified_row_height: 100,
+			tiles_min_columns: 4,					//min columns - for mobile size, for 1 column, type 1
+			tiles_max_columns: 5,
+			tiles_col_width: 220,
+			tiles_space_between_cols: 2,
+			lightbox_textpanel_padding_top:10,					//textpanel padding top 
+			lightbox_textpanel_padding_bottom:15,
+			lightbox_textpanel_title_font_size: 13,
+		});
+		$("#entorno").css({"height":"auto"});
+
+    	var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			// osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+			osmAttrib = '',
+			osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
+		var map = L.map('map').setView([-29.922094110417884, -71.27509598457016], 17).addLayer(osm);
+		var greenIcon = L.icon({
+		    iconUrl: 'https://icpacifico.cl/images/marker-3100.png',
+		    // shadowUrl: 'leaf-shadow.png',
+
+		    iconSize:     [50, 61], // size of the icon
+		    // shadowSize:   [50, 64], // size of the shadow
+		    iconAnchor:   [20, 60], // point of the icon which will correspond to marker's location
+		    shadowAnchor: [4, 62],  // the same for the shadow
+		    popupAnchor:  [0, -56] // point from which the popup should open relative to the iconAnchor
+		});
+
+		var marker = new L.marker([-29.922094110417884, -71.27509598457016], {icon: greenIcon})
+		.addTo(map)
+		.bindPopup('<img src="https://icpacifico.cl/archivo/proyecto/portada2/3/portada2_proyecto.jpg" width="160"><br>'+'<span>Avda. Pacífico 3100</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.922094110417884,-71.27509598457016&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
+
+
+		// formulario
+		$.validator.addMethod("rut", function(value, element) {
+                return this.optional(element) || $.Rut.validar(value);
+            }, "Rut invalido.");
+	    $('.numero').numeric();
+	    // validate the comment form when it is submitted
+	    //$("#commentForm").validate();
+	    // validate signup form on keyup and submit
+	    $("#commentForm").validate({
+	        rules: {
+	            rut: {
+	                required: true
+	            },
+	            nombres: {
+	                required: true,
+	                minlength: 3
+	            },
+	            modelo: {
+	                required: true
+	            },
+	            medio: {
+	                required: true
+	            },
+	            mail: {
+	                required: true,
+	                email: true
+	            },
+	            fonocon: {
+	                required: true,
+	                minlength: 6
+	            },
+	            comentarios: {
+	                required: true,
+	                minlength: 6
+	            }
+	        },
+	        messages: {
+	            rut: {
+	                required: "Ingrese rut"
+	            },
+	            nombre: {
+	                required: "Por favor ingrese Nombre",
+	                minlength: "Al menos 3 caracteres"
+	            },
+	            modelo: {
+	                required: "Por favor Seleccione Modelo"
+	            },
+	            medio: {
+	                required: "Por favor Seleccione Medio"
+	            },
+	            mail: "Ingrese un email válido",
+	            fonocon: {
+	                required: "Por favor ingrese Fono contacto",
+	                minlength: "Al menos 6 caracteres"
+	            },
+	            comentarios: {
+	                required: "Por favor ingrese Solicitud",
+	                minlength: "Al menos 6 caracteres"
+	            }
+	        }
+	    });
+
+	    $('#rut').Rut({
+	            });
+
+	    function resultado(data){
+	    	toastr.options = {
+	    		"closeButton": false,
+	    		"debug": false,
+	    		"newestOnTop": false,
+	    		"progressBar": false,
+	    		"positionClass": "toast-top-full-width",
+	    		"preventDuplicates": false,
+	    		"onclick": function () { 
+	    			if (data.alerta==="success") {
+	    				window.location='https://icpacifico.cl/gracias'; 
+	    			} else {
+	    				$('#contenedor-boton').html('<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>');
+	    			}
+	    		},
+	    		"onHidden": function () { 
+	    			if (data.alerta==="success") {
+	    				window.location='https://icpacifico.cl/gracias'; 
+	    			} else {
+	    				$('#contenedor-boton').html('<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>');
+	    			}
+	    		},
+	    		"showDuration": "2000",
+	    		"hideDuration": "500",
+	    		"timeOut": "2000",
+	    		"extendedTimeOut": "1000",
+	    		"showEasing": "swing",
+	    		"hideEasing": "linear",
+	    		"showMethod": "fadeIn",
+	    		"hideMethod": "fadeOut"
+	    	}
+		    // info de configuracion http://codeseven.github.io/toastr/demo.html
+		    Command: toastr[data.alerta](data.msj, data.titulo)
+
+		};
+
+		setTimeout(
+		  function() 
+		  {
+		    $( ".unico" ).addClass( "fademio" );
+		    // alert("hola");
+		  }, 50);
+
+		$(".carousel").swipe({
+	      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+	        if (direction == 'left') $(this).carousel('next');
+	        if (direction == 'right') $(this).carousel('prev');
+	      },
+	      allowPageScroll:"vertical"
+	    });
+
+    
+
+	    $('#commentForm').submit(function() {
+	        if ($("#commentForm").validate().form() == true){
+	  			fbq('track', 'CompleteRegistration');
+	  			dataLayer.push({'event': 'cotiza-web-click'});
+	            var_rut = $('#rut').val();
+	            var_rut = var_rut.replace(/\&/g,'{#@}');
+	            var_rut = var_rut.replace(/\+/g,'{#@@}');
+	            var_mail = $('#mail').val();
+	            var_mail = var_mail.replace(/\&/g,'{#@}');
+	            var_mail = var_mail.replace(/\+/g,'{#@@}');
+	            var_nombre = $('#nombre').val();
+	            var_nombre = var_nombre.replace(/\&/g,'{#@}');
+	            var_nombre = var_nombre.replace(/\+/g,'{#@@}');
+	            var_ciudad = $('#ciudad').val();
+	            var_ciudad = var_ciudad.replace(/\&/g,'{#@}');
+	            var_ciudad = var_ciudad.replace(/\+/g,'{#@@}');
+	            var_fonocon = $('#fonocon').val();
+	            var_fonocon = var_fonocon.replace(/\&/g,'{#@}');
+	            var_fonocon = var_fonocon.replace(/\+/g,'{#@@}');
+	            var_direccion = $('#direccion').val();
+	            var_direccion = var_direccion.replace(/\&/g,'{#@}');
+	            var_direccion = var_direccion.replace(/\+/g,'{#@@}');
+	            var_modelo = $('#modelo').val();
+	            var_modelo = var_modelo.replace(/\&/g,'{#@}');
+	            var_modelo = var_modelo.replace(/\+/g,'{#@@}');
+	            var_comentarios = $('#comentarios').val();
+	            var_comentarios = var_comentarios.replace(/\&/g,'{#@}');
+	            var_comentarios = var_comentarios.replace(/\+/g,'{#@@}');
+	            var_medio = $('#medio').val();
+	            var_medio = var_medio.replace(/\&/g,'{#@}');
+	            var_medio = var_medio.replace(/\+/g,'{#@@}');
+	            var_proyectoid = $('#proyectoid').val();
+	            var_proyectoid = var_proyectoid.replace(/\&/g,'{#@}');
+	            var_proyectoid = var_proyectoid.replace(/\+/g,'{#@@}');
+	            $('#contenedor-boton').html('<img src="https://icpacifico.cl/images/loading.gif">');
+	            $.ajax({
+	                data:"rut="+var_rut+"&mail="+var_mail+"&nombre="+var_nombre+"&direccion="+var_direccion+"&modelo="+var_modelo+"&ciudad="+var_ciudad+"&fonocon="+var_fonocon+"&comentarios="+var_comentarios+"&medio="+var_medio+"&proyectoid="+var_proyectoid,
+	                type: 'POST',
+	                url: $(this).attr('action'),
+	                dataType:'json',
+	                success: function(data) {
+	                    //$('#informacion').html(data);
+	                    resultado(data);
+	                }
+	            });
+	        }
+	        return false;
+	    });
+    });
+
+	$(function () {
+		$('.social a').on('click', function (e) {
+			e.preventDefault();
+		window.open($(this).attr('href'), 'shareWindow', 'height=450, width=600, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 300) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+ 	 });
+});
+</script>
 @endsection

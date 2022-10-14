@@ -9,7 +9,7 @@
     <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">	
 	<link rel="icon" href="{{ Vite::asset('resources/img/favicon.png') }}">
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    
 	@yield('style')
 </head>
 <body>
@@ -125,10 +125,12 @@
     </div>
 </div>
 </section>
-<script  src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="  crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" charset="utf-8"></script>
-<script>	
-
+<script>		
 	$(".preloader").fadeOut();
 
 		$('.slider2').slick({
