@@ -1101,69 +1101,69 @@
 
 
 		// formulario
-		$.validator.addMethod("rut", function(value, element) {
-                return this.optional(element) || $.Rut.validar(value);
-            }, "Rut invalido.");
-	    $('.numero').numeric();
+		// $.validator.addMethod("rut", function(value, element) {
+        //         return this.optional(element) || $.Rut.validar(value);
+        //     }, "Rut invalido.");
+	    // $('.numero').numeric();
 	    // validate the comment form when it is submitted
 	    //$("#commentForm").validate();
 	    // validate signup form on keyup and submit
-	    $("#commentForm").validate({
-	        rules: {
-	            rut: {
-	                required: true
-	            },
-	            nombres: {
-	                required: true,
-	                minlength: 3
-	            },
-	            modelo: {
-	                required: true
-	            },
-	            medio: {
-	                required: true
-	            },
-	            mail: {
-	                required: true,
-	                email: true
-	            },
-	            fonocon: {
-	                required: true,
-	                minlength: 6
-	            },
-	            comentarios: {
-	                required: true,
-	                minlength: 6
-	            }
-	        },
-	        messages: {
-	            rut: {
-	                required: "Ingrese rut"
-	            },
-	            nombre: {
-	                required: "Por favor ingrese Nombre",
-	                minlength: "Al menos 3 caracteres"
-	            },
-	            modelo: {
-	                required: "Por favor Seleccione Modelo"
-	            },
-	            medio: {
-	                required: "Por favor Seleccione Medio"
-	            },
-	            mail: "Ingrese un email válido",
-	            fonocon: {
-	                required: "Por favor ingrese Fono contacto",
-	                minlength: "Al menos 6 caracteres"
-	            },
-	            comentarios: {
-	                required: "Por favor ingrese Solicitud",
-	                minlength: "Al menos 6 caracteres"
-	            }
-	        }
-	    });
+	    // $("#commentForm").validate({
+	    //     rules: {
+	    //         rut: {
+	    //             required: true
+	    //         },
+	    //         nombres: {
+	    //             required: true,
+	    //             minlength: 3
+	    //         },
+	    //         modelo: {
+	    //             required: true
+	    //         },
+	    //         medio: {
+	    //             required: true
+	    //         },
+	    //         mail: {
+	    //             required: true,
+	    //             email: true
+	    //         },
+	    //         fonocon: {
+	    //             required: true,
+	    //             minlength: 6
+	    //         },
+	    //         comentarios: {
+	    //             required: true,
+	    //             minlength: 6
+	    //         }
+	    //     },
+	    //     messages: {
+	    //         rut: {
+	    //             required: "Ingrese rut"
+	    //         },
+	    //         nombre: {
+	    //             required: "Por favor ingrese Nombre",
+	    //             minlength: "Al menos 3 caracteres"
+	    //         },
+	    //         modelo: {
+	    //             required: "Por favor Seleccione Modelo"
+	    //         },
+	    //         medio: {
+	    //             required: "Por favor Seleccione Medio"
+	    //         },
+	    //         mail: "Ingrese un email válido",
+	    //         fonocon: {
+	    //             required: "Por favor ingrese Fono contacto",
+	    //             minlength: "Al menos 6 caracteres"
+	    //         },
+	    //         comentarios: {
+	    //             required: "Por favor ingrese Solicitud",
+	    //             minlength: "Al menos 6 caracteres"
+	    //         }
+	    //     }
+	    // });
 
-	    $('#rut').Rut({
-	            });
+	    // $('#rut').Rut({
+	    //         });
 
 	    function resultado(data){
 	    	toastr.options = {
