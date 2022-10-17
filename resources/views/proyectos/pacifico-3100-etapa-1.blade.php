@@ -652,7 +652,7 @@
         <div class="col-md-9">
             <ul id="navbarpro" class="nav nav-pills justify-content-end">
                 <li class="nav-item nombre_proyecto">
-                    <img src="https://icpacifico.cl/images/iso_3100.png" class="img-fluid" width="40">
+                    <img src="{{ Vite::asset('resources/img/iso_3100.png') }}" class="img-fluid" width="40">
                 </li>
                 <li class="nav-item">
                     <a class="nav-link sub" href="#banner-pac3100-1">Presentación</a>
@@ -693,13 +693,13 @@
             </ol> --}}        
             <div class="carousel-inner" role="listbox">
             	<div class="carousel-item active unico">                
-                    <img src="https://icpacifico.cl/archivo/proyecto/portada2/3/portada2_proyecto.jpg" alt="ICpacifico" class="slide-image d-none d-md-block" />
-                    <img src="https://icpacifico.cl/images/portada2_proyecto3100_xs.jpg" alt="ICpacifico" class="slide-image d-block d-md-none" />
+                    <img src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/portada/portada2_proyecto.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+                    <img src="{{ Vite::asset('resources/img/portada2_proyecto3100_xs.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
                     <div class="bs-slider-overlay d-none d-md-block"></div>                    
                 </div>
                 <div class="carousel-item unico">                   
-                    <img src="https://icpacifico.cl/archivo/proyecto/portada2/3/portada2_proyecto_2.jpg" alt="ICpacifico" class="slide-image d-none d-md-block" />
-                    <img src="https://icpacifico.cl/images/portada2_proyecto3100_b_xs.jpg" alt="ICpacifico" class="slide-image d-block d-md-none" />
+                    <img src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/portada/portada2_proyecto_2.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+                    <img src="{{ Vite::asset('resources/img/portada2_proyecto3100_b_xs.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
                     <div class="bs-slider-overlay d-none d-md-block"></div>                    
                 </div>                              
             </div>
@@ -726,14 +726,12 @@
         <!-- row  -->
         <div class="row">
         	<div class="col-md-12">
-        		<img src="https://icpacifico.cl/archivo/proyecto/logo/3/logo-pacifico.jpg" width="210" class="img-fluid mb-2 mx-auto d-block d-md-none">
+        		<img src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/logo-pacifico.jpg') }}" width="210" class="img-fluid mb-2 mx-auto d-block d-md-none">
         		<h2 class="mb-4">Información</h2>
         		<div class="descripcion mb-4">
         			<p>Un Condominio a pasos de la playa en donde la arquitectura armoniza amplios jardines y edificios que recogen vistas del paisaje costero. Un Proyecto que incorpora la t&eacute;cnica, energ&iacute;as renovables y reciclaje en amistad con el medio ambiente.</p>
-
-<p>En el centro de los amplios jardines se soterra un espacio relevante del Condominio, que acoge actividades sociales y gastron&oacute;micas. Es la evoluci&oacute;n de la sala multiuso, que convoca y llama al encuentro.</p>
-
-<p>Cuenta con dos terrazas emplazadas en el piso 10, un espacio al aire libre con vista panor&aacute;mica al entorno costero.</p>
+					<p>En el centro de los amplios jardines se soterra un espacio relevante del Condominio, que acoge actividades sociales y gastron&oacute;micas. Es la evoluci&oacute;n de la sala multiuso, que convoca y llama al encuentro.</p>
+					<p>Cuenta con dos terrazas emplazadas en el piso 10, un espacio al aire libre con vista panor&aacute;mica al entorno costero.</p>
         		</div>
         	</div>
         	<div class="col-md-6 mt-md-4">
@@ -748,17 +746,17 @@
                         <div class="p-30 detalles">
                             <div class="row">
                             	<div class="col-sm-12">
-                            		<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> 2 y 3 dormitorios <br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Cocina americana amoblada y equipada<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Encimera vitrocerámica, horno y campana<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Dormitorio principal en suite<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Estar comedor, pasillo y dormitorios piso SPC<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Terraza y Baños, piso Porcelanato<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Ventilaciones pasivas<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Walking closet<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Conexión para lavadora<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Estacionamiento y bodega<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Barandas de terrazas de aluminio y vidrio laminado
+                            		<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 2 y 3 dormitorios <br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Cocina americana amoblada y equipada<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Encimera vitrocerámica, horno y campana<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Dormitorio principal en suite<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Estar comedor, pasillo y dormitorios piso SPC<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Terraza y Baños, piso Porcelanato<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Ventilaciones pasivas<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Walking closet<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Conexión para lavadora<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Estacionamiento y bodega<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Barandas de terrazas de aluminio y vidrio laminado
 
                             		<!-- <hr> -->
                             		<!-- <b>Precio Desde: UF 2.637.-</b> -->
@@ -770,19 +768,19 @@
                     	<div class="p-30 detalles">
                             <div class="row">
                             	<div class="col-sm-12">
-                            		<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Dos edificios de 10 pisos<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Acceso controlado<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Sistema de seguridad con cámaras de vigilancia<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> 2.500 m2 de áreas verdes<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Piscina adultos<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Piscina niños<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Dos Quinchos al aire libre en Terraza panorámica<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Un quincho en espacio cerrado en salón Gourmet<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Salón de eventos Gourmet<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Dos salas para teletrabajo <br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Cicloparking<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Lavanderia<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Juegos Infantiles
+                            		<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Dos edificios de 10 pisos<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Acceso controlado<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Sistema de seguridad con cámaras de vigilancia<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 2.500 m2 de áreas verdes<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piscina adultos<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piscina niños<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Dos Quinchos al aire libre en Terraza panorámica<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Un quincho en espacio cerrado en salón Gourmet<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Salón de eventos Gourmet<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Dos salas para teletrabajo <br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Cicloparking<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Lavanderia<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Juegos Infantiles
                             	</div>
                             </div>
                         </div>
@@ -792,10 +790,10 @@
                             <div class="row">
                             	<div class="col-sm-12">
                             		<h4 class="mb-3" style="color: #a3bd33;">Comprometidos con el Medioambiente</h4>
-                            		<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Planta de generación de energía fotovoltaica, abasteciendo las zonas comunes del condominio<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Eficiencia hídrica; riego eficiente subteráneo para areas verdes además de incorporar hidrogel al sustrato para mantener la humedad<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Grifería eficiente de bajo consumo en baños y cocina<br>
-									<img src="https://icpacifico.cl/images/tick_verde.png" class="img-fluid" width="20"> Recolección de basura diferenciada  y Reciclaje
+                            		<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Planta de generación de energía fotovoltaica, abasteciendo las zonas comunes del condominio<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Eficiencia hídrica; riego eficiente subteráneo para areas verdes además de incorporar hidrogel al sustrato para mantener la humedad<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Grifería eficiente de bajo consumo en baños y cocina<br>
+									<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Recolección de basura diferenciada  y Reciclaje
                             	</div>
                             </div>
                         </div>
@@ -806,10 +804,10 @@
                 <!-- <a href="/Informativo_p2800.pdf" target="_blank"><img src="/images/avance_obra.jpg" class="img-fluid"></a> -->
         	<div class="col-md-6 mt-md-4">
 				<div id="gallery" style="display:none;">
-                                                    <img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/7/thumbnail/foto_folleto_3100.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/7/foto_folleto_3100.jpg" alt="foto_folleto_3100.jpg">
-                                                                <img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/7/thumbnail/foto_folleto_3100_2.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/7/foto_folleto_3100_2.jpg" alt="foto_folleto_3100_2.jpg">
-                                                                <img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/7/thumbnail/foto_folleto_3100_3.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/7/foto_folleto_3100_3.jpg" alt="foto_folleto_3100_3.jpg">
-                                                </div>
+					<img alt="" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/foto_folleto_3100.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/foto_folleto_3100.jpg') }}" alt="foto_folleto_3100">
+					<img alt="" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/foto_folleto_3100_2.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/foto_folleto_3100_2.jpg') }}" alt="foto_folleto_3100_2">
+					<img alt="" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/foto_folleto_3100_3.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/foto_folleto_3100_3.jpg') }}" alt="foto_folleto_3100_3">
+				</div>
         	</div>
         </div>
     </div>
@@ -827,7 +825,7 @@
 	    	</div>
 	    	<div class="bajo_recor col-md-12 d-flex justify-content-center">
 	    		<div class="ver_recor d-flex align-items-center"><p>Ver Recorrido Virtual</p></div>
-	    		<div class="verde_360"><img src="https://icpacifico.cl/images/360n.png" width="86" class="img-fluid"></div>
+	    		<div class="verde_360"><img src="{{Vite::asset('resources/img/360n.png')}}" width="86" class="img-fluid"></div>
 	    		<div class="ver_recor d-none d-md-flex align-items-center"><p>Ver Recorrido Virtual</p></div>
 	    	</div>
 	    </div>
@@ -848,17 +846,17 @@
                     <div class="tab-pane active" id="mod-a" role="tabpanel">
                         <div class="p-30 detalles">
                             <div class="row">
-                            			                                    <div class="col-md-5">
-		                                    	<div class="text-center">
-			                                    <a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo A" href="https://icpacifico.cl/archivo/modelo/planta/5/planta_a.jpg"><img src="https://icpacifico.cl/archivo/modelo/planta/5/thumbnail/planta_a.jpg" class="img-fluid"></a>
-			                                    </div>
-		                                    </div>
-		                                                                	<div class="col-md-7">
+									<div class="col-md-5">
+											<div class="text-center">
+												<a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo A" href="{{ Vite::asset('resources/img/proyectos/pac-3100-1/modelo/planta_a.jpg') }}"><img src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/modelo/thumbnail/planta_a.jpg') }}" class="img-fluid"></a>
+											</div>
+							</div>
+									<div class="col-md-7">
                             		<p><strong>MODELO A</strong><br />
-2 Dormitorios - 2 Ba&ntilde;os<br />
-Sup. Municipal: 51,65&nbsp;m2<br />
-Sup. Terraza: 4,72&nbsp;m2<br />
-Sup. Total: 56,37&nbsp;m2</p>
+										2 Dormitorios - 2 Ba&ntilde;os<br />
+										Sup. Municipal: 51,65&nbsp;m2<br />
+										Sup. Terraza: 4,72&nbsp;m2<br />
+										Sup. Total: 56,37&nbsp;m2</p>
                             	<!--	<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
                             		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
                             		 <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
@@ -871,15 +869,15 @@ Sup. Total: 56,37&nbsp;m2</p>
                             <div class="row">
                             			                                    <div class="col-md-5">
 		                                    	<div class="text-center">
-			                                    <a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo B" href="https://icpacifico.cl/archivo/modelo/planta/6/planta_b.jpg"><img src="https://icpacifico.cl/archivo/modelo/planta/6/thumbnail/planta_b.jpg" class="img-fluid"></a>
+			                                    <a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo B" href="{{ Vite::asset('resources/img/proyectos/pac-3100-1/modelo/planta_b.jpg') }}"><img src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/modelo/thumbnail/planta_b.jpg') }}" class="img-fluid"></a>
 			                                    </div>
 		                                    </div>
 		                                                                	<div class="col-md-7">
                             		<p><strong>MODELO B</strong><br />
-3 Dormitorios - 2 Ba&ntilde;os<br />
-Sup. Municipal: 59,84&nbsp;m2<br />
-Sup. Terraza: 4,70&nbsp;m2<br />
-Sup. Total: 64,54 m2</p>
+									3 Dormitorios - 2 Ba&ntilde;os<br />
+									Sup. Municipal: 59,84&nbsp;m2<br />
+									Sup. Terraza: 4,70&nbsp;m2<br />
+									Sup. Total: 64,54 m2</p>
                             			<!--<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
                             		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
                             	 <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
@@ -892,10 +890,10 @@ Sup. Total: 64,54 m2</p>
 	                            <div class="row">
 	                            		                            	<div class="col-md-7">
 	                            		<p><strong>ESTUDIO</strong><br />
-2 Dormitorios - 2 Ba&ntilde;os<br />
-Sup. Municipal: 51,65&nbsp;m2<br />
-Sup. Terraza: 4,72&nbsp;m2<br />
-Sup. Total: 56,37&nbsp;m2</p>
+									2 Dormitorios - 2 Ba&ntilde;os<br />
+									Sup. Municipal: 51,65&nbsp;m2<br />
+									Sup. Terraza: 4,72&nbsp;m2<br />
+									Sup. Total: 56,37&nbsp;m2</p>
 	                            	<!--	<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
 	                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
 	                            		 <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
@@ -927,22 +925,22 @@ Sup. Total: 56,37&nbsp;m2</p>
 			</div>
 			<div class="col-md-7 pl-md-0 pt-md-4">
 				<div id="entorno" style="display:none;">
-                                                <img data-title="Piscinas Adultos de 88,64 m2 y Niños de 24,3m2      (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/01.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/01.jpg" alt="Piscinas Adultos de 88,64 m2 y Niños de 24,3m2      (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="Caminos peatonales surgen como formas sobre un fondo verde originado en la vegetación dentro de un espacio protagonizado por lo natural del jardín     (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/04 Vista P3100-A_Grande.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/04 Vista P3100-A_Grande.png" alt="Caminos peatonales surgen como formas sobre un fondo verde originado en la vegetación dentro de un espacio protagonizado por lo natural del jardín     (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/08 Vista P3100_Grande.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/08 Vista P3100_Grande.png" alt="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="2 Quinchos en Terraza panorámica en piso 10    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/05.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/05.jpg" alt="2 Quinchos en Terraza panorámica en piso 10    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="En el centro de los amplios jardines se soterra un espacio relevante del Condominio, que acoge actividades sociales y gastronómicas. Es la evolución de la sala multiuso, que convoca y llama al encuentro.        (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/06 Vista P3100_Grande.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/06 Vista P3100_Grande.png" alt="En el centro de los amplios jardines se soterra un espacio relevante del Condominio, que acoge actividades sociales y gastronómicas. Es la evolución de la sala multiuso, que convoca y llama al encuentro.        (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/03.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/03.jpg" alt="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="Contiene dos salas de multipropósito de recreación y actividades productivas como teletrabajo en un ambiente relajado.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/04.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/04.jpg" alt="Contiene dos salas de multipropósito de recreación y actividades productivas como teletrabajo en un ambiente relajado.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="Como parte del aporte ecológico, Planta de generación fotovoltaica, para alimentar zonas comunes y pasillos de los edificios       (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/02.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/02.jpg" alt="Como parte del aporte ecológico, Planta de generación fotovoltaica, para alimentar zonas comunes y pasillos de los edificios       (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
-                                                        <img data-title="Emplazamiento del Proyecto" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/EMPLAZAMIENTO VENTAS_Grande.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/EMPLAZAMIENTO VENTAS_Grande.jpg" alt="Emplazamiento del Proyecto">
-                                                        <img data-title="Entorno costero, a una cuadra de la Avenida del Mar y la Playa" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/06.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/06.jpg" alt="Entorno costero, a una cuadra de la Avenida del Mar y la Playa">
-                                                        <img data-title="Avenida del Mar" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/_DSC0169_Grande.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/_DSC0169_Grande.jpg" alt="Avenida del Mar">
-                                                        <img data-title="Faro Monumental de La Serena" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/_DSC0163_Grande.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/_DSC0163_Grande.jpg" alt="Faro Monumental de La Serena">
-                                                        <img data-title="Playas de La Serena" src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/_DSC0121_Grande.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/_DSC0121_Grande.jpg" alt="Playas de La Serena">
-                                                        <img data-title="Negocios de gastronomía de la Avenida del Mar muy cercanos al condominio." src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/_DSC0094_Grande.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/_DSC0094_Grande.jpg" alt="Negocios de gastronomía de la Avenida del Mar muy cercanos al condominio.">
-                                                        <img data-title="Paseos de la Avenida del Mar, negocios y bicisenda." src="https://icpacifico.cl/archivo/galeria/galeria/8/thumbnail/07.jpg" data-image="https://icpacifico.cl/archivo/galeria/galeria/8/07.jpg" alt="Paseos de la Avenida del Mar, negocios y bicisenda.">
-                                            </div>
+					<img data-title="Piscinas Adultos de 88,64 m2 y Niños de 24,3m2      (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/01.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/01.jpg') }}" alt="Piscinas Adultos de 88,64 m2 y Niños de 24,3m2      (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="Caminos peatonales surgen como formas sobre un fondo verde originado en la vegetación dentro de un espacio protagonizado por lo natural del jardín     (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/04 Vista P3100-A_Grande.png') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/04 Vista P3100-A_Grande.png') }}" alt="Caminos peatonales surgen como formas sobre un fondo verde originado en la vegetación dentro de un espacio protagonizado por lo natural del jardín     (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/08 Vista P3100_Grande.png') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/08 Vista P3100_Grande.png') }}" alt="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="2 Quinchos en Terraza panorámica en piso 10    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/05.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/05.jpg') }}" alt="2 Quinchos en Terraza panorámica en piso 10    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="En el centro de los amplios jardines se soterra un espacio relevante del Condominio, que acoge actividades sociales y gastronómicas. Es la evolución de la sala multiuso, que convoca y llama al encuentro.        (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/06 Vista P3100_Grande.png') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/06 Vista P3100_Grande.png') }}" alt="En el centro de los amplios jardines se soterra un espacio relevante del Condominio, que acoge actividades sociales y gastronómicas. Es la evolución de la sala multiuso, que convoca y llama al encuentro.        (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/03.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/03.jpg') }}" alt="La terraza es un espacio al aire libre con vista panorámica al entorno costero.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="Contiene dos salas de multipropósito de recreación y actividades productivas como teletrabajo en un ambiente relajado.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/04.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/04.jpg') }}" alt="Contiene dos salas de multipropósito de recreación y actividades productivas como teletrabajo en un ambiente relajado.    (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="Como parte del aporte ecológico, Planta de generación fotovoltaica, para alimentar zonas comunes y pasillos de los edificios       (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/02.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/02.jpg') }}" alt="Como parte del aporte ecológico, Planta de generación fotovoltaica, para alimentar zonas comunes y pasillos de los edificios       (La imágenes contenidas en esta gráficas son meramente ilustrativas, entre ellas se consideran fotografías reales, cómo también imágenes 3D que incluyen montajes fotográficos)">
+					<img data-title="Emplazamiento del Proyecto" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/EMPLAZAMIENTO VENTAS_Grande.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/EMPLAZAMIENTO VENTAS_Grande.jpg') }}" alt="Emplazamiento del Proyecto">
+					<img data-title="Entorno costero, a una cuadra de la Avenida del Mar y la Playa" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/06.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/06.jpg') }}" alt="Entorno costero, a una cuadra de la Avenida del Mar y la Playa">
+					<img data-title="Avenida del Mar" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/_DSC0169_Grande.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/_DSC0169_Grande.jpg') }}" alt="Avenida del Mar">
+					<img data-title="Faro Monumental de La Serena" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/_DSC0163_Grande.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/_DSC0163_Grande.jpg') }}" alt="Faro Monumental de La Serena">
+					<img data-title="Playas de La Serena" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/_DSC0121_Grande.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/_DSC0121_Grande.jpg') }}" alt="Playas de La Serena">
+					<img data-title="Negocios de gastronomía de la Avenida del Mar muy cercanos al condominio." src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/_DSC0094_Grande.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/_DSC0094_Grande.jpg') }}" alt="Negocios de gastronomía de la Avenida del Mar muy cercanos al condominio.">
+					<img data-title="Paseos de la Avenida del Mar, negocios y bicisenda." src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/07.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/07.jpg') }}" alt="Paseos de la Avenida del Mar, negocios y bicisenda.">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -953,7 +951,7 @@ Sup. Total: 56,37&nbsp;m2</p>
 		<div class="row">
 			<div class="col-md-8">
 				<div id="map" class="map" style="width:100%;">
-                    <img src="../../assets/img/loading.gif">
+                    <img src="{{Vite::asset('resources/img/loading.gif')}}">
                 </div>
 			</div>
 			<div class="col-md-4 sala">
@@ -1070,7 +1068,7 @@ Sup. Total: 56,37&nbsp;m2</p>
 			osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
 		var map = L.map('map').setView([-29.922094110417884, -71.27509598457016], 17).addLayer(osm);
 		var greenIcon = L.icon({
-		    iconUrl: 'https://icpacifico.cl/images/marker-3100.png',
+		    iconUrl: "{{Vite::asset('resources/img/marker-3100.png')}}",
 		    // shadowUrl: 'leaf-shadow.png',
 
 		    iconSize:     [50, 61], // size of the icon
@@ -1082,7 +1080,7 @@ Sup. Total: 56,37&nbsp;m2</p>
 
 		var marker = new L.marker([-29.922094110417884, -71.27509598457016], {icon: greenIcon})
 		.addTo(map)
-		.bindPopup('<img src="https://icpacifico.cl/archivo/proyecto/portada2/3/portada2_proyecto.jpg" width="160"><br>'+'<span>Avda. Pacífico 3100</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.922094110417884,-71.27509598457016&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
+		.bindPopup('<img src="{{Vite::asset("resources/img/proyectos/pac-3100-1/portada/portada2_proyecto.jpg")}}" width="160"><br>'+'<span>Avda. Pacífico 3100</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.922094110417884,-71.27509598457016&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
 
 
 		// formulario
@@ -1160,14 +1158,14 @@ Sup. Total: 56,37&nbsp;m2</p>
 	    		"preventDuplicates": false,
 	    		"onclick": function () { 
 	    			if (data.alerta==="success") {
-	    				window.location='https://icpacifico.cl/gracias'; 
+	    				window.location='/gracias'; 
 	    			} else {
 	    				$('#contenedor-boton').html('<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>');
 	    			}
 	    		},
 	    		"onHidden": function () { 
 	    			if (data.alerta==="success") {
-	    				window.location='https://icpacifico.cl/gracias'; 
+	    				window.location='/gracias'; 
 	    			} else {
 	    				$('#contenedor-boton').html('<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>');
 	    			}
@@ -1237,7 +1235,7 @@ Sup. Total: 56,37&nbsp;m2</p>
 	            var_proyectoid = $('#proyectoid').val();
 	            var_proyectoid = var_proyectoid.replace(/\&/g,'{#@}');
 	            var_proyectoid = var_proyectoid.replace(/\+/g,'{#@@}');
-	            $('#contenedor-boton').html('<img src="https://icpacifico.cl/images/loading.gif">');
+	            $('#contenedor-boton').html('<img src="{{Vite::asset("resources/img/loading.gif")}}">');
 	            $.ajax({
 	                data:"rut="+var_rut+"&mail="+var_mail+"&nombre="+var_nombre+"&direccion="+var_direccion+"&modelo="+var_modelo+"&ciudad="+var_ciudad+"&fonocon="+var_fonocon+"&comentarios="+var_comentarios+"&medio="+var_medio+"&proyectoid="+var_proyectoid,
 	                type: 'POST',

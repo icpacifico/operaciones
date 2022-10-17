@@ -775,13 +775,13 @@
                 <!-- <a href="/Informativo_p2800.pdf" target="_blank"><img src="/images/avance_obra.jpg" class="img-fluid"></a> -->
         	<div class="col-md-6 mt-md-4">
 				<div id="gallery">
-					<img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Circuito Pump Track.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Circuito Pump Track.png" alt="Circuito Pump Track.png">
-					<img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Sector piscina.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Sector piscina.png" alt="Sector piscina.png">
-					<img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Sector practica yoga.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Sector practica yoga.png" alt="Sector practica yoga.png">
-					<img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Zona de Quinchos.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Zona de Quinchos.png" alt="Zona de Quinchos.png">
-					<img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Acceso -.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Acceso -.png" alt="Acceso -.png">
-					<img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Emplazamiento.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Emplazamiento.png" alt="Emplazamiento.png">
-					<img alt="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Acceso.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Acceso.png" alt="Acceso.png">
+					<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Circuito Pump Track.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Circuito Pump Track.png')}}" alt="Circuito Pump Track">
+					<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector piscina.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector piscina.png')}}" alt="Sector piscina">
+					<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector practica yoga.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector practica yoga.png')}}" alt="Sector practica yoga">
+					<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Zona de Quinchos.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Zona de Quinchos.png')}}" alt="Zona de Quinchos">
+					<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso -.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso -.png')}}" alt="Acceso -">
+					<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Emplazamiento.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Emplazamiento.png')}}" alt="Emplazamiento">
+					<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso.png')}}" alt="Acceso">
 				</div>
         	</div>
         </div>
@@ -808,12 +808,12 @@
                     <div class="tab-pane active" id="mod-a" role="tabpanel">
                         <div class="p-30 detalles">
                             <div class="row">
-                            			                                    <div class="col-md-5">
-		                                    	<div class="text-center">
-			                                    <a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo A" href="https://icpacifico.cl/archivo/modelo/planta/11/Orig Brouchure_DV A.jpg"><img src="https://icpacifico.cl/archivo/modelo/planta/11/thumbnail/Orig Brouchure_DV A.jpg" class="img-fluid"></a>
-			                                    </div>
-		                                    </div>
-		                                                                	<div class="col-md-7">
+									<div class="col-md-5">
+										<div class="text-center">
+											<a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo A" href="{{Vite::asset('resources/img/proyectos/distritoverde/11/Orig Brouchure_DV A.jpg')}}"><img src="{{Vite::asset('resources/img/proyectos/distritoverde/11/thumbnail/Orig Brouchure_DV A.jpg')}}" class="img-fluid"></a>
+										</div>
+									</div>
+									<div class="col-md-7">
                             		<p><strong>MODELO A</strong><br />
 									2 Dormitorios - 2 Ba&ntilde;os<br />
 									Sup. Municipal: 50,91&nbsp;m2<br />
@@ -829,12 +829,12 @@
                     <div class="tab-pane" id="mod-b" role="tabpanel">
                     	<div class="p-30 detalles">
                             <div class="row">
-                            			                                    <div class="col-md-5">
-		                                    	<div class="text-center">
-			                                    <a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo B" href="https://icpacifico.cl/archivo/modelo/planta/12/Orig Brouchure_DV B.jpg"><img src="https://icpacifico.cl/archivo/modelo/planta/12/thumbnail/Orig Brouchure_DV B.jpg" class="img-fluid"></a>
-			                                    </div>
-		                                    </div>
-		                                                                	<div class="col-md-7">
+									<div class="col-md-5">
+										<div class="text-center">
+										<a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo B" href="{{Vite::asset('resources/img/proyectos/distritoverde/12/Orig Brouchure_DV B.jpg')}}"><img src="{{Vite::asset('resources/img/proyectos/distritoverde/12/thumbnail/Orig Brouchure_DV B.jpg')}}" class="img-fluid"></a>
+										</div>
+									</div>
+									<div class="col-md-7">
                             		<p><strong>MODELO B</strong><br />
 										2 Dormitorios - 1&nbsp;Ba&ntilde;o<br />
 										Sup. Municipal: 46,19&nbsp;m2<br />
@@ -850,12 +850,12 @@
 	                <div class="tab-pane" id="mod-c" role="tabpanel">
 	                    	<div class="p-30 detalles">
 	                            <div class="row">
-	                            				                                    <div class="col-md-5">
+											<div class="col-md-5">
 			                                    	<div class="text-center">
-				                                    <a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo C" href="https://icpacifico.cl/archivo/modelo/planta/13/Orig Brouchure_DV C.jpg"><img src="https://icpacifico.cl/archivo/modelo/planta/13/thumbnail/Orig Brouchure_DV C.jpg" class="img-fluid"></a>
+				                                    <a data-fancybox="group" data-caption="<b>Planta</b><br />Modelo C" href="{{Vite::asset('resources/img/proyectos/distritoverde/13/Orig Brouchure_DV C.jpg')}}"><img src="{{Vite::asset('resources/img/proyectos/distritoverde/13/thumbnail/Orig Brouchure_DV C.jpg')}}" class="img-fluid"></a>
 				                                    </div>
 			                                    </div>
-			                                    	                            	<div class="col-md-7">
+			                                <div class="col-md-7">
 	                            		<p><strong>MODELO A</strong><br />
 											1 Dormitorio&nbsp;- 1&nbsp;Ba&ntilde;o<br />
 											Sup. Municipal: 29,84&nbsp;m2<br />
@@ -870,7 +870,7 @@
 	                    </div>
                 </div>
                                 <!-- <a class="nav-link sub" href="#cotizacion"><img src="/images/banner_cam_06.jpg" class="img-fluid mt-md-5"></a> -->
-                        	</div>
+			</div>
         </div>
     </div>
 </section>
@@ -882,13 +882,13 @@
 			
 			<div class="col-md-12 pl-md-0 pt-md-4">
 				<div id="entorno" style="display:none;">
-					<img data-title="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Circuito Pump Track.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Circuito Pump Track.png" alt="">
-							<img data-title="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Sector piscina.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Sector piscina.png" alt="">
-							<img data-title="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Sector practica yoga.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Sector practica yoga.png" alt="">
-							<img data-title="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Zona de Quinchos.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Zona de Quinchos.png" alt="">
-							<img data-title="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Acceso -.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Acceso -.png" alt="">
-							<img data-title="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Emplazamiento.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Emplazamiento.png" alt="">
-							<img data-title="" src="https://icpacifico.cl/archivo/galeria/galeria/9/thumbnail/Acceso.png" data-image="https://icpacifico.cl/archivo/galeria/galeria/9/Acceso.png" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Circuito Pump Track.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Circuito Pump Track.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector piscina.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector piscina.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector practica yoga.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector practica yoga.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Zona de Quinchos.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Zona de Quinchos.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso -.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso -.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Emplazamiento.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Emplazamiento.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso.png')}}" alt="">
 				</div>
 			</div>
 		</div>
@@ -900,7 +900,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="map">
-					<img  id="map" src="https://icpacifico.cl/images/MapaDV.png">
+					<img  id="map" src="{{Vite::asset('resources/img/MapaDV.png')}}">
                    
                 </div>
 			</div>
@@ -931,7 +931,7 @@
 				<h2>Cotización</h2>
 				<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1473626&conversionId=1469745&fmt=gif" />
 				<div class="form pt-md-3">
-	        		<form class="cmxform row" id="commentForm" method="post" action="https://icpacifico.cl/graba_cotizacion.php" >
+	        		<form class="cmxform row" id="commentForm" method="post" action="/graba_cotizacion" >
 	    				<input id="proyectoid" type="hidden" name="proyectoid" value="7">
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
 
@@ -1085,7 +1085,7 @@
 			osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
 		var map = L.map('map').setView([-29.90714907906146, -71.26393357313296], 17).addLayer(osm);
 		var greenIcon = L.icon({
-		    iconUrl: 'https://icpacifico.cl/images/marker-3100.png',
+		    iconUrl: '{{Vite::asset("resources/img/marker-3100.png")}}',
 		    // shadowUrl: 'leaf-shadow.png',
 
 		    iconSize:     [50, 61], // size of the icon
@@ -1097,7 +1097,7 @@
 
 		var marker = new L.marker([-29.90714907906146, -71.26393357313296], {icon: greenIcon})
 		.addTo(map)
-		.bindPopup('<img src="https://icpacifico.cl/archivo/proyecto/portada2/7/Acceso -.png" width="160"><br>'+'<span>Emilio Apey N° 405</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.90714907906146,-71.26393357313296&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
+		.bindPopup('<img src="{{Vite::asset("resources/img/proyectos/distritoverde/Acceso -.png")}}" width="160"><br>'+'<span>Emilio Apey N° 405</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.90714907906146,-71.26393357313296&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
 
 
 		// formulario
@@ -1175,14 +1175,14 @@
 	    		"preventDuplicates": false,
 	    		"onclick": function () { 
 	    			if (data.alerta==="success") {
-	    				window.location='https://icpacifico.cl/gracias'; 
+	    				window.location='/gracias'; 
 	    			} else {
 	    				$('#contenedor-boton').html('<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>');
 	    			}
 	    		},
 	    		"onHidden": function () { 
 	    			if (data.alerta==="success") {
-	    				window.location='https://icpacifico.cl/gracias'; 
+	    				window.location='/gracias'; 
 	    			} else {
 	    				$('#contenedor-boton').html('<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>');
 	    			}
@@ -1252,7 +1252,7 @@
 	            var_proyectoid = $('#proyectoid').val();
 	            var_proyectoid = var_proyectoid.replace(/\&/g,'{#@}');
 	            var_proyectoid = var_proyectoid.replace(/\+/g,'{#@@}');
-	            $('#contenedor-boton').html('<img src="https://icpacifico.cl/images/loading.gif">');
+	            $('#contenedor-boton').html('<img src="{{Vite::asset("resources/img/loading.gif")}}">');
 	            $.ajax({
 	                data:"rut="+var_rut+"&mail="+var_mail+"&nombre="+var_nombre+"&direccion="+var_direccion+"&modelo="+var_modelo+"&ciudad="+var_ciudad+"&fonocon="+var_fonocon+"&comentarios="+var_comentarios+"&medio="+var_medio+"&proyectoid="+var_proyectoid,
 	                type: 'POST',
