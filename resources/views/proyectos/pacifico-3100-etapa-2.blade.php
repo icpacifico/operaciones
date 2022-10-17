@@ -1120,7 +1120,7 @@
 
 		var marker = new L.marker([-29.922094110417884, -71.27509598457016], {icon: greenIcon})
 		.addTo(map)
-		.bindPopup('<img src="{{Vite::asset("resources/img/proyectos/pac-3100-2/portada2_proyecto__.jpg")}}" width="160"><br>'+'<span>Avda. Pacífico 3100</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.922094110417884,-71.27509598457016&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
+		.bindPopup('<img src="{{Vite::asset("resources/img/proyectos/pac-3100-1/portada/portada2_proyecto.jpg")}}" width="160"><br>'+'<span>Avda. Pacífico 3100</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.922094110417884,-71.27509598457016&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
 
 	    function resultado(data){
 	    	toastr.options = {
