@@ -511,24 +511,7 @@
 		/*background-color: #73bae7;*/
 		padding: 6px 20px;
 		color: #FFFFFF;
-	}
-
-	/*#main_header .nombre_proyecto h2{
-		font-size: 1.1rem;
-		margin-top: 5px;
-		line-height: 1rem;
-		margin-bottom: 0;
-		font-weight: normal;
-		color: #FFFFFF;
-	}
-
-	#main_header .nombre_proyecto h6{
-		font-size: .75rem;
-		margin-top: 0;
-		font-weight: normal;
-		margin-bottom: 0;
-		color: #FFFFFF;
-	}*/
+	}	
 
 	#main_header .nav-link.sub {
 	    display: block;
@@ -719,12 +702,12 @@
 				<div id="slider5" class="carousel bs-slider slide carousel-fade control-round indicators-line" data-bs-ride="carousel" data-pause="hover" data-interval="7000">					
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active unico">							
-							<img src="{{Vite::asset('resources/img/proyectos/pac-3100-2/portada2_proyecto.jpg')}}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+							<img src="{{Vite::asset('resources/img/proyectos/pac-3100-1/portada/portada2_proyecto.jpg')}}" alt="ICpacifico" class="slide-image d-none d-md-block" />
 							<img src="{{Vite::asset('resources/img/portada2_proyecto3100_xs.jpg')}}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>							
 						</div>
 						<div class="carousel-item unico">							
-							<img src="{{Vite::asset('resources/img/proyectos/pac-3100-2/portada2_proyecto_2.jpg')}}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+							<img src="{{Vite::asset('resources/img/proyectos/pac-3100-1/portada/portada2_proyecto_2.jpg')}}" alt="ICpacifico" class="slide-image d-none d-md-block" />
 							<img src="{{Vite::asset('resources/img/portada2_proyecto3100_b_xs.jpg')}}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>							
 						</div>													
@@ -844,8 +827,7 @@
 	<div class="container">
 		<div class="row virtuales align-items-center">
 	    	<div class="col-md-6 cols">
-	    		<iframe id="frameprueba" class="frames" width = "100%" src = " https://my.matterport.com/show/?m=DmtQBSUXc2U" frameborder = "0" allowfullscreen allow = "vr"> </iframe>
-	    		{{-- <div class="flotante_virtual d-none d-md-flex align-items-center click_caja"><p>Visita nuestros pilotos virtuales desde cualquier parte del mundo</p></div> --}}
+	    		<iframe id="frameprueba" class="frames" width = "100%" src = " https://my.matterport.com/show/?m=DmtQBSUXc2U" frameborder = "0" allowfullscreen allow = "vr"> </iframe>	    		
 	    	</div>
 	    	<div class="col-md-6 cols">
 	    		<iframe class="frames" width = "100%" src = " https://my.matterport.com/show/?m=4Sbr7iLm1CY" frameborder = "0" allowfullscreen allow = "vr" class="render"> </iframe>
@@ -880,8 +862,7 @@
 									Sup. Terraza: 4,72&nbsp;m2<br />
 									Sup. Total: 56,37&nbsp;m2</p>
                             		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
-                            		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
+                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>                            		
                             	</div>
                             </div>
                         </div>
@@ -889,15 +870,14 @@
                     <div class="tab-pane" id="mod-b" role="tabpanel">
                     	<div class="p-30 detalles">
                             <div class="row">
-                            	                            	<div class="col-md-7">
+								<div class="col-md-7">
                             		<p><strong>MODELO B</strong><br />
 									3 Dormitorios - 2 Ba&ntilde;os<br />
 									Sup. Municipal: 59,84&nbsp;m2<br />
 									Sup. Terraza: 4,70&nbsp;m2<br />
 									Sup. Total: 64,54 m2</p>
                             		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
-                            		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
+                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>                            		
                             	</div>
                             </div>
                         </div>
@@ -912,15 +892,13 @@
 										Sup. Terraza: 4,72&nbsp;m2<br />
 										Sup. Total: 56,37&nbsp;m2</p>
 	                            		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-	                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
-	                            		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
+	                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>	                            		
 	                            	</div>
 	                            </div>
 	                        </div>
 	                    </div>
-                </div>
-                                <!-- <a class="nav-link sub" href="#cotizacion"><img src="/images/banner_cam_06.jpg" class="img-fluid mt-md-5"></a> -->
-                        	</div>
+                	</div>                              
+				</div>
         </div>
     </div>
 </section>
@@ -989,7 +967,7 @@
 				<h2>Cotización</h2>
 				<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1473626&conversionId=1469745&fmt=gif" />
 				<div class="form pt-md-3">
-	        		<form class="cmxform row" id="commentForm" method="post" action="/graba_cotizacion" >
+	        		<form class="cmxform row" id="commentForm" method="post" action="#" >
 	    				<input id="proyectoid" type="hidden" name="proyectoid" value="5">
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
 
@@ -1043,15 +1021,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js" integrity="sha512-tpaozUhiemCplwPy+SorWM3CcHW5HF2dGoqdFEm49MOnui4tzhjwIAV05dMUVHNRbSURl+R3sOSLfOfNFYwrjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript"> 
 	
-	// function simularCredito(){
-	// 	dataLayer.push({'event': 'simular-click'});
-	//     $( "#bci" ).addClass( "showBci" );
-	// }
-
-	// function closeBci(){
-	//     $( "#bci" ).removeClass( "showBci" );
-	// }
-
 	function agendarVideoLlamada(){
 		dataLayer.push({'event': 'agenda-click'});
 	    $.fancybox.open({
@@ -1142,11 +1111,8 @@
 			osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
 		var map = L.map('map').setView([-29.922094110417884, -71.27509598457016], 17).addLayer(osm);
 		var greenIcon = L.icon({
-		    iconUrl: "{{Vite::asset('resources/img/marker-3100.png')}}",
-		    // shadowUrl: 'leaf-shadow.png',
-
-		    iconSize:     [50, 61], // size of the icon
-		    // shadowSize:   [50, 64], // size of the shadow
+		    iconUrl: "{{Vite::asset('resources/img/marker-3100.png')}}",		
+		    iconSize:     [50, 61], // size of the icon		  
 		    iconAnchor:   [20, 60], // point of the icon which will correspond to marker's location
 		    shadowAnchor: [4, 62],  // the same for the shadow
 		    popupAnchor:  [0, -56] // point from which the popup should open relative to the iconAnchor
@@ -1155,72 +1121,6 @@
 		var marker = new L.marker([-29.922094110417884, -71.27509598457016], {icon: greenIcon})
 		.addTo(map)
 		.bindPopup('<img src="{{Vite::asset("resources/img/proyectos/pac-3100-2/portada2_proyecto__.jpg")}}" width="160"><br>'+'<span>Avda. Pacífico 3100</span><br><br><a target="_blank" href="https://waze.com/ul?ll=-29.922094110417884,-71.27509598457016&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
-
-
-		// formulario
-		// $.validator.addMethod("rut", function(value, element) {
-        //         return this.optional(element) || $.Rut.validar(value);
-        //     }, "Rut invalido.");
-	    // $('.numero').numeric();
-	    // validate the comment form when it is submitted
-	    //$("#commentForm").validate();
-	    // validate signup form on keyup and submit
-	    // $("#commentForm").validate({
-	    //     rules: {
-	    //         rut: {
-	    //             required: true
-	    //         },
-	    //         nombres: {
-	    //             required: true,
-	    //             minlength: 3
-	    //         },
-	    //         modelo: {
-	    //             required: true
-	    //         },
-	    //         medio: {
-	    //             required: true
-	    //         },
-	    //         mail: {
-	    //             required: true,
-	    //             email: true
-	    //         },
-	    //         fonocon: {
-	    //             required: true,
-	    //             minlength: 6
-	    //         },
-	    //         comentarios: {
-	    //             required: true,
-	    //             minlength: 6
-	    //         }
-	    //     },
-	    //     messages: {
-	    //         rut: {
-	    //             required: "Ingrese rut"
-	    //         },
-	    //         nombre: {
-	    //             required: "Por favor ingrese Nombre",
-	    //             minlength: "Al menos 3 caracteres"
-	    //         },
-	    //         modelo: {
-	    //             required: "Por favor Seleccione Modelo"
-	    //         },
-	    //         medio: {
-	    //             required: "Por favor Seleccione Medio"
-	    //         },
-	    //         mail: "Ingrese un email válido",
-	    //         fonocon: {
-	    //             required: "Por favor ingrese Fono contacto",
-	    //             minlength: "Al menos 6 caracteres"
-	    //         },
-	    //         comentarios: {
-	    //             required: "Por favor ingrese Solicitud",
-	    //             minlength: "Al menos 6 caracteres"
-	    //         }
-	    //     }
-	    // });
-
-	    // $('#rut').Rut({
-	    //         });
 
 	    function resultado(data){
 	    	toastr.options = {
@@ -1252,8 +1152,7 @@
 	    		"hideEasing": "linear",
 	    		"showMethod": "fadeIn",
 	    		"hideMethod": "fadeOut"
-	    	}
-		    // info de configuracion http://codeseven.github.io/toastr/demo.html
+	    	}		   
 		    Command: toastr[data.alerta](data.msj, data.titulo)
 
 		};
@@ -1315,8 +1214,7 @@
 	                type: 'POST',
 	                url: $(this).attr('action'),
 	                dataType:'json',
-	                success: function(data) {
-	                    //$('#informacion').html(data);
+	                success: function(data) {	                  
 	                    resultado(data);
 	                }
 	            });
