@@ -734,7 +734,7 @@
         <!-- row  -->
         <div class="row">
         	<div class="col-md-12">
-        		<img src="{{Vite::asset('resources/img/proyectos/pac-3100-2/logo-pacifico.jpg')}}" width="210" class="img-fluid mb-2 mx-auto d-block d-md-none">
+        		<img src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/logo-pacifico.jpg') }}" width="210" class="img-fluid mb-2 mx-auto d-block d-md-none">
         		<h2 class="mb-4">Información</h2>
         		<div class="descripcion mb-4">
         			<p>Un Condominio a pasos de la playa en donde la arquitectura armoniza amplios jardines y edificios que recogen vistas del paisaje costero. Un Proyecto que incorpora la t&eacute;cnica, energ&iacute;as renovables y reciclaje en amistad con el medio ambiente.</p>
