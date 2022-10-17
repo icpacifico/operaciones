@@ -814,9 +814,9 @@
                 <!-- <a href="/Informativo_p2800.pdf" target="_blank"><img src="/images/avance_obra.jpg" class="img-fluid"></a> -->
         	<div class="col-md-6 mt-md-4">
 				<div id="gallery" style="display:none;">
-					<img alt="" src="{{Vite::asset('resources/img/proyectos/pac-3100-2/thumbnail/foto_folleto_3100.jpg')}}" data-image="{{Vite::asset('resources/img/proyectos/pac-3100-2/foto_folleto_3100.jpg')}}" alt="foto_folleto_3100.jpg">
-					<img alt="" src="{{Vite::asset('resources/img/proyectos/pac-3100-2/thumbnail/foto_folleto_3100_2.jpg')}}" data-image="{{Vite::asset('resources/img/proyectos/pac-3100-2/foto_folleto_3100_2.jpg')}}" alt="foto_folleto_3100_2.jpg">
-					<img alt="" src="{{Vite::asset('resources/img/proyectos/pac-3100-2/thumbnail/foto_folleto_3100_3.jpg')}}" data-image="{{Vite::asset('resources/img/proyectos/pac-3100-2/foto_folleto_3100_3.jpg')}}" alt="foto_folleto_3100_3.jpg">
+					<img alt="" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/foto_folleto_3100.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/foto_folleto_3100.jpg') }}" alt="foto_folleto_3100">
+					<img alt="" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/foto_folleto_3100_2.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/foto_folleto_3100_2.jpg') }}" alt="foto_folleto_3100_2">
+					<img alt="" src="{{ Vite::asset('resources/img/proyectos/pac-3100-1/thumbnail/foto_folleto_3100_3.jpg') }}" data-image="{{ Vite::asset('resources/img/proyectos/pac-3100-1/foto_folleto_3100_3.jpg') }}" alt="foto_folleto_3100_3">
 				</div>
         	</div>
         </div>
