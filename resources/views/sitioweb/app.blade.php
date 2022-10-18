@@ -39,7 +39,7 @@
 									<a class="nav-link" href="{{ route('/') }}"><i class="fa-solid fa-building"></i></a> 
 								</li>						
 								<li id="act_proyectos" class="nav-item dropdown ml-md-1 {{ (request()->path() == "proyectos/distrito-verde-etapa-1" || request()->path() == "proyectos/pacifico-3100-etapa-2" || request()->path() == "proyectos/pacifico-3100-etapa-1") ? 'active' : '' }}">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										Proyectos en Venta <i class="fas fa-angle-down"></i>
 									</a>
 									<ul class="b-none dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
@@ -51,7 +51,7 @@
 									</ul>
 								</li>
 								<li id="act_equipo" class="nav-item dropdown ml-md-1 {{ (request()->path() == "ventas" || request()->path() == "operaciones" || request()->path() == "postventa") ? 'active' : '' }}">
-									<a class="nav-link dropdown-toggle" href="{{route('ventas')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link dropdown-toggle" href="{{route('ventas')}}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										Equipo Inmobiliaria <i class="fas fa-angle-down"></i>
 									</a>
 									<ul class="b-none dropdown-menu animated fadeIn " aria-labelledby="navbarDropdown">
@@ -84,14 +84,14 @@
 <footer>
 <div class="container">
     <div class="row">
-    	<div class="col-md-3 text-md-left">
+    	<div class="col-md-3 text-md-start text-sm-center text-center">
     		<img src="{{Vite::asset('resources/img/logo-pie.png')}}" alt="Condominio Pacífico 2800">
     	</div>
-    	<div class="col-md-3 presenta antialias text-md-left">
+    	<div class="col-md-3 text-md-start text-sm-center text-center">
     		<h5>Vende</h5>
     		{!!App\Models\Seccion::find(1)->descripcion_sec!!}
     	</div>
-    	<div class="col-md-3 antialias navega text-md-left">
+    	<div class="col-md-3 antialias navega text-md-start text-sm-center text-center">
     		<h5>Navegación</h5>
     		<ul>
     			<li><a href="{{ route('/')}}">Inicio</a></li>
@@ -103,7 +103,7 @@
     			<li><a href="{{ route('contacto')}}">Contáctenos</a></li>
     		</ul>
     	</div>
-    	<div class="col-md-3 sociales antialias text-md-left">
+    	<div class="col-md-3 sociales antialias text-md-start text-sm-center text-center">
     		<h5>Sala de Ventas</h5>
 			{!!App\Models\Seccion::find(2)->descripcion_sec!!}    		
 			<div class="round-social light">

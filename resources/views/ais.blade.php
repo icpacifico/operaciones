@@ -121,7 +121,7 @@
         	<div class="col-md-4 cajaais" style="background-image: url({{Vite::asset('resources/img/05.jpg')}});">
 
         	</div>
-        	<div class="col-md-4 cajaais d-flex flex-column justify-content-center align-items-center">
+        	<div class="col-md-4 cajaais d-flex flex-column justify-content-center align-items-center text-center">
         		<!-- <img src="/images/logo_deptos_pacifico.jpg" class="img-fluid mb-3" width="180"/> -->
 				<p class="big">Nuestros proyectos se ubican a pasos de la playa en segunda línea, junto a toda la gastronomía de la región dentro del sector, a solo minutos del centro de La Serena y Coquimbo. Atributos únicos que lo hacen un proyecto muy atractivo para los arrendatarios de verano y todo el año.</p>
 				<a class="btn btn-info-gradiant btn-rounded btn-md btn-arrow m-t-20 m-b-30" href="{{route('contacto')}}"><span>Consúltanos <i class="ti-arrow-right"></i></span></a>
