@@ -242,7 +242,7 @@
 			<div class="row justify-content-center align-items-center">	        	
 				<div class="col-12 col-lg-4">
 					<div class="imagen">
-						<img src="https://icpacifico.cl/images/equipo/wanda.png" class="img-fluid">
+						<img src="{{Vite::asset('resources/img/equipo/wanda.png')}}" class="img-fluid">
 					</div>
 				</div>
 				<div class="col-12 col-lg-4 pl-lg-5 pt-5 pt-lg-0">
@@ -261,7 +261,7 @@
 			</div>
 			<div class="row justify-content-center">
 	        	<div class="col-12 pt-5 text-center">
-					<img src="https://icpacifico.cl/images/equipo/equipopostventa.png" class="img-fluid mb-2">
+					<img src="{{Vite::asset('resources/img/equipo/equipopostventa.png')}}" class="img-fluid mb-2">
 				</div>
 			</div>
 	   	</div>
