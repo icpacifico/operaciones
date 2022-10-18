@@ -89,36 +89,36 @@
         	</div>
         	<div class="col-md-4 cajaais d-flex flex-column justify-content-center align-items-center">
 				<h2 class="text-uppercase text-center">Hoy es un buen momento para hacerlo</h2>
-				<img src="https://icpacifico.cl/images/ais.png" width="200" class="img-fluid my-3"/>
+				<img src="{{Vite::asset('resources/img/ais.png')}}" width="200" class="img-fluid my-3"/>
 				<!-- <p>Sistema de rentabilidad inmobiliaria donde Inviertes, Administras, Rentabilizas y Decides qué hacer con tus ingresos</p> -->
         	</div>
-        	<div class="col-md-4 cajaais" style="background-image: url(https://icpacifico.cl/images/ais/01.jpg);">
+        	<div class="col-md-4 cajaais" style="background-image: url({{Vite::asset('resources/img/01.jpg')}});">
 
         	</div>
         	<div class="col-md-4 cajaais azul d-flex justify-content-center align-items-center">
 				<h2 class="text-uppercase text-center">Te preguntas <strong>¿Dónde invertir?</strong></h2>
         	</div>
-        	<div class="col-md-4 cajaais" style="background-image: url(https://icpacifico.cl/images/ais/02.jpg);">
+        	<div class="col-md-4 cajaais" style="background-image: url({{Vite::asset('resources/img/02.jpg')}});">
 
         	</div>
         	<div class="col-md-4 cajaais d-flex flex-column justify-content-center align-items-center celeste">
 				<h3>La Serena</h3>
 				<p class="big">Segunda ciudad turística más importante de Chile. Constante crecimiento de la taza de alojamiento. Es una ciudad de alta demanda en arriendo.</p>
         	</div>
-        	<div class="col-md-4 cajaais" style="background-image: url(https://icpacifico.cl/images/ais/03.jpg);">
+        	<div class="col-md-4 cajaais" style="background-image: url({{Vite::asset('resources/img/03.jpg')}});">
 
         	</div>
         	<div class="col-md-4 cajaais d-flex flex-column justify-content-center align-items-center">
-        		<img src="https://icpacifico.cl/images/logo-top.png" class="img-fluid mb-3" width="180"/>
+        		<img src="{{Vite::asset('resources/img/logo-top.png')}}" class="img-fluid mb-3" width="180"/>
 				<h2 class="text-uppercase text-center"><strong>Descubre</strong> NUESTROS PROYECTOS</h2>
         	</div>
-        	<div class="col-md-4 cajaais d-flex justify-content-center align-items-center" style="background-image: url(https://icpacifico.cl/images/ais/04.jpg);">
+        	<div class="col-md-4 cajaais d-flex justify-content-center align-items-center" style="background-image: url({{Vite::asset('resources/img/04.jpg')}});">
 				<p class="big">Excelente relación Precio/Calidad. Ubicados en el centro neurálgico del turismo. Sector áltamente demandado y rentable.</p>
         	</div>
         	<div class="col-md-4 cajaais celeste d-flex justify-content-center align-items-center">
 				<h2 class="text-uppercase text-center">¿Cómo <strong>rentabilizas tu inversión?</strong></h2>
         	</div>
-        	<div class="col-md-4 cajaais" style="background-image: url(https://icpacifico.cl/images/ais/05.jpg);">
+        	<div class="col-md-4 cajaais" style="background-image: url({{Vite::asset('resources/img/05.jpg')}});">
 
         	</div>
         	<div class="col-md-4 cajaais d-flex flex-column justify-content-center align-items-center">
