@@ -143,6 +143,17 @@ return [
         // 'store'  => 'redis',
     ],
 
+     /*
+    |--------------------------------------------------------------------------
+    | Llamado a imagen de firma
+    |--------------------------------------------------------------------------
+    |
+    | Se llama a la aimagen para ser mostrada en la firma de los correos de la empresa    
+    |
+    */
+
+    'images_url' => env('APP_IMAGES_URL','https://icpacifico.cl/firmas'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -153,6 +164,9 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+
+
+
 
     'providers' => [
 

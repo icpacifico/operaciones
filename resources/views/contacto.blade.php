@@ -66,23 +66,24 @@
         	<div class="col-md-5 order-2 order-md-3">
         		<p class="mt-4 mt-md-0">Contáctenos a través del siguiente formulario.</p>
                 <form class="cmxform form-horizontal mb-4 formula" id="commentForm" method="post">
+					@csrf
                     <div class="form-group">
                         <label class="form-control-label" for="nombre">Nombre Completo</label>
-                        <input type="text" minlength="3" class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo" required>
+                        <input type="text" minlength="3" class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo" autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <label class="form-control-label" for="mail">E-mail</label>
-                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Ingrese email" required>
+                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Ingrese email" autocomplete="off" required>
                     </div>
 
                     <div class="form-group">
                         <label class="form-control-label" for="fono">Teléfono</label>
-                        <input type="number" class="form-control" id="fono" name="fono" placeholder="Ingrese teléfono">
+                        <input type="number" class="form-control" id="fono" name="fono" autocomplete="off" placeholder="Ingrese teléfono">
                     </div>
 
                     <div class="form-group">
                         <label class="form-control-label" for="fono">Comentarios</label>
-                        <textarea maxlength="500" minlength="4" id="comentarios" name="comentarios" class="form-control" placeholder="Ingrese comentarios" required></textarea>
+                        <textarea maxlength="500" minlength="4" id="comentarios" name="comentarios" class="form-control" placeholder="Ingrese comentarios" autocomplete="off" required></textarea>
                     </div>
 
                     <div class="text-right" id="contenedor_boton"><button class="btn btn-secondary" type="submit" role="button">Enviar</button></div>
@@ -150,32 +151,7 @@
 		    
 		};
 
-		$('#commentForm').submit(function() {
-	        $('#contenedor_boton').html('<img src="{{Vite::asset('resources/img/loading.gif')}}">');
-	        var_nombre = $('#nombre').val();
-	        var_nombre = var_nombre.replace(/\&/g,'{#@}');
-	        var_nombre = var_nombre.replace(/\+/g,'{#@@}');
-	        var_mail = $('#mail').val();
-	        var_mail = var_mail.replace(/\&/g,'{#@}');
-	        var_mail = var_mail.replace(/\+/g,'{#@@}');
-	        var_fono = $('#fono').val();
-	        var_fono = var_fono.replace(/\&/g,'{#@}');
-	        var_fono = var_fono.replace(/\+/g,'{#@@}');
-	        var_comentarios = $('#comentarios').val();
-	        var_comentarios = var_comentarios.replace(/\&/g,'{#@}');
-	        var_comentarios = var_comentarios.replace(/\+/g,'{#@@}');
-	        
-	        // $.ajax({
-	        //     data:"nombre="+var_nombre+"&mail="+var_mail+"&fono="+var_fono+"&comentarios="+var_comentarios,
-	        //     type: 'POST',
-	        //     url: '{{Request::url()}}/graba_contacto.php',
-	        //     dataType:'json',
-	        //     success: function(data) {
-	        //         resultado(data);
-	        //     }           
-	        // });
-	    return false;
-	    });
+		
 	});
 </script>
 @endsection

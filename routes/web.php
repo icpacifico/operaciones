@@ -58,12 +58,4 @@ Route::get('/proyectos/pacifico-3100-etapa-2', function () {
 
 
 
-Route::controller(IndexController::class)->group(function () {
-    // Route::get('/indexs/{id}', 'show');
-    // Route::post('/indexs', 'store');
-   // Route::get('/sitioweb/app','seccion')->name('base');
-});
-// Route::get('/sitioweb/app', [IndexController::class, 'seccion'])->name('sitioweb.app');
-// Route::get('/indexes', function (User $user) {
-//     return $user->email;
-// });
+
