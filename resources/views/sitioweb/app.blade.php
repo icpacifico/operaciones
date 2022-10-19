@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- <link rel="canonical" href="https://icpacifico.cl" /> -->
+    <link rel="canonical" href="https://icpacifico.cl" />
     <title>@yield('title','Inmobiliaria Costanera Pacífico - La Serena - Chile') </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">	
+	<meta name="keywords" content="departamento, departamentos en venta, departamentos en la serena,venta de departamentos, departamentos para inversion, avenida pacífico, la serena, chile">
+	<meta name="author" content="icpacifico.cl">
 	<link rel="icon" href="{{ Vite::asset('resources/img/favicon.png') }}">
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
     
