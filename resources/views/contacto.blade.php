@@ -62,7 +62,7 @@
         	</div>
         	<div class="col-md-5 order-2 order-md-3">
         		<p class="mt-4 mt-md-0">Contáctenos a través del siguiente formulario.</p>
-                <form class="cmxform form-horizontal mb-4 formula" id="commentForm" action="/" method="POST">
+                <form class="cmxform form-horizontal mb-4 formula" id="commentForm" action="{{ route('/') }}" method="POST">
 					@csrf
                     <div class="form-group">
                         <label class="form-control-label" for="nombre">Nombre Completo</label>
