@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,10 @@ Route::get('/postventa', function () {
     return view('postventa');
 })->name('postventa');
 
+Route::get('/email/contact_form', function () {
+    return view('email/contact_form');
+})->name('email.contact_form');
+
 // PROYECTOS
 
 Route::get('/proyectos/distrito-verde-etapa-1', function () {
@@ -56,6 +61,12 @@ Route::get('/proyectos/pacifico-3100-etapa-2', function () {
 })->name('proyectos.pacifico-3100-etapa-2');
 
 
+// Envio de datos
 
+Route::post('/contactos', [ContactoController::class, 'store'])->name('contacto.send');
+Route::post('/contactos', [ContactoController::class, 'cotizacion'])->name('cotizacion.send');
 
-
+// Route::controller(ContactoController::class)->group(function () {
+//     Route::post('/contactos', 'cotizacion')->name('cotizacion.send');
+//     Route::post('/contactos', 'store')->name('contacto.send');
+// });

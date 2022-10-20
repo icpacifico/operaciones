@@ -967,7 +967,8 @@
 				<h2>Cotización</h2>
 				<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1473626&conversionId=1469745&fmt=gif" />
 				<div class="form pt-md-3">
-	        		<form class="cmxform row" id="commentForm" method="post" action="#" >
+	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.send') }}" method="POST" >
+						@csrf
 	    				<input id="proyectoid" type="hidden" name="proyectoid" value="5">
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
 
@@ -1170,57 +1171,7 @@
 	        if (direction == 'right') $(this).carousel('prev');
 	      },
 	      allowPageScroll:"vertical"
-	    });
-
-    
-
-	    $('#commentForm').submit(function() {
-	        if ($("#commentForm").validate().form() == true){
-	  			fbq('track', 'CompleteRegistration');
-	  			dataLayer.push({'event': 'cotiza-web-click'});
-	            var_rut = $('#rut').val();
-	            var_rut = var_rut.replace(/\&/g,'{#@}');
-	            var_rut = var_rut.replace(/\+/g,'{#@@}');
-	            var_mail = $('#mail').val();
-	            var_mail = var_mail.replace(/\&/g,'{#@}');
-	            var_mail = var_mail.replace(/\+/g,'{#@@}');
-	            var_nombre = $('#nombre').val();
-	            var_nombre = var_nombre.replace(/\&/g,'{#@}');
-	            var_nombre = var_nombre.replace(/\+/g,'{#@@}');
-	            var_ciudad = $('#ciudad').val();
-	            var_ciudad = var_ciudad.replace(/\&/g,'{#@}');
-	            var_ciudad = var_ciudad.replace(/\+/g,'{#@@}');
-	            var_fonocon = $('#fonocon').val();
-	            var_fonocon = var_fonocon.replace(/\&/g,'{#@}');
-	            var_fonocon = var_fonocon.replace(/\+/g,'{#@@}');
-	            var_direccion = $('#direccion').val();
-	            var_direccion = var_direccion.replace(/\&/g,'{#@}');
-	            var_direccion = var_direccion.replace(/\+/g,'{#@@}');
-	            var_modelo = $('#modelo').val();
-	            var_modelo = var_modelo.replace(/\&/g,'{#@}');
-	            var_modelo = var_modelo.replace(/\+/g,'{#@@}');
-	            var_comentarios = $('#comentarios').val();
-	            var_comentarios = var_comentarios.replace(/\&/g,'{#@}');
-	            var_comentarios = var_comentarios.replace(/\+/g,'{#@@}');
-	            var_medio = $('#medio').val();
-	            var_medio = var_medio.replace(/\&/g,'{#@}');
-	            var_medio = var_medio.replace(/\+/g,'{#@@}');
-	            var_proyectoid = $('#proyectoid').val();
-	            var_proyectoid = var_proyectoid.replace(/\&/g,'{#@}');
-	            var_proyectoid = var_proyectoid.replace(/\+/g,'{#@@}');
-	            $('#contenedor-boton').html('<img src="{{Vite::asset("resources/img/loading.gif")}}">');
-	            $.ajax({
-	                data:"rut="+var_rut+"&mail="+var_mail+"&nombre="+var_nombre+"&direccion="+var_direccion+"&modelo="+var_modelo+"&ciudad="+var_ciudad+"&fonocon="+var_fonocon+"&comentarios="+var_comentarios+"&medio="+var_medio+"&proyectoid="+var_proyectoid,
-	                type: 'POST',
-	                url: $(this).attr('action'),
-	                dataType:'json',
-	                success: function(data) {	                  
-	                    resultado(data);
-	                }
-	            });
-	        }
-	        return false;
-	    });
+	    });    	    
     });
 $(function () {
 $('.social a').on('click', function (e) {

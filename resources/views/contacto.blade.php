@@ -49,23 +49,20 @@
 		</div>
 	</div>
 </div>
-
 <div id="contacto" class="p-5">
-    <div class="container">
-        <!-- row  -->
+    <div class="container">        
         <div class="row">
         	<div class="col-md-4 order-3 order-md-1">
         		<div id="map" class="map" style="width:100%; ">
                     <img src="{{Vite::asset('resources/img/loading.gif')}}">
-                </div>
-        		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.027976963318!2d-71.27672084816868!3d-29.921096748888562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca3d5f0d7115%3A0x6f5e9488a14017ea!2sAv.+Pac%C3%ADfico+2800%2C+La+Serena%2C+Regi%C3%B3n+de+Coquimbo!5e0!3m2!1ses!2scl!4v1545225712200" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                </div>        		
         	</div>
         	<div class="col-md-3 order-1 order-md-2">
         		{!!App\Models\Seccion::find(6)->descripcion_sec!!}
         	</div>
         	<div class="col-md-5 order-2 order-md-3">
         		<p class="mt-4 mt-md-0">Contáctenos a través del siguiente formulario.</p>
-                <form class="cmxform form-horizontal mb-4 formula" id="commentForm" method="post">
+                <form class="cmxform form-horizontal mb-4 formula" id="commentForm" action="{{ route('contacto.send') }}" method="POST">
 					@csrf
                     <div class="form-group">
                         <label class="form-control-label" for="nombre">Nombre Completo</label>
@@ -96,24 +93,17 @@
 
 @section('script')
 <script>
-	// $('#slider2').bsTouchSlider();
-
 	$(document).ready(function() {
-
-		var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-			// osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+		var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',			
 			osmAttrib = '',
 			osm = L.tileLayer(osmUrl, {maxZoom: 16, attribution: osmAttrib});
 		var map = L.map('map').setView([-29.92032794050309, -71.27463756875613], 17).addLayer(osm);
 		var greenIcon = L.icon({
-		    iconUrl: '{{Vite::asset("resources/img/marker.png")}}',
-		    // shadowUrl: 'leaf-shadow.png',
-
-		    iconSize:     [50, 61], // size of the icon
-		    // shadowSize:   [50, 64], // size of the shadow
-		    iconAnchor:   [20, 60], // point of the icon which will correspond to marker's location
-		    shadowAnchor: [4, 62],  // the same for the shadow
-		    popupAnchor:  [0, -56] // point from which the popup should open relative to the iconAnchor
+		    iconUrl: '{{Vite::asset("resources/img/marker.png")}}',		    
+		    iconSize:     [50, 61], 
+		    iconAnchor:   [20, 60], 
+		    shadowAnchor: [4, 62],  
+		    popupAnchor:  [0, -56] 
 		});
 
 		var marker = new L.marker([-29.92032794050309, -71.27463756875613], {icon: greenIcon})
@@ -121,11 +111,7 @@
 		.bindPopup('<img src="{{Vite::asset('resources/img/logo-top.png')}}" width="110"><br>'+'<br><a target="_blank" href="https://waze.com/ul?ll=-29.92032794050309,-71.27463756875613&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
 		var marker2 = new L.marker([-29.922040629547134, -71.27512012239063], {icon: greenIcon})
 		.addTo(map)
-		.bindPopup('<img src="{{Vite::asset('resources/img/logo-top.png')}}" width="110"><br>'+'<br><a target="_blank" href="https://waze.com/ul?ll=-29.922040629547134, -71.27512012239063&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');
-		// $.fancybox.open([{
-		// 	src  : 'https://www.youtube.com/watch?v=STq6wfU17fk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0'
-		// }]);
-		// 
+		.bindPopup('<img src="{{Vite::asset('resources/img/logo-top.png')}}" width="110"><br>'+'<br><a target="_blank" href="https://waze.com/ul?ll=-29.922040629547134, -71.27512012239063&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>');		
 		function resultado(data)
 		{
 			toastr.options = {
@@ -145,13 +131,10 @@
 		          "hideEasing": "linear",
 		          "showMethod": "fadeIn",
 		          "hideMethod": "fadeOut"
-		            }
-		        // info de configuracion http://codeseven.github.io/toastr/demo.html
+		            }		       
 		    Command: toastr[data.alerta](data.msj, data.titulo)
 		    
-		};
-
-		
+		};		
 	});
 </script>
 @endsection

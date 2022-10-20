@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Mail\EnvioContacto;
+use App\Mail\EnvioCotizacion;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Arr;
 
-class IndexController extends Controller
+class ContactoController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -17,7 +18,7 @@ class IndexController extends Controller
     public function index()
     {
         //
-    }   
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -44,9 +45,31 @@ class IndexController extends Controller
             'comentarios' => 'required'
             ]);
             
-            Mail::to('osman.ahumada@gmail.com')->send(new EnvioContacto($data));
+            Mail::to('icpdigital@icpacifico.cl')->send(new EnvioContacto($data));
             
-            return back()->with('data', $data)->with('message', ['success', 'Message sent succesfully']);
+            return back()->with('data', $data)->with('message', ['success', 'Mensaje enviado éxitosamente']);
+    }
+
+    public function cotizacion(Request $request)
+    {
+        $data = $request->validate([
+            'nombre' => 'required',
+            'rut' => 'required',
+            'mail' => 'required',            
+            'fonocon' => 'required',
+            'direccion' => 'required',
+            'ciudad' => 'required',
+            'modelo' => 'required',
+            'medio' => 'required',
+            'comentarios' => 'required'
+            ]);
+            $array = ['mjcallejas@icpacifico.cl', 'jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@ventas.icpacifico.cl'];
+ 
+            $moreUsers = Arr::random($array);
+            
+            Mail::to('icpdigital@icpacifico.cl')->cc($moreUsers)->send(new EnvioCotizacion($data));
+            
+            return back()->with('data', $data)->with('message', ['success', 'Mensaje enviado éxitosamente']);
     }
 
     /**
