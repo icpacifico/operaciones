@@ -63,8 +63,9 @@ Route::get('/proyectos/pacifico-3100-etapa-2', function () {
 
 // Envio de datos
 
-Route::post('/contactos', [ContactoController::class, 'store'])->name('contacto.send');
-Route::post('/contactos', [ContactoController::class, 'cotizacion'])->name('cotizacion.send');
+Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.contacto');
+Route::post('/proyectos/distrito-verde-etapa-1', [ContactoController::class, 'cotizacion'])->name('cotizacion.distrito');
+Route::post('/proyectos/pacifico-3100-etapa-2', [ContactoController::class, 'cotizacion'])->name('cotizacion.pacifico');
 
 // Route::controller(ContactoController::class)->group(function () {
 //     Route::post('/contactos', 'cotizacion')->name('cotizacion.send');
