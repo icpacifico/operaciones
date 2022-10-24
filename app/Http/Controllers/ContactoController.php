@@ -7,6 +7,7 @@ use App\Mail\EnvioContacto;
 use App\Mail\EnvioCotizacion;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Arr;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ContactoController extends Controller
 {
@@ -46,8 +47,9 @@ class ContactoController extends Controller
             ]);
             
             Mail::to('icpdigital@icpacifico.cl')->send(new EnvioContacto($data));
-            
-            return back()->with('data', $data)->with('message', ['success', 'Mensaje enviado éxitosamente']);
+
+            Alert::success('Éxito!', 'Contacto enviado con éxito!.');
+            return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
     }
 
     public function cotizacion(Request $request)
@@ -64,12 +66,13 @@ class ContactoController extends Controller
             'comentarios' => 'required'
             ]);
             $array = ['mjcallejas@icpacifico.cl', 'jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@ventas.icpacifico.cl'];
- 
-            $moreUsers = Arr::random($array);
+            $array2 = Arr::shuffle($array);
+            $moreUsers = Arr::random($array2);
             
             Mail::to('icpdigital@icpacifico.cl')->cc($moreUsers)->send(new EnvioCotizacion($data));
             
-            return back()->with('data', $data)->with('message', ['success', 'Mensaje enviado éxitosamente']);
+            Alert::success('Éxito!', 'Cotización enviada con éxito!.');
+            return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
     }
 
     /**

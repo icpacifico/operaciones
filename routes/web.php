@@ -14,7 +14,7 @@ use App\Http\Controllers\ContactoController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () {    
     return view('home');
 })->name('/');
 

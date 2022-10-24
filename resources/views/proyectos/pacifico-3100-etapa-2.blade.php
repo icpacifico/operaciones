@@ -685,7 +685,7 @@
                     <a class="nav-link sub cotice" href="#cotizacion">Cotiza Aquí !</a>
                 </li>
                 <li class="nav-item ml-md-2">
-                    <a class="nav-link sub agende" href="#" onclick="agendarVideoLlamada()"><i class="far fa-calendar-alt"></i> Agendar VideoLlamada</a>
+                    <a class="nav-link sub agende videollamada" href="#" ><i class="far fa-calendar-alt"></i> Agendar VideoLlamada</a>
                 </li>
             </ul>
         </div>
@@ -862,7 +862,7 @@
 									Sup. Terraza: 4,72&nbsp;m2<br />
 									Sup. Total: 56,37&nbsp;m2</p>
                             		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>                            		
+                            		<button  class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>                            		
                             	</div>
                             </div>
                         </div>
@@ -877,7 +877,7 @@
 									Sup. Terraza: 4,70&nbsp;m2<br />
 									Sup. Total: 64,54 m2</p>
                             		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>                            		
+                            		<button  class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>                            		
                             	</div>
                             </div>
                         </div>
@@ -892,7 +892,7 @@
 										Sup. Terraza: 4,72&nbsp;m2<br />
 										Sup. Total: 56,37&nbsp;m2</p>
 	                            		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-	                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>	                            		
+	                            		<button  class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>
 	                            	</div>
 	                            </div>
 	                        </div>
@@ -1020,33 +1020,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js" integrity="sha512-q0Tx9njjBh0TfH3nPC2HfQbLXRyq27yx22U9zdj7nwH97SfIbnvAwTqpjwowq2dDZBe2k84sx/GdEZwzHsDqUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.min.js" integrity="sha512-wJ77CqWvHxl0VZkkTXIlwy931rh4p7CnmdvYEz1XZJHAfl4xhktuokGnk+2rUgoMKRjyywx0tbPMyoxVz99LAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js" integrity="sha512-tpaozUhiemCplwPy+SorWM3CcHW5HF2dGoqdFEm49MOnui4tzhjwIAV05dMUVHNRbSURl+R3sOSLfOfNFYwrjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript"> 
-	
-	function agendarVideoLlamada(){
-		dataLayer.push({'event': 'agenda-click'});
-	    $.fancybox.open({
-	        src : 'https://calendly.com/icpacifico/reunion-virtual',
-	        type : 'iframe',
-	        opts : {
-	            iframe : {
-	                css : {
-	                    width: '100%'
-	                },
-	                attr : {
-	                    scrolling : 'no'
-	                }
-	            },
-	            afterClose : function() {
-
-	            }
-	        }
-	    });
-	}
-
-    jQuery(document).ready(function(){
-
-    	
-
+<script type="text/javascript"> 	
+    jQuery(document).ready(function(){    	
     	$(document).on("click", ".click_caja", function() {
 	    	$("div.click_caja").addClass("oculta");
 	    });
@@ -1180,4 +1155,5 @@ $('.social a').on('click', function (e) {
   });
 });
 </script>
+@include('sweetalert::alert')
 @endsection

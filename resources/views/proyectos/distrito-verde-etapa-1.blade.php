@@ -655,7 +655,7 @@
                     <a class="nav-link sub cotice" href="#cotizacion">Cotiza Aquí !</a>
                 </li>
                 <li class="nav-item ml-md-2">
-                    <a class="nav-link sub agende" href="#" onclick="agendarVideoLlamada()"><i class="far fa-calendar-alt"></i> Agendar VideoLlamada</a>
+                    <button class="nav-link sub agende videollamada" type="button"><i class="far fa-calendar-alt"></i> Agendar VideoLlamada</button>
                 </li>
             </ul>
         </div>
@@ -820,7 +820,7 @@
 									Sup. Terraza: 9,61&nbsp;m2<br />
 									Sup. Total: 60,52&nbsp;m2</p>
 																		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
+                            		<button  class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>
                             		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
                             	</div>
                             </div>
@@ -841,7 +841,7 @@
 										Sup. Terraza: 4,95&nbsp;m2<br />
 										Sup. Total: 51,14&nbsp;m2</p>
                             		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
+                            		<button  class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>
                             		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
                             	</div>
                             </div>
@@ -862,7 +862,7 @@
 											Sup. Terraza: 7,63&nbsp;m2<br />
 											Sup. Total: 37,47&nbsp;m2</p>
 	                            		<a href="#cotizacion" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-	                            		<div onclick="agendarVideoLlamada()" class="btn btn-info sub ml-md-2"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</div>
+	                            		<button class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>
 	                            		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
 	                            	</div>
 	                            </div>
@@ -981,6 +981,7 @@
 @endsection
 
 @section('script')
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js" integrity="sha512-q0Tx9njjBh0TfH3nPC2HfQbLXRyq27yx22U9zdj7nwH97SfIbnvAwTqpjwowq2dDZBe2k84sx/GdEZwzHsDqUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.min.js" integrity="sha512-wJ77CqWvHxl0VZkkTXIlwy931rh4p7CnmdvYEz1XZJHAfl4xhktuokGnk+2rUgoMKRjyywx0tbPMyoxVz99LAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js" integrity="sha512-tpaozUhiemCplwPy+SorWM3CcHW5HF2dGoqdFEm49MOnui4tzhjwIAV05dMUVHNRbSURl+R3sOSLfOfNFYwrjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -996,26 +997,25 @@
 	//     $( "#bci" ).removeClass( "showBci" );
 	// }
 
-	function agendarVideoLlamada(){
-		dataLayer.push({'event': 'agenda-click'});
-	    $.fancybox.open({
-	        src : 'https://calendly.com/icpacifico/reunion-virtual',
-	        type : 'iframe',
-	        opts : {
-	            iframe : {
-	                css : {
-	                    width: '100%'
-	                },
-	                attr : {
-	                    scrolling : 'no'
-	                }
-	            },
-	            afterClose : function() {
+	$('.videollamada').on('click',function(){
+			$.fancybox.open({
+				src : 'https://calendly.com/icpacifico/reunion-virtual',
+				type : 'iframe',
+				opts : {
+					iframe : {
+						css : {
+							width: '100%'
+						},
+						attr : {
+							scrolling : 'no'
+						}
+					},
+					afterClose : function() {
 
-	            }
-	        }
-	    });
-	}
+					}
+				}
+			});
+		})	
 
     jQuery(document).ready(function(){
 
@@ -1209,13 +1209,13 @@
 		    // alert("hola");
 		  }, 50);
 
-		$(".carousel").swipe({
-	      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-	        if (direction == 'left') $(this).carousel('next');
-	        if (direction == 'right') $(this).carousel('prev');
-	      },
-	      allowPageScroll:"vertical"
-	    });    	    
+		// $(".carousel").swipe({
+	    //   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+	    //     if (direction == 'left') $(this).carousel('next');
+	    //     if (direction == 'right') $(this).carousel('prev');
+	    //   },
+	    //   allowPageScroll:"vertical"
+	    // });    	    
     });
 	$(function () {
 
@@ -1229,4 +1229,5 @@ $('.social a').on('click', function (e) {
   });
 });
 </script>
+@include('sweetalert::alert')
 @endsection

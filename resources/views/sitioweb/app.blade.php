@@ -11,8 +11,9 @@
 	<meta name="keywords" content="departamento, departamentos en venta, departamentos en la serena,venta de departamentos, departamentos para inversion, avenida pacífico, la serena, chile">
 	<meta name="author" content="icpacifico.cl">
 	<link rel="icon" href="{{ Vite::asset('resources/img/favicon.png') }}">
+	@include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
-    
+	
 	@yield('style')
 </head>
 <body>
@@ -142,8 +143,11 @@
 			slidesToShow: 1,
 			adaptiveHeight: true
 		});
-		function agendarVideoLlamada(){
-			dataLayer.push({'event': 'agenda-click'});
+		// function agendarVideoLlamada(){
+		// 	dataLayer.push({'event': 'agenda-click'});
+			
+		// }
+		$('.videollamada').on('click',function(){
 			$.fancybox.open({
 				src : 'https://calendly.com/icpacifico/reunion-virtual',
 				type : 'iframe',
@@ -161,7 +165,7 @@
 					}
 				}
 			});
-		}							
+		})							
 		   setTimeout(
 			function() 
 			{
