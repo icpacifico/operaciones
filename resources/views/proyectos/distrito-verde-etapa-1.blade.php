@@ -931,7 +931,7 @@
 				<h2>Cotización</h2>
 				<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1473626&conversionId=1469745&fmt=gif" />
 				<div class="form pt-md-3">
-	        		<form class="cmxform row" id="commentForm" action="{{ route('/') }}" method="POST" >
+	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.distrito') }}" method="POST" >
 						@csrf
 	    				<input id="proyectoid" type="hidden" name="proyectoid" value="7">
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
