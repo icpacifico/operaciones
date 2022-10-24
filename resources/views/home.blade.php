@@ -229,6 +229,19 @@
 		margin: 0 !important;
 		font-weight: bold !important;
 	}
+	div#wh-widget-send-button {
+	    left: auto !important;
+		    right: 0px !important;
+	    margin-bottom: 0px !important;
+	}
+
+	@media (max-width: 550px) {
+		div#wh-widget-send-button {
+		    left: auto !important;
+		    right: 0px !important;
+		    margin-bottom: 30vh !important;
+		}
+	}
 </style>
 @endsection
 

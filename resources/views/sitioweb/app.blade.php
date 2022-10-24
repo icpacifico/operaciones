@@ -202,6 +202,44 @@
 	
 	    
 </script>
+<script>
+	var numeros = ['+56948596196','+56954126944','+56954130065','+56947960446','+56954126943']
+	var random = Math.floor((Math.random() * 5));
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?70491';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"Contáctanos",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Inmobiliaria Costanera Pacífico",
+      "brandSubTitle":"",
+      "brandImg":"{{ Vite::asset('resources/img/logo-chat.jpg') }}",
+      "welcomeText":"Hola, podemos ayudarte?\nContáctanos",
+      "messageText":"Hola, tengo una pregunta sobre {{route('/')}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":numeros[random]
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 @yield('script')   
 </body>
 </html>
