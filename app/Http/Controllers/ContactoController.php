@@ -48,7 +48,7 @@ class ContactoController extends Controller
             
             Mail::to('icpdigital@icpacifico.cl')->send(new EnvioContacto($data));
 
-            Alert::success('Éxito!', 'Contacto enviado con éxito!.');
+            Alert::success('Gracias!', 'Contacto enviado con éxito.');
             return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
     }
 
@@ -72,7 +72,7 @@ class ContactoController extends Controller
             
             Mail::to('icpdigital@icpacifico.cl')->cc($array[$indice])->send(new EnvioCotizacion($data));
             
-            Alert::success('Éxito!', 'Cotización enviada con éxito!.');
+            Alert::success('Gracias!', 'Cotización enviada con éxito.');
             return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
     }
 
