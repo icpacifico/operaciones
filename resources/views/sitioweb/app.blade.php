@@ -210,6 +210,7 @@
 			adaptiveHeight: true
 		});		
 		$('.videollamada').on('click',function(){
+			dataLayer.push({'event': 'agenda-click'});
 			$.fancybox.open({
 				src : 'https://calendly.com/icpacifico/reunion-virtual',
 				type : 'iframe',
