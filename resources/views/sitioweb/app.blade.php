@@ -8,6 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">	
+	<meta property="og:url" content="https://icpacifico.cl">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="{{ Vite::asset('resources/img/ogimage.jpg') }}" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="500" />
 	<meta name="keywords" content="departamento, departamentos en venta, departamentos en la serena,venta de departamentos, departamentos para inversion, avenida pacífico, la serena, chile">
 	<meta name="author" content="icpacifico.cl">
 	<link rel="icon" href="{{ Vite::asset('resources/img/favicon.png') }}">
@@ -54,8 +60,29 @@
   
 </head>
 <body>
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW4QL7Q"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW4QL7Q"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111516400-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-111516400-1');
+	</script> -->
+	
+	<!-- Global site tag (gtag.js) - Google Ads: 788087187 -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-788087187"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'AW-788087187');
+	</script> -->
 <div class="preloader" >
     <div class="loader">
         <div class="loader__figure"></div>
