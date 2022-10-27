@@ -200,7 +200,10 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" charset="utf-8"></script>
-<script>		
+<script>	
+function onPixel() {
+		fbq('track', 'SubmitApplication');
+	}	
 	$(".preloader").fadeOut();
 
 		$('.slider2').slick({
