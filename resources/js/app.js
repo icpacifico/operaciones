@@ -19,7 +19,7 @@ import '../css/animate.css';
 import '../css/headers1-10.css';
 import '../css/jquery.fancybox.css';
 import '../../node_modules/@popperjs/core/dist/umd/popper.min';
-import '../../node_modules/bootstrap/dist/js/bootstrap.min';
+// import '../../node_modules/bootstrap/dist/js/bootstrap.min';
 import * as bootstrap from 'bootstrap';
 import './slide';
 import '../../node_modules/sweetalert2/dist/sweetalert2';
