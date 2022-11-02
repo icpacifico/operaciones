@@ -900,8 +900,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="map">
-					<img  id="map" src="{{Vite::asset('resources/img/MapaDV.png')}}">
-                   
+					<img  id="map" class="img-fluid rounded mx-auto d-block" src="{{Vite::asset('resources/img/MapaDV.png')}}">                   
                 </div>
 			</div>
 			<div class="col-md-4 sala">
@@ -985,17 +984,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js" integrity="sha512-q0Tx9njjBh0TfH3nPC2HfQbLXRyq27yx22U9zdj7nwH97SfIbnvAwTqpjwowq2dDZBe2k84sx/GdEZwzHsDqUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.min.js" integrity="sha512-wJ77CqWvHxl0VZkkTXIlwy931rh4p7CnmdvYEz1XZJHAfl4xhktuokGnk+2rUgoMKRjyywx0tbPMyoxVz99LAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js" integrity="sha512-tpaozUhiemCplwPy+SorWM3CcHW5HF2dGoqdFEm49MOnui4tzhjwIAV05dMUVHNRbSURl+R3sOSLfOfNFYwrjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript"> 
-	
-	// function simularCredito(){
-	// 	dataLayer.push({'event': 'simular-click'});
-	//     $( "#bci" ).addClass( "showBci" );
-	// }
-
-	// function closeBci(){
-	//     $( "#bci" ).removeClass( "showBci" );
-	// }
-
+<script type="text/javascript"> 	
 	$('.videollamada').on('click',function(){
 		dataLayer.push({'event': 'agenda-click'});
 			$.fancybox.open({
