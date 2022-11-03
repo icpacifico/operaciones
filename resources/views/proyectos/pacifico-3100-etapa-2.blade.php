@@ -657,7 +657,7 @@
 	}
 </style>
 @endsection
-
+@include('facebook-pixel::head')
 @section('header')
 <div class="container-fluid d-none d-md-block" style="background-color: #ffffff; border-top: 1px solid #c9c9c9">
     <div class="row justify-content-md-center">
@@ -1165,4 +1165,5 @@ $('.social a').on('click', function (e) {
 });
 </script>
 @include('sweetalert::alert')
+@include('facebook-pixel::body')
 @endsection

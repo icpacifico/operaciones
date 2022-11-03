@@ -244,7 +244,7 @@
 	}
 </style>
 @endsection
-
+@include('facebook-pixel::head')
 @section('content')
 @parent
 <div id="banner-home">
@@ -348,3 +348,4 @@
     </div>    
 </div>
 @endsection
+@include('facebook-pixel::body')

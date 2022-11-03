@@ -662,7 +662,7 @@
     </div>
 </div>
 @endsection
-
+@include('facebook-pixel::head')
 @section('content')
 @parent
 <div id="banner-dv">
@@ -1219,4 +1219,6 @@ $('.social a').on('click', function (e) {
 });
 </script>
 @include('sweetalert::alert')
+
 @endsection
+@include('facebook-pixel::body')

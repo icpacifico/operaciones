@@ -27,8 +27,7 @@
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PW4QL7Q');</script>
-	<!-- End Google Tag Manager -->
-	@include('facebook-pixel::head')
+	<!-- End Google Tag Manager -->	
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
   <script>
 	(adsbygoogle = window.adsbygoogle || []).push({
@@ -42,10 +41,7 @@
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW4QL7Q"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+
 <div class="preloader" >
     <div class="loader">
         <div class="loader__figure"></div>
@@ -269,7 +265,11 @@
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
-@include('facebook-pixel::body')
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW4QL7Q"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 @yield('script')   
 </body>
 </html>
