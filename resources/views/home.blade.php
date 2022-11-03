@@ -228,25 +228,32 @@
 		max-height: 25px;
 		display: block;
 	}
-	#cotizacion .h21{
-		text-align: left;
+	#cotizacion .h21{		
+		padding:10px;
+		text-align: center;
 		text-transform: uppercase;
 		color: #fff;
 		background-color: #b13582;
 		font-weight: bold;
-		display: inline;
-		line-height: 2;
+		width: 100px;
+		/* display: inline; */
+		
 	}
 	#cotizacion .h22{
-		text-align: left;
+		padding:10px;
+		text-align: center;
 		color: #fff;
 		background-color: #9dbc55;
 		font-weight: 300 !important;
-		display: inline;
-		line-height: 1;
+		width: 380px;
+		/* display: inline;		 */
 		font-size: 2.5rem;
 	}
-	#cotizacion .h22 span{
+	#cotizacion .hspan{
+		color: #fff;
+		background-color: #9dbc55;
+		padding:10px;
+		text-align:center;		
 		font-weight: bold !important;
 		font-size: 2rem;
 	}
@@ -325,13 +332,16 @@
     <div class="container">
     	<div class="row align-items-center" id="cotizacion">
     		<div class="col-md-7 pb-5 pb-md-0">    			
-    			<img src="{{ Vite::asset('resources/img/logowp.png') }}" class="img-fluid wp"/>
+    			<img src="{{ Vite::asset('resources/img/logowp.png') }}" class="img-fluid wp my-3"/>
     			<div>
     				<h2 class="h21">AHORA</h2>
     			</div>
     			<div>
-    				<h2 class="h22">Disfruta sin preocupaciones<br><span>Paga el pie en cuotas</span></h2>
+    				<h2 class="h22" >Disfruta sin preocupaciones</h2>					
     			</div>
+				<div>
+					<span class="hspan">Paga el pie en cuotas</span>
+				</div>
     			<div class="pt-3">
 	    			<!-- <button type="button" onclick="window.location='/proyectos/3/pacifico-3100-etapa-1#cotizacion'" class="btn btn-success-gradiant btn-md btn-arrow mb-3"><span>Cotiza Aquí</span></button> -->
 					<button type="button" class="btn btn-success-gradiant btn-md btn-arrow videollamada"><span> Agenda Una Video Llamada</span></button>
