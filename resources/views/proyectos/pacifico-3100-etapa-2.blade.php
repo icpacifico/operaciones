@@ -977,7 +977,7 @@
 				<div class="form pt-md-3">
 	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.pacifico') }}" method="POST" >
 						@csrf
-	    				<input id="proyectoid" type="hidden" name="proyectoid" value="5">
+	    				<input id="proyecto" type="hidden" name="proyecto" value="Pacífico 3100 | Etapa II">
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
 
 	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut"></div>

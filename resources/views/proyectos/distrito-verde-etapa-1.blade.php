@@ -932,7 +932,7 @@
 				<div class="form pt-md-3">
 	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.distrito') }}" method="POST" >
 						@csrf
-	    				<input id="proyectoid" type="hidden" name="proyectoid" value="7">
+	    				<input id="proyecto" type="hidden" name="proyecto" value="Distrito Verde | Etapa I">
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
 
 	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut"></div>
@@ -986,7 +986,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js" integrity="sha512-tpaozUhiemCplwPy+SorWM3CcHW5HF2dGoqdFEm49MOnui4tzhjwIAV05dMUVHNRbSURl+R3sOSLfOfNFYwrjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript"> 	
 	$('.videollamada').on('click',function(){
-		dataLayer.push({'event': 'agenda-click'});
+		// dataLayer.push({'event': 'agenda-click'});
 			$.fancybox.open({
 				src : 'https://calendly.com/icpacifico/reunion-virtual',
 				type : 'iframe',

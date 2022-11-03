@@ -55,6 +55,7 @@ class ContactoController extends Controller
     public function cotizacion(Request $request)
     {
         $data = $request->validate([
+            'proyecto' =>'required',                        
             'nombre' => 'required',
             'rut' => 'required',
             'mail' => 'required',            
@@ -65,8 +66,8 @@ class ContactoController extends Controller
             'medio' => 'required',
             'comentarios' => 'required'
             ]);
-            $numbs = [0,1,2,3,4];
-            $array = ['mjcallejas@icpacifico.cl', 'jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
+            $numbs = [0,1,2,3];
+            $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
             $moreUsers = Arr::shuffle($array);
             $indice = Arr::random($numbs);
             

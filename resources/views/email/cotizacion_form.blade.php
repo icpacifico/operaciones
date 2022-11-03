@@ -69,6 +69,7 @@
               <p class="texto"><b>Telefono:</b> <i>{{ $data['fonocon'] }}</i></p>              
               <p class="texto"><b>Direccion:</b> <i>{{ $data['direccion'] }}</i></p>              
               <p class="texto"><b>Ciudad:</b> <i>{{ $data['ciudad'] }}</i></p>              
+              <p class="texto"><b>Proyecto:</b> <i>{{ $data['proyecto'] }}</i></p>              
               <p class="texto"><b>Modelo:</b> <i>{{ $data['modelo'] }}</i></p>              
               <p class="texto"><b>Medio:</b> <i>{{ $data['medio'] }}</i></p>              
               <p class="texto"><b>Comentarios:</b> <i>{{ $data['comentarios'] }}</i></p>              
