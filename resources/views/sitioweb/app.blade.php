@@ -18,7 +18,7 @@
 	<meta name="author" content="icpacifico.cl">
 	<link rel="icon" href="{{ Vite::asset('resources/img/favicon.png') }}">
 	@include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
-	@vite(['resources/js/app.js'])
+	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	<style>
 		.navbar-nav li.nav-item ul li.vendido{
 			background-color: rgba(240,240,240,.4);
