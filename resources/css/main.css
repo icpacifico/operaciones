@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,900&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap&subset=latin-ext'); */
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap&subset=latin-ext');
 
 html {
 	font-size:15px;
@@ -84,14 +84,6 @@ body{
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
-}
-
-.navbar-nav li.nav-item ul li.vendido{
-	background-color: rgba(240,240,240,.4);
-	background-image: url(../img/vendido_bot.png);
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: contain;
 }
 
 .navbar-nav li.nav-item ul li.vendido a.disabled{

@@ -125,23 +125,7 @@ right: 0;
 }
 
 /*#home*/
-#home{
-padding-top: 10px;
-text-align: justify;
-background-image: url(../img/bg_home_1.jpg);
-background-repeat: repeat-x;
-background-position: 0 450px;
-}
 
-@media (max-width: 768px) {
-#home{
-    padding-top: 5px;
-    text-align: justify;
-    background-image: url(../img/bg_home_1.jpg);
-    background-repeat: repeat-x;
-    background-position: 0 450px;
-}
-}
 
 #home .flotante_virtual{
 position: absolute;
@@ -240,13 +224,7 @@ cursor: pointer;
 /*background-position: -5px 0px;*/
 }
 
-#home .caja.uno{
-background-image: url(../img/caja_1.jpg);
-}
 
-#home .caja.dos{
-background-image: url(../img/caja_2.jpg);
-}
 
 #home .virtuales iframe.frames{
 height: 410px;
@@ -258,15 +236,7 @@ height: 410px;
 }
 }
 
-/*novedades*/
-#bienve{
-padding-top: 55px;
-padding-bottom: 30px;
-overflow-x: hidden;
-background-image: url(../img/bg_home_1.jpg);
-background-repeat: repeat-x;
-background-position: 0 -350px;
-}
+
 
 @media (max-width: 760px) {
 #bienve{

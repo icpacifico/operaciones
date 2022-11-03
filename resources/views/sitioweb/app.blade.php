@@ -19,7 +19,47 @@
 	<link rel="icon" href="{{ Vite::asset('resources/img/favicon.png') }}">
 	@include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
-	
+	<style>
+		.navbar-nav li.nav-item ul li.vendido{
+			background-color: rgba(240,240,240,.4);
+			background-image: url({{Vite::asset('resources/img/vendido_bot.png')}});
+			background-repeat: no-repeat;
+			background-position: top right;
+			background-size: contain;
+		}
+		#banner-top{
+			background-color: #89816B;
+			/*min-height: 50vh;*/
+			padding-top: 128px;
+			padding-bottom: 32px;
+			background-image: url({{Vite::asset('resources/img/bg-interior.jpg')}});
+			background-repeat: no-repeat;
+			-webkit-background-size: contain;
+			background-size: contain;
+			background-attachment: fixed;
+		}
+		/* Extra Small devices (phones) */
+		@media (max-width: 767px) { 
+			#banner-top{
+				background-color: #89816B;
+				/*min-height: 50vh;*/
+				padding-top: 128px;
+				padding-bottom: 32px;
+				background-image: url({{Vite::asset('resources/img/bg-interior.jpg')}});
+				background-repeat: no-repeat;
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-attachment: normal;
+			}
+		}
+		#presenta .caja.uno{
+   			background-image: url({{Vite::asset('resources/img/caja_1.jpg')}});
+		}
+
+		#presenta .caja.dos{
+			background-image: url({{Vite::asset('resources/img/caja_2.jpg')}});
+		}
+	</style>
 	@yield('style')
 	<!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

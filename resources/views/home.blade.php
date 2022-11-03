@@ -2,6 +2,39 @@
 
 @section('style')
 <style>
+	#home{
+		padding-top: 10px;
+		text-align: justify;
+		background-image: url({{ Vite::asset('resources/img/bg_home_1.jpg') }});
+		background-repeat: repeat-x;
+		background-position: 0 450px;
+		}
+
+		@media (max-width: 768px) {
+		#home{
+			padding-top: 5px;
+			text-align: justify;
+			background-image: url({{ Vite::asset('resources/img/bg_home_1.jpg') }});
+			background-repeat: repeat-x;
+			background-position: 0 450px;
+		}
+		}
+		#home .caja.uno{
+		background-image: url({{ Vite::asset('resources/img/caja_1.jpg') }});
+		}
+
+		#home .caja.dos{
+		background-image: url({{ Vite::asset('resources/img/caja_2.jpg') }});
+		}
+		/*novedades*/
+	#bienve{
+	padding-top: 55px;
+	padding-bottom: 30px;
+	overflow-x: hidden;
+	background-image: url({{ Vite::asset('resources/img/bg_home_1.jpg') }});
+	background-repeat: repeat-x;
+	background-position: 0 -350px;
+	}
     .notifyjs-bootstrap-base {
     font-weight: bold;
     padding: 10px 15px 10px 14px;
@@ -312,12 +345,12 @@
         <div class="row virtuales align-items-center">
         	<div class="col-md-6 cols">
 				<div class="ratio ratio-1x1">
-  	              <iframe class="frames" width = "100%" src = " https://my.matterport.com/show/?m=DmtQBSUXc2U" frameborder = "0" allowfullscreen allowvr="yes"> </iframe>
+  	              <iframe class="frames" width = "100%" src = "{{url('https://my.matterport.com/show/?m=DmtQBSUXc2U')}}" frameborder = "0" allowfullscreen allowvr="yes"> </iframe>
 				</div>
         	</div>
         	<div class="col-md-6 cols">
 				<div class="ratio ratio-1x1">
-    	    		<iframe class="frames render" width="100%" src=" https://my.matterport.com/show/?m=4Sbr7iLm1CY" frameborder = "0" allowfullscreen allowvr="yes"> </iframe>
+    	    		<iframe class="frames render" width="100%" src="{{url('https://my.matterport.com/show/?m=4Sbr7iLm1CY')}}" frameborder = "0" allowfullscreen allowvr="yes"> </iframe>
 				</div>
         	</div>
 
@@ -339,7 +372,7 @@
         <div class="row">
 			<div class="col-md-12">				
 				<div class="ratio ratio-4x3" data-aos="fade-in">
-				  	<iframe  src="{{ 'https://www.youtube.com/embed/h5Du3LqHl2k' }}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  	<iframe  src="{{ url('https://www.youtube.com/embed/h5Du3LqHl2k') }}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 			
