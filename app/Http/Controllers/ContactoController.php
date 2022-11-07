@@ -66,9 +66,12 @@ class ContactoController extends Controller
             'medio' => 'required',
             'comentarios' => 'required'
             ]);
-            $numbs = [0,1,2,3];
-            $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
-            $moreUsers = Arr::shuffle($array);
+            $numbs = [0,1];
+            // $numbs = [0,1,2,3];
+
+            $array = ['ovelasquez@icpacifico.cl','priera@icpacifico.cl'];
+            // $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
+            // $moreUsers = Arr::shuffle($array);
             $indice = Arr::random($numbs);
             
             Mail::to('icpdigital@icpacifico.cl')->cc($array[$indice])->send(new EnvioCotizacion($data));
