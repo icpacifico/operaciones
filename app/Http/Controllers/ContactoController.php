@@ -69,8 +69,8 @@ class ContactoController extends Controller
             $numbs = [0,1];
             // $numbs = [0,1,2,3];
 
-            $array = ['ovelasquez@icpacifico.cl','priera@icpacifico.cl'];
-            // $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
+            // $array = ['ovelasquez@icpacifico.cl','priera@icpacifico.cl'];
+            $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
             // $moreUsers = Arr::shuffle($array);
             $indice = Arr::random($numbs);
             

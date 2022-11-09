@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\ManejadorController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +73,18 @@ Route::post('/proyectos/pacifico-3100-etapa-2', [ContactoController::class, 'cot
 //     Route::post('/contactos', 'cotizacion')->name('cotizacion.send');
 //     Route::post('/contactos', 'store')->name('contacto.send');
 // });
+
+// Route::group(['middleware' => 'admin'], function () {
+//     Route::get('/admin/inicio', [ManejadorController::class, 'inicio'])->name('admin.inicio');
+   
+// });
+
+Route::get('/admin/inicio', function () {
+   return view('admin/inicio');
+})->middleware('auth');;
+
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+// Logout
+Route::post('/logout', [HomeController::class, 'logout'])->name('auth.logout');

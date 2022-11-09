@@ -66,21 +66,21 @@
 					@csrf
                     <div class="form-group">
                         <label class="form-control-label" for="nombre">Nombre Completo</label>
-                        <input type="text" minlength="3" class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo" autocomplete="off" required>
+                        <input type="text" minlength="3" class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre completo .." autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <label class="form-control-label" for="mail">E-mail</label>
-                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Ingrese email" autocomplete="off" required>
+                        <input type="email" class="form-control" id="mail" name="mail" placeholder="ej: correo@ejemplo.cl" autocomplete="off" required>
                     </div>
 
                     <div class="form-group">
                         <label class="form-control-label" for="fono">Teléfono</label>
-                        <input type="number" class="form-control" id="fono" name="fono" autocomplete="off" placeholder="Ingrese teléfono">
+                        <input type="number" class="form-control" id="fono" name="fono" autocomplete="off" placeholder="ej: 98765421" required>
                     </div>
 
                     <div class="form-group">
                         <label class="form-control-label" for="fono">Comentarios</label>
-                        <textarea maxlength="500" minlength="4" id="comentarios" name="comentarios" class="form-control" placeholder="Ingrese comentarios" autocomplete="off" required></textarea>
+                        <textarea maxlength="500" minlength="4" id="comentarios" name="comentarios" class="form-control" placeholder="Ingrese comentarios .." autocomplete="off" required></textarea>
                     </div>
 
                     <div class="text-right" id="contenedor_boton"><button class="btn btn-secondary" type="submit" role="button">Enviar</button></div>

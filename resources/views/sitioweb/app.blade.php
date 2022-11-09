@@ -138,6 +138,14 @@
 								<li id="act_contacto" class="nav-item ml-md-2 {{ request()->path() == "contacto" ? 'active' : '' }}">
 									<a class="nav-link" href="{{ route('contacto') }}">Contáctenos</a>
 								</li>
+								<li class="nav-item ml-md-2">
+									@if (Illuminate\Support\Facades\Auth::check())
+									<form action="{{ url('logout') }}" method="POST">
+										@csrf
+										<button class="nav-link" type="submit">cerrar sesión</button>
+									</form>
+									@endif						
+								</li>
 							</ul>
 						</div>
 					</div>

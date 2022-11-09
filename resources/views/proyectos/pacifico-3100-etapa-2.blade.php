@@ -863,7 +863,7 @@
                     <div class="tab-pane active" id="mod-a" role="tabpanel">
                         <div class="p-30 detalles">
                             <div class="row">
-                            	                            	<div class="col-md-7">
+								<div class="col-md-7">
                             		<p><strong>MODELO A</strong><br />
 									2 Dormitorios - 2 Ba&ntilde;os<br />
 									Sup. Municipal: 51,65&nbsp;m2<br />
@@ -978,20 +978,15 @@
 	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.pacifico') }}" method="POST" >
 						@csrf
 	    				<input id="proyecto" type="hidden" name="proyecto" value="Pacífico 3100 | Etapa II">
-	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="fonocon" type="text" name="fonocon" class="form-control numero" placeholder="Teléfono"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad"></div>
+	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="fonocon" type="text" name="fonocon" class="form-control numero" placeholder="Teléfono" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required></div>
 
 	    				<div class="col-12 col-md-6 espacio">
-	    					<select name="modelo" id="modelo" class="form-control">
+	    					<select name="modelo" id="modelo" class="form-control" required>
 	    						<option value="" selected>Modelo de Departamento</option>
 	    						<option value="A">Modelo A 2 dorm. 2 baños</option>
 	    						<option value="ESTUDIO">Modelo ESTUDIO 2 dorm. 2 baños</option>
@@ -1000,7 +995,7 @@
 	    				</div>
 
 	    				<div class="col-12 col-md-6 espacio">
-	    					<select name="medio" id="medio" class="form-control">
+	    					<select name="medio" id="medio" class="form-control" required>
 	    						<option value="" selected>Cómo llegó a nosotros</option>
 	    						<option value="Diario el Día">Diario el Día</option>
 	    						<option value="Radio">Radio</option>
@@ -1011,10 +1006,9 @@
 	    						<option value="Letrero">Letrero</option>
 	    					</select>
 	    				</div>
-	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario"></textarea></div>
+	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario" required></textarea></div>
 	        			<div class="col-12 text-center" id="contenedor-boton">
-	        				<button type="submit" onclick="onPixel()" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>
-	        				<!-- <input class="btn btn-default" type="submit" value="Enviar" name="button" id="button"/> -->
+	        				<button type="submit" onclick="onPixel()" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>	        				
 	        			</div>
 	        		</form>
 	        	</div>
@@ -1034,8 +1028,6 @@
     	$(document).on("click", ".click_caja", function() {
 	    	$("div.click_caja").addClass("oculta");
 	    });
-
-
 		$('a.nav-link.sub').click(function() {
             // alert("aaaa");
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -1059,21 +1051,13 @@
 	        slider_enable_bullets: false,
 	        slider_enable_fullscreen_button: true,
 	        slider_enable_text_panel: false
-	        // slider_textpanel_title_font_size: 12,
-	        // slider_textpanel_title_bold:false	        
+	       
 	    });
-	    // $("#gallery").css({"height":"auto"});
-	    // setTimeout(function(){
-    	// 	$('.ug-tiles-preloader').css( "opacity", "0" );
-    	// }, 100);
-
 
     	jQuery("#entorno").unitegallery({
-			gallery_theme: "tiles",
-			// gallery_background_color: "#FFFFFF",
+			gallery_theme: "tiles",			
 			tiles_type: "justified",
-			tile_enable_image_effect:false,
-			// tile_image_effect_type: "sepia",
+			tile_enable_image_effect:false,			
 			tile_enable_overlay:false,
 			tile_enable_icons:false,
 			tile_enable_textpanel: true,

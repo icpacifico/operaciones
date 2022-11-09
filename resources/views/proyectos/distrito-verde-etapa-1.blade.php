@@ -933,20 +933,15 @@
 	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.distrito') }}" method="POST" >
 						@csrf
 	    				<input id="proyecto" type="hidden" name="proyecto" value="Distrito Verde | Etapa I">
-	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="fonocon" type="text" name="fonocon" class="form-control numero" placeholder="Teléfono"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion"></div>
-
-	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad"></div>
+	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="fonocon" type="text" name="fonocon" class="form-control numero" placeholder="Teléfono" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required></div>
 
 	    				<div class="col-12 col-md-6 espacio">
-	    					<select name="modelo" id="modelo" class="form-control">
+	    					<select name="modelo" id="modelo" class="form-control" required>
 	    						<option value="" selected>Modelo de Departamento</option>
 	    						<option value="A">Modelo A 2 dorm. 2 baños</option>
 	    						<option value="B">Modelo B 2 dorm. 1 baño</option>
@@ -955,10 +950,8 @@
 	    				</div>
 
 	    				<div class="col-12 col-md-6 espacio">
-	    					<select name="medio" id="medio" class="form-control">
-	    						<option value="" selected>Cómo llegó a nosotros</option>
-	    						<!--<option value="Diario el Día">Diario el Día</option>
-	    						<option value="Radio">Radio</option>-->
+	    					<select name="medio" id="medio" class="form-control" required>
+	    						<option value="" selected>Cómo llegó a nosotros</option>	    						
 	    						<option value="Facebook">RRSS</option>
 	    						<option value="Expo. Inmobiliaria">Expo. Inmobiliaria</option>
 	    						<option value="Recomendación">Recomendación</option>
@@ -966,7 +959,7 @@
 	    						<option value="Letrero">Letrero</option>
 	    					</select>
 	    				</div>
-	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario"></textarea></div>
+	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario" required></textarea></div>
 	        			<div class="col-12 text-center" id="contenedor-boton">
 	        				<button type="submit" onclick="onPixel()" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>
 	        				<!-- <input class="btn btn-default" type="submit" value="Enviar" name="button" id="button"/> -->
