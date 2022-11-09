@@ -990,7 +990,7 @@
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
 	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required></div>
 	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="telefono" type="text" name="telefono" class="form-control numero" placeholder="Teléfono" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="telefono" type="number" name="telefono" class="form-control numero" placeholder="Teléfono ej: 987654321" required>
 	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required></div>
 	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required></div>
 
