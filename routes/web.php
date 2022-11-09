@@ -69,15 +69,6 @@ Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.c
 Route::post('/proyectos/distrito-verde-etapa-1', [ContactoController::class, 'cotizacion'])->name('cotizacion.distrito');
 Route::post('/proyectos/pacifico-3100-etapa-2', [ContactoController::class, 'cotizacion'])->name('cotizacion.pacifico');
 
-// Route::controller(ContactoController::class)->group(function () {
-//     Route::post('/contactos', 'cotizacion')->name('cotizacion.send');
-//     Route::post('/contactos', 'store')->name('contacto.send');
-// });
-
-// Route::group(['middleware' => 'admin'], function () {
-//     Route::get('/admin/inicio', [ManejadorController::class, 'inicio'])->name('admin.inicio');
-   
-// });
 
 Route::get('/admin/inicio', function () {
    return view('admin/inicio');

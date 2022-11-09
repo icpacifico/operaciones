@@ -5,9 +5,10 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 <style>
-		#banner-dv{    
-		padding-top: 145px;
-		padding-bottom: 0px;
+
+	#banner-dv{    
+	padding-top: 145px;
+	padding-bottom: 0px;
 	}
 
 	#banner-dv .carousel{
@@ -928,17 +929,56 @@
 		<div class="row justify-content-md-center">
 			<div class="col-md-7">
 				<h2>Cotización</h2>
+				@if ($errors->any())
+				<div class="alert alert-danger" role="alert">
+						<ul>
+							@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif									
 				<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1473626&conversionId=1469745&fmt=gif" />
 				<div class="form pt-md-3">
-	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.distrito') }}" method="POST" >
+	        		<form class="cmxform row needs-validation" id="commentForm" action="{{ route('cotizacion.distrito') }}" method="POST">
 						@csrf
 	    				<input id="proyecto" type="hidden" name="proyecto" value="Distrito Verde | Etapa I">
-	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="fonocon" type="text" name="fonocon" class="form-control numero" placeholder="Teléfono" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required></div>
+	    				<div class="col-12 col-md-6 espacio" >
+							<input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese nombre
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese rut
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese correo						
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="telefono" type="number" name="telefono" class="form-control numero" placeholder="Teléfono ej: 987654321" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese telefono 
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese direccion
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese ciudad
+							</div>
+						</div>
 
 	    				<div class="col-12 col-md-6 espacio">
 	    					<select name="modelo" id="modelo" class="form-control" required>
@@ -959,12 +999,17 @@
 	    						<option value="Letrero">Letrero</option>
 	    					</select>
 	    				</div>
-	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario" required></textarea></div>
+	    				<div class="col-md-12 espacio">
+							<textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario" required></textarea>
+							<div class="invalid-feedback">
+								Porfavor ingrese comentarios
+							</div>
+						</div>
 	        			<div class="col-12 text-center" id="contenedor-boton">
-	        				<button type="submit" onclick="onPixel()" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>
-	        				<!-- <input class="btn btn-default" type="submit" value="Enviar" name="button" id="button"/> -->
+	        				<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>	        				
 	        			</div>
 	        		</form>
+					
 	        	</div>
 			</div>
 		</div>

@@ -973,6 +973,15 @@
 		<div class="row justify-content-md-center">
 			<div class="col-md-7">
 				<h2>Cotización</h2>
+				@if ($errors->any())
+				<div class="alert alert-danger" role="alert">
+						<ul>
+							@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif	
 				<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1473626&conversionId=1469745&fmt=gif" />
 				<div class="form pt-md-3">
 	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.pacifico') }}" method="POST" >
@@ -981,7 +990,7 @@
 	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
 	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required></div>
 	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="fonocon" type="text" name="fonocon" class="form-control numero" placeholder="Teléfono" required></div>
+	    				<div class="col-12 col-md-6 espacio"><input id="telefono" type="text" name="telefono" class="form-control numero" placeholder="Teléfono" required></div>
 	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required></div>
 	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required></div>
 
@@ -1008,7 +1017,7 @@
 	    				</div>
 	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario" required></textarea></div>
 	        			<div class="col-12 text-center" id="contenedor-boton">
-	        				<button type="submit" onclick="onPixel()" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>	        				
+	        				<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>	        				
 	        			</div>
 	        		</form>
 	        	</div>

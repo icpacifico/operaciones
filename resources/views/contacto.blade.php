@@ -62,6 +62,15 @@
         	</div>
         	<div class="col-md-5 order-2 order-md-3">
         		<p class="mt-4 mt-md-0">Contáctenos a través del siguiente formulario.</p>
+				@if ($errors->any())
+				<div class="alert alert-danger" role="alert">
+						<ul>
+							@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+							@endforeach
+						</ul>
+					</div>
+				@endif	
                 <form class="cmxform form-horizontal mb-4 formula" id="commentForm" action="{{ route('contacto.contacto') }}" method="POST">
 					@csrf
                     <div class="form-group">

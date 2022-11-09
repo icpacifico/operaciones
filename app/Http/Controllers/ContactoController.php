@@ -39,89 +39,60 @@ class ContactoController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->validate([
-            'nombre' => 'required',
-            'fono' => 'required',
-            'mail' => 'required',            
-            'comentarios' => 'required'
-            ]);
-            
-            Mail::to('icpdigital@icpacifico.cl')->send(new EnvioContacto($data));
-
-            Alert::success('Gracias!', 'Contacto enviado con éxito.');
+        try {
+            $data = $request->validate([
+                'nombre' => 'required',
+                'fono' => 'required',
+                'mail' => 'required',            
+                'comentarios' => 'required'
+                ]);
+                
+                Mail::to('icpdigital@icpacifico.cl')->send(new EnvioContacto($data));
+    
+                Alert::success('Gracias!', 'Contacto enviado con éxito.');
+                return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
+        } catch (\Throwable $th) {
+            throw $th;
+        } catch (Exception $ex){
+            Alert::error('Error', 'Hemos notado un error, porfavor intentelo nuevamente. code error: '.$ex->getMessage());
             return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
+        }
     }
 
     public function cotizacion(Request $request)
     {
-        $data = $request->validate([
-            'proyecto' =>'required',                        
-            'nombre' => 'required',
-            'rut' => 'required',
-            'mail' => 'required',            
-            'fonocon' => 'required',
-            'direccion' => 'required',
-            'ciudad' => 'required',
-            'modelo' => 'required',
-            'medio' => 'required',
-            'comentarios' => 'required'
-            ]);
-            $numbs = [0,1];
-            // $numbs = [0,1,2,3];
-
-            // $array = ['ovelasquez@icpacifico.cl','priera@icpacifico.cl'];
-            $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
-            // $moreUsers = Arr::shuffle($array);
-            $indice = Arr::random($numbs);
-            
-            Mail::to('icpdigital@icpacifico.cl')->cc($array[$indice])->send(new EnvioCotizacion($data));
-            
-            Alert::success('Gracias!', 'Cotización enviada con éxito.');
+        try {
+            $data = $request->validate([
+                'proyecto' =>'required',                        
+                'nombre' => 'required',
+                'rut' => 'required',
+                'mail' => 'required',            
+                'telefono' => 'required',
+                'direccion' => 'required',
+                'ciudad' => 'required',
+                'modelo' => 'required',
+                'medio' => 'required',
+                'comentarios' => 'required'
+                ]);
+                $numbs = [0,1,2,3];
+                // $numbs = [0,1,2,3];
+    
+                // $array = ['ovelasquez@icpacifico.cl','priera@icpacifico.cl'];
+                $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
+                // $moreUsers = Arr::shuffle($array);
+                $indice = Arr::random($numbs);
+                
+                Mail::to('icpdigital@icpacifico.cl')->cc($array[$indice])->send(new EnvioCotizacion($data));
+                
+                Alert::success('Gracias!', 'Cotización enviada con éxito.');
+                return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
+        } catch (\Throwable $th) {
+            throw $th;
+        } catch (Exception $ex){
+            Alert::error('Error', 'Hemos notado un error, porfavor intentelo nuevamente. code error: '.$ex->getMessage());
             return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
-    }
+        }
+        
+    }  
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }
