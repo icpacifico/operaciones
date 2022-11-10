@@ -962,7 +962,7 @@
 							</div>
 						</div>
 	    				<div class="col-12 col-md-6 espacio">
-							<input id="telefono" type="number" name="telefono" class="form-control numero" placeholder="Teléfono ej: 987654321" required>
+							<input id="telefono" type="number" name="telefono" class="form-control numero" placeholder="Teléfono ej: +56987654321" required>
 							<div class="invalid-feedback">
 								Porfavor ingrese telefono 
 							</div>
