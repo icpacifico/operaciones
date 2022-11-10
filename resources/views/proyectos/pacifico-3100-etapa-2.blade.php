@@ -987,13 +987,42 @@
 	        		<form class="cmxform row" id="commentForm" action="{{ route('cotizacion.pacifico') }}" method="POST" >
 						@csrf
 	    				<input id="proyecto" type="hidden" name="proyecto" value="Pacífico 3100 | Etapa II">
-	    				<div class="col-12 col-md-6 espacio" ><input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="telefono" type="number" name="telefono" class="form-control numero" placeholder="Teléfono ej: 987654321" required>
-	    				<div class="col-12 col-md-6 espacio"><input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required></div>
-	    				<div class="col-12 col-md-6 espacio"><input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required></div>
-
+	    				<div class="col-12 col-md-6 espacio" >
+							<input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese nombre
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="rut" type="text" name="rut" class="form-control rut" placeholder="Rut" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese rut
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="mail" type="email" name="mail" class="form-control" placeholder="E-mail" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese correo						
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="telefono" type="number" name="telefono" class="form-control numero" placeholder="Teléfono ej: 987654321" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese telefono 
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="direccion" type="text" name="direccion" class="form-control" placeholder="Direccion" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese direccion
+							</div>
+						</div>
+	    				<div class="col-12 col-md-6 espacio">
+							<input id="ciudad" type="text" name="ciudad" class="form-control" placeholder="Ciudad" required>
+							<div class="invalid-feedback">
+								Porfavor ingrese ciudad
+							</div>
+						</div>
 	    				<div class="col-12 col-md-6 espacio">
 	    					<select name="modelo" id="modelo" class="form-control" required>
 	    						<option value="" selected>Modelo de Departamento</option>
@@ -1015,7 +1044,12 @@
 	    						<option value="Letrero">Letrero</option>
 	    					</select>
 	    				</div>
-	    				<div class="col-md-12 espacio"><textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario" required></textarea></div>
+						<div class="col-md-12 espacio">
+							<textarea id="comentarios" rows="10" name="comentarios" class="form-control" placeholder="Comentario" required></textarea>
+							<div class="invalid-feedback">
+								Porfavor ingrese comentarios
+							</div>
+						</div>
 	        			<div class="col-12 text-center" id="contenedor-boton">
 	        				<button type="submit" class="btn btn-success-gradiant btn-md btn-arrow"><span>Enviar <i class="ti-arrow-right"></i></span></button>	        				
 	        			</div>
