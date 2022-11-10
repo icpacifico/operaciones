@@ -15,8 +15,6 @@ import '../sliders/slider_proyecto.css';
 import '../css/animate.css';
 import '../css/headers1-10.css';
 import '../css/jquery.fancybox.css';
-import '../../node_modules/bootstrap/dist/js/bootstrap.min';
-import '../../node_modules/@popperjs/core/dist/umd/popper.min';
 import './slide';
 import '../../node_modules/sweetalert2/dist/sweetalert2';
 import '../../node_modules/perfect-scrollbar/dist/perfect-scrollbar.min';
