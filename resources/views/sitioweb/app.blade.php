@@ -2,6 +2,10 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
+	<meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <link rel="canonical" href="https://icpacifico.cl" />
     <title>@yield('title','Inmobiliaria Costanera Pacífico - La Serena - Chile') </title>
 	<meta name="csrf-token" content="{{ csrf_token() }}">
