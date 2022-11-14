@@ -72,9 +72,9 @@ Route::post('/proyectos/pacifico-3100-etapa-2', [ContactoController::class, 'cot
 
 Route::get('/admin/inicio', function () {
    return view('admin/inicio');
-})->middleware('auth');;
+})->middleware('auth');
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 // Logout

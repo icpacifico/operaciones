@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use \stdClass;
 use Illuminate\Http\Request;
 use App\Mail\EnvioContacto;
 use App\Mail\EnvioCotizacion;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Arr;
 use RealRashid\SweetAlert\Facades\Alert;
+use Label84\TagManager\Facades\TagManager;
 
 class ContactoController extends Controller
 {
@@ -53,7 +55,7 @@ class ContactoController extends Controller
                 return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
         } catch (\Throwable $th) {
             throw $th;
-        } catch (Exception $ex){
+        } catch (\Exception $ex){
             Alert::error('Error', 'Hemos notado un error, porfavor intentelo nuevamente. code error: '.$ex->getMessage());
             return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
         }
@@ -62,7 +64,21 @@ class ContactoController extends Controller
     public function cotizacion(Request $request)
     {
         try {
+           
+            $telefono = $request->input('codigo').$request->input('telefono');            
+            $dataForm = new stdClass();
+            $dataForm->nombre = $request->input('nombre');
+            $dataForm->rut = $request->input('rut');
+            $dataForm->mail = $request->input('mail');
+            $dataForm->telefono = $telefono;
+            $dataForm->direccion = $request->input('direccion');
+            $dataForm->ciudad = $request->input('ciudad');
+            $dataForm->modelo = $request->input('modelo');
+            $dataForm->medio = $request->input('medio');
+            $dataForm->comentarios = $request->input('comentarios');
+         
             $data = $request->validate([
+                'codigo' => 'required',
                 'proyecto' =>'required',                        
                 'nombre' => 'required',
                 'rut' => 'required',
@@ -74,6 +90,8 @@ class ContactoController extends Controller
                 'medio' => 'required',
                 'comentarios' => 'required'
                 ]);
+              
+                TagManager::event('gtm.formSubmit', ['data' => json_encode($dataForm) ]);               
                 $numbs = [0,1,2,3];
                 // $numbs = [0,1,2,3];
     
@@ -88,7 +106,7 @@ class ContactoController extends Controller
                 return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
         } catch (\Throwable $th) {
             throw $th;
-        } catch (Exception $ex){
+        } catch (\Exception $ex){
             Alert::error('Error', 'Hemos notado un error, porfavor intentelo nuevamente. code error: '.$ex->getMessage());
             return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
         }

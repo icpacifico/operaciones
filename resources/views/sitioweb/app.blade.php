@@ -65,13 +65,7 @@
 		}
 	</style>
 	@yield('style')
-	<!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-PW4QL7Q');</script>
-	<!-- End Google Tag Manager -->	
+	
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
   <script>
 	(adsbygoogle = window.adsbygoogle || []).push({
@@ -81,9 +75,10 @@
   </script>
   
   <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"1dcf1a21c87d82ad19000315ebd3dad7"})});</script>
-  
+  <x-tagmanager-head />
 </head>
 <body>
+	<x-tagmanager-body />
 
 
 <div class="preloader" >

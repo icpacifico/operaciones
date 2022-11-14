@@ -1005,8 +1005,18 @@
 								Porfavor ingrese correo						
 							</div>
 						</div>
-	    				<div class="col-12 col-md-6 espacio">
-							<input id="telefono" type="number" name="telefono" class="form-control numero" placeholder="Teléfono ej: 987654321" required>
+	    				<div class="col-12 col-md-2 espacio">
+							<select name="codigo" id="codigo" class="form-select">
+								<option value="+56" selected>+56(CL)</option>
+								<option value="+51">+51(PE)</option>
+								<option value="+54">+54(AR)</option>
+								<option value="+55">+55(BR)</option>
+								<option value="+57">+57(CO)</option>
+								<option value="+58">+58(VE)</option>
+							</select>
+						</div>
+	    				<div class="col-12 col-md-4 espacio">
+							<input id="telefono" type="number" maxlength="9" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="telefono" class="form-control numero" placeholder="Teléfono ej: 987654321" required>
 							<div class="invalid-feedback">
 								Porfavor ingrese telefono 
 							</div>
@@ -1065,6 +1075,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js" integrity="sha512-q0Tx9njjBh0TfH3nPC2HfQbLXRyq27yx22U9zdj7nwH97SfIbnvAwTqpjwowq2dDZBe2k84sx/GdEZwzHsDqUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.min.js" integrity="sha512-wJ77CqWvHxl0VZkkTXIlwy931rh4p7CnmdvYEz1XZJHAfl4xhktuokGnk+2rUgoMKRjyywx0tbPMyoxVz99LAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/tiles/ug-theme-tiles.min.js" integrity="sha512-tpaozUhiemCplwPy+SorWM3CcHW5HF2dGoqdFEm49MOnui4tzhjwIAV05dMUVHNRbSURl+R3sOSLfOfNFYwrjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{asset('validate/jquery.validate.js')}}"></script>
+<script src="{{asset('validate/jquery.rut.js')}}"></script>
 <script type="text/javascript"> 	
 
     jQuery(document).ready(function(){    	
@@ -1184,6 +1196,70 @@
 	      allowPageScroll:"vertical"
 	    });    	    
     });
+		// formulario
+		$.validator.addMethod("rut", function(value, element) {
+                return this.optional(element) || $.Rut.validar(value);
+            }, "Rut invalido.");
+	    // $('.numero').numeric();
+	    // validate the comment form when it is submitted
+	    //$("#commentForm").validate();
+	    // validate signup form on keyup and submit
+	    $("#commentForm").validate({
+	        rules: {
+	            rut: {
+	                required: true
+	            },
+	            nombres: {
+	                required: true,
+	                minlength: 3
+	            },
+	            modelo: {
+	                required: true
+	            },
+	            medio: {
+	                required: true
+	            },
+	            mail: {
+	                required: true,
+	                email: true
+	            },
+	            fonocon: {
+	                required: true,
+	                minlength: 6
+	            },
+	            comentarios: {
+	                required: true,
+	                minlength: 6
+	            }
+	        },
+	        messages: {
+	            rut: {
+	                required: "Ingrese rut"
+	            },
+	            nombre: {
+	                required: "Por favor ingrese Nombre",
+	                minlength: "Al menos 3 caracteres"
+	            },
+	            modelo: {
+	                required: "Por favor Seleccione Modelo"
+	            },
+	            medio: {
+	                required: "Por favor Seleccione Medio"
+	            },
+	            mail: "Ingrese un email válido",
+	            fonocon: {
+	                required: "Por favor ingrese Fono contacto",
+	                minlength: "Al menos 6 caracteres"
+	            },
+	            comentarios: {
+	                required: "Por favor ingrese Solicitud",
+	                minlength: "Al menos 6 caracteres"
+	            }
+	        }
+	    });
+
+	    $('#rut').Rut({
+	            });
 $(function () {
 $('.social a').on('click', function (e) {
 	e.preventDefault();

@@ -66,7 +66,7 @@
               <p class="texto"><b>Nombre:</b> <i>{{ $data['nombre'] }}</i></p>
               <p class="texto"><b>Rut:</b> <i>{{ $data['rut'] }}</i></p>
               <p class="texto"><b>Correo:</b> <i>{{ $data['mail'] }}</i></p>
-              <p class="texto"><b>Telefono:</b> <i>{{ $data['telefono'] }}</i></p>              
+              <p class="texto"><b>Telefono:</b> <i>{{$data['codigo']}}{{ $data['telefono'] }}</i></p>              
               <p class="texto"><b>Direccion:</b> <i>{{ $data['direccion'] }}</i></p>              
               <p class="texto"><b>Ciudad:</b> <i>{{ $data['ciudad'] }}</i></p>              
               <p class="texto"><b>Proyecto:</b> <i>{{ $data['proyecto'] }}</i></p>              
