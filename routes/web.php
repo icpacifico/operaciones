@@ -63,19 +63,36 @@ Route::get('/proyectos/pacifico-3100-etapa-2', function () {
 })->name('proyectos.pacifico-3100-etapa-2');
 
 
-// Envio de datos
+// formularios
 
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.contacto');
 Route::post('/proyectos/distrito-verde-etapa-1', [ContactoController::class, 'cotizacion'])->name('cotizacion.distrito');
 Route::post('/proyectos/pacifico-3100-etapa-2', [ContactoController::class, 'cotizacion'])->name('cotizacion.pacifico');
 
 
-Route::get('/admin/inicio', function () {
-   return view('admin/inicio');
-})->middleware('auth');
+// paginas de admin
 
-// Auth::routes();
+// Route::get('/admin/inicio', function () {
+//    return view('admin/inicio');
+// })->middleware('auth');
+
+// Route::get('/admin/parametros', [ManejadorController::class, 'parametros'])->middleware('auth');
+
+
+
+
+
+Auth::routes();
+
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 // Logout
 Route::post('/logout', [HomeController::class, 'logout'])->name('auth.logout');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/inicio', function () {
+        return view('admin/inicio');
+     });
+     Route::get('/admin/parametros', [ManejadorController::class, 'parametros']);
+});
