@@ -4,7 +4,7 @@
 <div class="container-fluid p-0">
     <h1 class="h3 mb-3"><strong>Parametros</strong> Generales</h1>
         <div class="row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-10">
                 <div class="card flex-fill w-100">
                     <div class="card-header">
                         
