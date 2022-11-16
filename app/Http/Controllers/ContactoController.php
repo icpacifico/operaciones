@@ -91,7 +91,7 @@ class ContactoController extends Controller
                 'comentarios' => 'required'
                 ]);
               
-                TagManager::event('gtm.formSubmit', ['data' => json_encode($dataForm) ]);               
+                TagManager::event('gtm.formSubmit', ['data' => $dataForm->toJson() ]);               
                 $numbs = [0,1,2,3];
                 // $numbs = [0,1,2,3];
     
