@@ -92,11 +92,11 @@ class ContactoController extends Controller
                 ]);
               
                 TagManager::event('gtm.formSubmit', ['data' => $dataForm->toJson() ]);               
-                $numbs = [0,1,2,3];
+                $numbs = [0,1];
                 // $numbs = [0,1,2,3];
     
-                // $array = ['ovelasquez@icpacifico.cl','priera@icpacifico.cl'];
-                $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
+                $array = ['kaguirre@icpacifico.cl','etorres@icpacifico.cl'];
+                // $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
                 // $moreUsers = Arr::shuffle($array);
                 $indice = Arr::random($numbs);
                 
