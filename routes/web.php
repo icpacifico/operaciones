@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ManejadorController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ParametroController;
 
 /*
 |--------------------------------------------------------------------------
@@ -94,5 +95,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/inicio', function () {
         return view('admin/inicio');
      });
-     Route::get('/admin/parametros', [ManejadorController::class, 'parametros']);
+     Route::get('/admin/parametros', [ParametroController::class, 'index']);
+     Route::resource('parametros', ParametroController::class);
 });
