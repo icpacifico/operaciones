@@ -76,6 +76,7 @@ class ContactoController extends Controller
             $dataForm->modelo = $request->input('modelo');
             $dataForm->medio = $request->input('medio');
             $dataForm->comentarios = $request->input('comentarios');
+            TagManager::event('gtm.formSubmit', ['data' => $dataForm]);
          
             $data = $request->validate([
                 'codigo' => 'required',
@@ -91,7 +92,7 @@ class ContactoController extends Controller
                 'comentarios' => 'required'
                 ]);
               
-                TagManager::event('gtm.formSubmit', ['data' => $dataForm->toJson() ]);               
+                               
                 $numbs = [0,1];
                 // $numbs = [0,1,2,3];
     
