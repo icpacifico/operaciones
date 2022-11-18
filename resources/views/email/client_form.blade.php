@@ -14,9 +14,10 @@
     <style>
         .contenedor{
             margin:3% 0 0 3%;
-            /* display: flex; */
+            /* display: flex; */        
         }
         .tarjeta{
+           padding:3%;
             display: flex;
             justify-content: center;
             max-width: 540px;
@@ -59,22 +60,7 @@
           <div class="imagen">
             <img src="{{'https://icpacifico.cl/firmas/image001.jpg'}}" width="170" height="200" class=" rounded-start" alt="...">
           </div>
-          <div class="mensaje">
-            <h5 class="titulo">Nuevo mensaje desde el formulario de cotización</h5>
-            <div class="margenes">
-              
-              <p class="texto"><b>Nombre:</b> <i>{{ $data['nombre'] }}</i></p>
-              <p class="texto"><b>Telefono:</b> <i>{{$data['codigo']}}{{ $data['telefono'] }}</i></p>
-              <p class="texto"><b>Correo:</b> <i>{{ $data['mail'] }}</i></p>
-              <p class="texto"><b>Mensaje:</b> <i>{{ $data['comentarios'] }}</i></p>              
-            </div>
-          </div>
-
-          <table width='90%' border='0' style='margin:auto; font-family:Verdana, Geneva, sans-serif;'>
-            <tr>
-              {{-- <td align='center'><img src='http://www.icpacifico.cl/images/logo-top.png'></td> --}}
-              {{-- <td align='center'><img src={{ 'http://www.icpacifico.cl/images/logo-top.png'}}></td> --}}
-            </tr>
+          <table width='90%' border='0' style='margin:auto; font-family:Verdana, Geneva, sans-serif;'>            
             <tr>
               <td style='padding:10px; line-height:20px; font-size:13px; text-align:center'>
                   Muchas gracias por cotizar con nosotros. Tu consulta será revisada y atendida por uno de nuestros ejecutivos dentro de 24 hrs <br>
