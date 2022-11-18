@@ -67,17 +67,51 @@ class ContactoController extends Controller
     public function cotizacion(Request $request)
     {
         try {
-
+            $correo_vendedor = '';
+            $id_vendedor = 0;
+            $ultimo = '';
+            $verificacion=[];
             // llamar a los vendedores activos
+            $vendedores = DB::table('parametro_parametro')->where('id_est_par','=', 1)->get();  
+            // obtener la cantidad de vendedores activos
+            $limit = $vendedores->count();
+            // si solo hay un vendedor no se necesita un orden para recibir leads
+            if($limit == 1){
+                // se obtienen datos del vendedor para registrarlos 
+                $correo_vendedor = $vendedores[0]->valor_par;
+                $id_vendedor = $vendedores[0]->id_vend_par;
+            }else{
+                /****** obtener ultimos registros de cotizaciones para saber quien fue el último vendedor
+                 * 
+                 * si hay 2 vendedores se preguntara por la mitad osea, solo 1 registro
+                 * si hay 3 vendedores se preguntara por los 2 últimos registros
+                 * si hay 4 vendedores se preguntara por los últimos 3 registros
+                 * 
+                 */
+                $limit -= 1;
+                $ultimo = ContactoEspecial::orderBy('id_con_esp', 'desc')->limit($limit)->get();
+                // dd($vendedores);
+                // si flag es falso es porque ese vendedor no fue el último, de lo contrario es verdadero
+                $flag=false;
+               for ($i=0; $i < $vendedores->count(); $i++){                    
+                    if($ultimo->count() == 1){
+                        $flag = ($vendedores[$i]->id_vend_par == $ultimo[0]->id_vend_par) ? true : false;                            
+                    }else{
+                        for ($j=0; $j < $ultimo->count(); $j++) { 
+                            $flag = ($vendedores[$i]->id_vend_par == $ultimo[$j]->id_vend_par) ? true : false;                            
+                        }
+                    }                    
+                    array_push($verificacion, $flag);
+               }
+            }
+            
+           
 
-            $vendedores = DB::table('parametro_parametro')->where('id_est_par','=', 1)->get('valor_par','id_vend_par');  
-            $limit = count($vendedores);
-            $ultimo = ContactoEspecial::orderBy('id_con_esp', 'desc')->limit($limit)->get();
             
             
             
-            dd($ultimo);
-          
+            // dd($verificacion);
+            dd($vendedores);
 
             //   datos que van a google tag manager
             // $telefono = $request->input('codigo').$request->input('telefono');                                             
@@ -140,7 +174,7 @@ class ContactoController extends Controller
             throw $th;
         } catch (\Exception $ex){
             Alert::error('Error', 'Hemos notado un error, porfavor intentelo nuevamente. code error: '.$ex->getMessage());
-            return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
+            // return redirect()->back()->with('data', $data)->with('success', 'Mensaje enviado éxitosamente');
         }
         
     }  
