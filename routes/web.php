@@ -49,6 +49,9 @@ Route::get('/email/contact_form', function () {
     return view('email/contact_form');
 })->name('email.contact_form');
 
+Route::get('/email/client_form', function () {
+    return view('email/client_form');
+});
 // PROYECTOS
 
 Route::get('/proyectos/distrito-verde-etapa-1', function () {
