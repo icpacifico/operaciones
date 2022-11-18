@@ -25,11 +25,11 @@
             -webkit-box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
             -moz-box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
         }
-        .imagen{
+        /* .imagen{
             padding-top:30px;
             padding-left:30px;
             width: 200px;
-            /* border:1px solid grey; */
+            
             flex-direction: column
         }
         .titulo{
@@ -40,16 +40,16 @@
         .mensaje{            
             width: 340px;
             padding:10px;
-            /* border:1px solid grey; */
+           
             flex-direction: column
         }
         
         .margenes{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color:grey;
-            /* line-height: 70%; */
+            
             padding-bottom:10%;;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -60,11 +60,11 @@
             <img src="{{'https://icpacifico.cl/firmas/image001.jpg'}}" width="170" height="200" class=" rounded-start" alt="...">
           </div>
           <div class="mensaje">
-            <h5 class="titulo">Nuevo mensaje desde el formulario de contacto</h5>
+            <h5 class="titulo">Nuevo mensaje desde el formulario de cotización</h5>
             <div class="margenes">
               
               <p class="texto"><b>Nombre:</b> <i>{{ $data['nombre'] }}</i></p>
-              <p class="texto"><b>Telefono:</b> <i>{{ $data['fono'] }}</i></p>
+              <p class="texto"><b>Telefono:</b> <i>{{$data['codigo']}}{{ $data['telefono'] }}</i></p>
               <p class="texto"><b>Correo:</b> <i>{{ $data['mail'] }}</i></p>
               <p class="texto"><b>Mensaje:</b> <i>{{ $data['comentarios'] }}</i></p>              
             </div>
@@ -73,20 +73,23 @@
           <table width='90%' border='0' style='margin:auto; font-family:Verdana, Geneva, sans-serif;'>
             <tr>
               {{-- <td align='center'><img src='http://www.icpacifico.cl/images/logo-top.png'></td> --}}
-              <td align='center'><img src='http://www.icpacifico.cl/images/logo-top.png'></td>
+              {{-- <td align='center'><img src={{ 'http://www.icpacifico.cl/images/logo-top.png'}}></td> --}}
             </tr>
             <tr>
               <td style='padding:10px; line-height:20px; font-size:13px; text-align:center'>
-                  Muchas gracias por cotizar con nosotros. Tu consulta tendrá respuesta dentro de 24 horas.<br><br>
-                  Para más consultas puedes escribir directo a nuestro Jefe de Ventas Manuel Álvarez a malvarez@icpacifico.cl<br>
+                  Muchas gracias por cotizar con nosotros. Tu consulta será revisada y atendida por uno de nuestros ejecutivos dentro de 24 hrs <br>
                   Conozca más de nuestro proyecto en:
               </td>
             </tr>
             <tr>
-              <td style='text-align: center'><a href='https://www.facebook.com/icpacifico/' target='_blank'><img src='http://www.icpacifico.cl/images/face-icon-mail.png' width='40'></a> &nbsp;&nbsp;<a href='https://www.instagram.com/costanerapacifico/' target='_blank'><img src='http://www.icpacifico.cl/images/instagram-icon-mail.png' width='40'></a><br><br></td>
+              <td style='text-align: center'><a href={{'https://www.facebook.com/icpacifico/'}} target='_blank'>
+                <img src={{'https://icpacifico.cl/firmas/face-icon-mail.png'}} width='40'></a> &nbsp;&nbsp;
+                <a href={{'https://www.instagram.com/costanerapacifico/'}} target='_blank'>
+                <img src={{'https://icpacifico.cl/firmas/instagram-icon-mail.png'}} width='40'>
+                </a><br><br></td>
             </tr>
             <tr height='28'>
-                    <td style='font-size:11px; background-color:#88c440; color:#EEE; text-align:center; border-radius: 10px'>Inmobiliaria Costanera Pacífico <a href='http://www.icpacifico.cl' target='_blank' style='color: #FFF'>www.icpacifico.cl</a></td>
+                    <td style='font-size:11px; background-color:#88c440; color:#EEE; text-align:center; border-radius: 10px'>Inmobiliaria Costanera Pacífico <a href={{'http://www.icpacifico.cl'}} target='_blank' style='color: #FFF'>www.icpacifico.cl</a></td>
                   </tr>
           </table>
         

@@ -16,9 +16,9 @@ class EnvioCliente extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -28,6 +28,6 @@ class EnvioCliente extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->from('sociales@icpacifico.cl')->subject('Inmobiliaria Costanera Pacifico Formulario de Cotizacion')->view('email.client_form', ['data' => $this->data]);
     }
 }
