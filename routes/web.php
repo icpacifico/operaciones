@@ -49,6 +49,10 @@ Route::get('/email/contact_form', function () {
     return view('email/contact_form');
 })->name('email.contact_form');
 
+Route::get('/email/contact_form', function () {
+    return view('email/contact_form');
+})->name('email.client_general_form');
+
 Route::get('/email/client_form', function () {
     return view('email/client_form');
 });

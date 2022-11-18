@@ -38,7 +38,7 @@
           <table width='90%' border='0' style='margin:auto; font-family:Verdana, Geneva, sans-serif;'>            
             <tr>
               <td style='padding:10px; line-height:20px; font-size:13px; text-align:center'>
-                  Muchas gracias por cotizar con nosotros. Tu consulta será revisada y atendida por uno de nuestros ejecutivos dentro de 24 hrs <br>
+                Muchas gracias por enviarnos tu Consulta. La misma será revisada y atendida por uno de nuestros ejecutivos dentro de 24 hrs <br>
                   Conozca más de nuestro proyecto en:
               </td>
             </tr>

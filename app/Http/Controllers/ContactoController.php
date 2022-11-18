@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use \stdClass;
 use App\Models\ContactoEspecial;
+use App\Models\ContactoGeneral;
 use App\Models\Parametro;
 use Illuminate\Http\Request;
 use App\Mail\EnvioContacto;
 use App\Mail\EnvioCotizacion;
 use App\Mail\EnvioCliente;
+use App\Mail\EnvioClienteGeneral;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Arr;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -46,6 +48,16 @@ class ContactoController extends Controller
     public function store(Request $request)
     {
         try {
+
+            $contactoGeneral = new ContactoGeneral;
+            $contactoGeneral->nombre_con_gen = $request->input('nombre');                
+            $contactoGeneral->correo_con_gen = $request->input('mail');
+            $contactoGeneral->fono_con_gen = $request->input('fono');
+            $contactoGeneral->fecha_con_gen = date("Y-m-d H:i:s");
+            $contactoGeneral->descripcion_con_gen = $request->input('comentarios');                
+            $contactoGeneral->save();
+
+
             $data = $request->validate([
                 'nombre' => 'required',
                 'fono' => 'required',
@@ -53,6 +65,7 @@ class ContactoController extends Controller
                 'comentarios' => 'required'
                 ]);
                 
+                Mail::to($request->input('mail'))->send(new EnvioClienteGeneral());
                 Mail::to('icpdigital@icpacifico.cl')->send(new EnvioContacto($data));
     
                 Alert::success('Gracias!', 'Contacto enviado con éxito.');
@@ -125,7 +138,7 @@ class ContactoController extends Controller
                 }
             }                                    
                        
-            //   datos que van a google tag manager
+            //  datos que van a google tag manager
             $telefono = $request->input('codigo').$request->input('telefono');                                             
             $dataForm = new stdClass();
             $dataForm->nombre = $request->input('nombre');
@@ -139,30 +152,21 @@ class ContactoController extends Controller
             $dataForm->comentarios = $request->input('comentarios');            
             TagManager::event('gtm.formSubmit', ['data' => $dataForm]);
          
-            $data = $request->validate([
-                'proyectoid' => 'required',
-                'codigo' => 'required',
-                'proyecto' =>'required',                        
-                'nombre' => 'required',
-                'rut' => 'required',
-                'mail' => 'required',            
-                'telefono' => 'required',
-                'direccion' => 'required',
-                'ciudad' => 'required',
-                'modelo' => 'required',
-                'medio' => 'required',
-                'comentarios' => 'required'
+                $data = $request->validate([
+                    'proyectoid' => 'required',
+                    'codigo' => 'required',
+                    'proyecto' =>'required',                        
+                    'nombre' => 'required',
+                    'rut' => 'required',
+                    'mail' => 'required',            
+                    'telefono' => 'required',
+                    'direccion' => 'required',
+                    'ciudad' => 'required',
+                    'modelo' => 'required',
+                    'medio' => 'required',
+                    'comentarios' => 'required'
                 ]);
               
-                               
-                // $numbs = [0,1];
-                // $numbs = [0,1,2,3];
-    
-                // $array = ['kaguirre@icpacifico.cl','etorres@icpacifico.cl'];
-                // $array = ['jmedina@icpacifico.cl', 'kaguirre@icpacifico.cl', 'ovelasquez@icpacifico.cl','etorres@icpacifico.cl'];
-                // $moreUsers = Arr::shuffle($array);
-                // $indice = Arr::random($numbs);
-                
                 Mail::to('icpdigital@icpacifico.cl')->cc($correo_vendedor)->send(new EnvioCotizacion($data));
                 Mail::to($request->input('mail'))->send(new EnvioCliente($data));
                 
