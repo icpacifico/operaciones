@@ -11,7 +11,7 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Condominio Pacífico 2800, Avda. Pacífico en La Serena. Departamentos en venta de 2 y 3 dormitorios. Inversión Inmobiliaria, ideal inversores. A pasos de la playa.">	
+    <meta name="description" content="Condominio Distrito Verde,  Emilio Apey 405, La Serena. Departamentos en venta cercanos a universidades, Avenida del Mar y Ruta 5">	
 	<meta property="og:url" content="https://icpacifico.cl">
 	<meta property="og:type" content="article">
 	<meta property="og:image" content="{{ Vite::asset('resources/img/ogimage.jpg') }}" />
