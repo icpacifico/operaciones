@@ -270,27 +270,7 @@
 							</p>
 						</div>
 					</div>
-				</div>
-				<div class="col-12 col-lg-2 caja1">
-					<div class="position-relative borde">
-						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/mariajose.jpg')}}" class="img-fluid">
-						</div>
-						<div class="info">
-							<h3><span>María José</span><br>
-							Callejas Salgado</h3>
-							<p>Asesora inmobiliaria</p>
-							<p>+56 9 54126943</p>
-							<p>mjcallejas@icpacifico.cl</p>
-							<p class="links">
-								<a href="https://www.facebook.com/mariajose.cpacifico.1" target="_blank"><img src="{{Vite::asset('resources/img/equipo/facebook.png')}}" class="img-fluid"/></a>
-								<a href="https://www.instagram.com/mariajose_asesoracomercial/" target="_blank"><img src="{{Vite::asset('resources/img/equipo/instagram.png')}}" class="img-fluid"/></a>
-								<a href="https://wa.me/56954126943" target="_blank"><img src="{{Vite::asset('resources/img/equipo/whatsapp.png')}}" class="img-fluid"/></a>
-							</p>
-						</div>
-					</div>
-				</div>
-				
+				</div>				
 	        </div>
 	   	</div>
    	</div>
