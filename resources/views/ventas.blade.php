@@ -198,7 +198,7 @@
 				<div class="col-12 col-lg-2 caja1">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/jeannisse.png')}}" class="img-fluid">
+							<img src="{{Vite::asset('resources/img/equipo/jeannisse2.jpg')}}" width="178" height="233" class="img-thumbnail">
 						</div>
 						<address class="info">
 							<h3><span>Jeannisse</span><br>
@@ -217,7 +217,7 @@
 				<div class="col-12 col-lg-2 caja2">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/kriss.png')}}" class="img-fluid">
+							<img src="{{Vite::asset('resources/img/equipo/kriss.png')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Kriss</span><br>
@@ -236,7 +236,7 @@
 				<div class="col-12 col-lg-2 caja2">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/erica.png')}}" class="img-fluid">
+							<img src="{{Vite::asset('resources/img/equipo/erica.png')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Erica</span><br>
@@ -255,7 +255,7 @@
 				<div class="col-12 col-lg-2 caja1">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/osvaldo.png')}}" class="img-fluid">
+							<img src="{{Vite::asset('resources/img/equipo/osvaldo.png')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Osvaldo</span><br>

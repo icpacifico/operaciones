@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ManejadorController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ParametroController;
+use App\Http\Controllers\LeadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,9 +100,11 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::post('/logout', [HomeController::class, 'logout'])->name('auth.logout');
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin/inicio', function () {
+     Route::get('/admin/inicio', function () {
         return view('admin/inicio');
      });
      Route::get('/admin/parametros', [ParametroController::class, 'index']);
+     Route::get('/admin/leads', [LeadController::class, 'index']);
      Route::resource('parametros', ParametroController::class);
+     Route::resource('leads', LeadController::class);
 });

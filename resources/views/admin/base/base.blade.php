@@ -30,15 +30,21 @@
 
 					<li class="sidebar-item {{ request()->path() == "admin/inicio" ? 'active' : '' }}">
 						<a class="sidebar-link" href="/admin/inicio">
-              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
-            </a>
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+						</a>
 					</li>
 
 					<li class="sidebar-item {{ request()->path() == "admin/parametros" ? 'active' : '' }}">
 						<a class="sidebar-link" href="/admin/parametros">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Parametros</span>
-            </a>
-					</li>					
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Parametros</span>
+						</a>
+					</li>	
+					
+					<li class="sidebar-item {{ request()->path() == "admin/leads" ? 'active' : '' }}">
+						<a class="sidebar-link" href="/admin/leads">
+							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Leads</span>
+						</a>
+					</li>
 				</ul>			
 			</div>
 		</nav>
@@ -72,8 +78,7 @@
 
 			<main class="content">
                 @section('content_admin')
-                @show
-				
+                @show				
 			</main>
 
 			<footer class="footer">

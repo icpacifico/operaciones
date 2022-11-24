@@ -24,7 +24,7 @@
                                 @if($par->id_est_par !== 3 and $par->id_est_par !== 0)
                                 <tr>                                
                                     <td>{{$par->nombre_par}}</td>                                 
-                                    <td>@if ($par->id_est_par == 1){{ 'Activo' }}@else{{ 'Inactivo' }}@endif</td>                                 
+                                    <td>@if ($par->id_est_par == 1)<strong style="color:green"> Activo <i class="align-middle" data-feather="check-circle"></i></strong>@else<strong style="color:rgba(255, 0, 0, 0.795)"> Inactivo <i class="align-middle" data-feather="x"></i></strong>@endif</td>                                 
                                     <td><form action="{{ route('parametros.store') }}" method="POST">
                                          @csrf 
                                          <input type="hidden" value="{{$par->id_par}}" name="identificador">
