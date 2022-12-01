@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CorreoPortal;
+use App\Models\ContactoEspecial;
+use App\Models\ContactoGeneral;
 use Illuminate\Support\Facades\DB;
 
 class LeadController extends Controller
@@ -24,6 +26,17 @@ class LeadController extends Controller
         return view('/admin/leads',['leads'=>$leads,'vendedora'=>$parametros]);
     }
 
+    public function leadCotizacion(){
+        $parametros = DB::table('parametro_parametro')->orderBy('id_par', 'asc')->get(); 
+        $leads = ContactoEspecial::orderBy('id_con_esp', 'desc')->limit(100)->get();
+        return view('/admin/cotizaciones',['leads'=>$leads,'vendedora'=>$parametros]);
+    }
+
+    public function leadContacto(){
+        $parametros = DB::table('parametro_parametro')->orderBy('id_par', 'asc')->get(); 
+        $leads = ContactoGeneral::orderBy('id_con_gen', 'desc')->limit(100)->get();
+        return view('/admin/contactos',['leads'=>$leads,'vendedora'=>$parametros]);
+    }
     /**
      * Show the form for creating a new resource.
      *

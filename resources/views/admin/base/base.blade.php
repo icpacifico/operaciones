@@ -30,22 +30,36 @@
 
 					<li class="sidebar-item {{ request()->path() == "admin/inicio" ? 'active' : '' }}">
 						<a class="sidebar-link" href="/admin/inicio">
-							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Escritorio</span>
 						</a>
 					</li>
 
 					<li class="sidebar-item {{ request()->path() == "admin/parametros" ? 'active' : '' }}">
 						<a class="sidebar-link" href="/admin/parametros">
-							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Parametros</span>
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Turnos</span>
 						</a>
-					</li>	
-					
+					</li>														
+				
+				<li class="sidebar-header">
+					Leads
+				</li>
+													
 					<li class="sidebar-item {{ request()->path() == "admin/leads" ? 'active' : '' }}">
 						<a class="sidebar-link" href="/admin/leads">
-							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Leads</span>
+							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Correos</span>
 						</a>
 					</li>
-				</ul>			
+					<li class="sidebar-item {{ request()->path() == "admin/cotizaciones" ? 'active' : '' }}">
+						<a class="sidebar-link" href="/admin/cotizaciones">
+							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Cotizaciones</span>
+						</a>
+					</li>
+					<li class="sidebar-item {{ request()->path() == "admin/contactos" ? 'active' : '' }}">
+						<a class="sidebar-link" href="/admin/contactos">
+							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Contactos</span>
+						</a>
+					</li>					
+				</ul>	
 			</div>
 		</nav>
 

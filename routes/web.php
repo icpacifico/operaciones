@@ -105,6 +105,8 @@ Route::middleware(['auth'])->group(function () {
      });
      Route::get('/admin/parametros', [ParametroController::class, 'index']);
      Route::get('/admin/leads', [LeadController::class, 'index']);
+     Route::get('/admin/cotizaciones', [LeadController::class, 'leadCotizacion']);
+     Route::get('/admin/contactos', [LeadController::class, 'leadContacto']);
      Route::resource('parametros', ParametroController::class);
      Route::resource('leads', LeadController::class);
 });
