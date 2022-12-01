@@ -6,7 +6,8 @@
         <div class="row">
             <div class="col-12 col-md-10">
                 <div class="card flex-fill w-100">
-                    <div class="card-header">                                                  
+                    <div class="card-header">  
+                        {{-- {!!App\Models\Parametro::nombreVendedora($led->id_vend_par)!!}                                                 --}}
                           <table class="table table-hover">
                             <thead >
                               <tr>
@@ -24,7 +25,8 @@
                                     <td>{{$led->id_cor}}</td>                                
                                     <td>{{$led->asunto_cor}}</td>                                 
                                     <td>{!!$led->body_cor!!}</td>
-                                    <td>{!!App\Models\Parametro::nombreVendedora($led->id_vend_par)[0]->nombre_par!!}</td>
+                                    {{-- <td>@if(App\Models\Parametro::nombreVendedora($led->id_vend_par)){!!App\Models\Parametro::nombreVendedora($led->id_vend_par)[0]->nombre_par!!}@endif</td> --}}
+                                    <td>@if($led->id_vend_par == ''){{0}}@else {!!App\Models\Parametro::nombreVendedora($led->id_vend_par)[0]->nombre_par!!} @endif</td>
                                     <td>@if ($led->id_est_cor == 1)
                                         <span class="badge bg-success">Asignado</span>
                                     @else
