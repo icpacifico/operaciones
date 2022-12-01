@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\CorreoPortal;
+use Illuminate\Support\Facades\DB;
 
 class LeadController extends Controller
 {
@@ -17,7 +19,9 @@ class LeadController extends Controller
      */
     public function index()
     {
-        return view('/admin/leads');
+        $parametros = DB::table('parametro_parametro')->orderBy('id_par', 'asc')->get(); 
+        $leads = CorreoPortal::orderBy('id_cor', 'desc')->limit(100)->get();
+        return view('/admin/leads',['leads'=>$leads,'vendedora'=>$parametros]);
     }
 
     /**
