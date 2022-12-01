@@ -32,10 +32,9 @@ class LeadController extends Controller
         return view('/admin/cotizaciones',['leads'=>$leads,'vendedora'=>$parametros]);
     }
 
-    public function leadContacto(){
-        $parametros = DB::table('parametro_parametro')->orderBy('id_par', 'asc')->get(); 
+    public function leadContacto(){        
         $leads = ContactoGeneral::orderBy('id_con_gen', 'desc')->limit(100)->get();
-        return view('/admin/contactos',['leads'=>$leads,'vendedora'=>$parametros]);
+        return view('/admin/contactos',['leads'=>$leads]);
     }
     /**
      * Show the form for creating a new resource.
