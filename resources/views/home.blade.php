@@ -303,7 +303,7 @@
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
 						</div>
 						<div class="carousel-item unico">                    
-							<img src="{{ Vite::asset('resources/img/slide/bwdistrito.png') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_pies.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<img src="{{ Vite::asset('resources/img/slide/bmdistrito.png') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
 						</div>
