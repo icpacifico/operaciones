@@ -80,6 +80,7 @@ Route::get('/proyectos/pacifico-3100-etapa-2', function () {
 
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.contacto');
 Route::post('/proyectos/distrito-verde-etapa-1', [ContactoController::class, 'cotizacion'])->name('cotizacion.distrito');
+Route::post('/proyectos/distrito-verde-etapa-2', [ContactoController::class, 'cotizacion'])->name('cotizacion.distrito');
 Route::post('/proyectos/pacifico-3100-etapa-2', [ContactoController::class, 'cotizacion'])->name('cotizacion.pacifico');
 
 
