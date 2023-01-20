@@ -294,13 +294,12 @@
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active unico">                    
 							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_bicicleta.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
-							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_Yoga.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
-							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_pies.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
+							<img src="{{ Vite::asset('resources/img/slide/banner_mobile_bicicleta.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
 						</div>
 						<div class="carousel-item unico">                    
-							<img src="{{ Vite::asset('resources/img/slide/web_banner_icp_2-100.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
-							<img src="{{ Vite::asset('resources/img/slide/movil_banner_icp_2-100.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
+							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_Yoga.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+							<img src="{{ Vite::asset('resources/img/slide/banner_mobile_Yoga.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
 						</div>
 						<div class="carousel-item unico">                    
