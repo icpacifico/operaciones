@@ -63,6 +63,10 @@ Route::get('/proyectos/distrito-verde-etapa-1', function () {
     return view('proyectos/distrito-verde-etapa-1');
 })->name('proyectos.distrito-verde-etapa-1');
 
+Route::get('/proyectos/distrito-verde-etapa-2', function () {
+    return view('proyectos/distrito-verde-etapa-2');
+})->name('proyectos.distrito-verde-etapa-2');
+
 Route::get('/proyectos/pacifico-3100-etapa-1', function () {
     return view('proyectos/pacifico-3100-etapa-1');
 })->name('proyectos.pacifico-3100-etapa-1');
