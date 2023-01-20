@@ -942,7 +942,7 @@
 				<div class="form pt-md-3">
 	        		<form class="cmxform row needs-validation" id="commentForm" action="{{ route('cotizacion.distrito') }}" method="POST">
 						@csrf
-	    				<input id="proyecto" type="hidden" name="proyecto" value="Distrito Verde | Etapa I">
+	    				<input id="proyecto" type="hidden" name="proyecto" value="Distrito Verde | Etapa II">
 	    				<input id="proyectoid" type="hidden" name="proyectoid" value="7">
 	    				<div class="col-12 col-md-6 espacio" >
 							<input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre" required>
