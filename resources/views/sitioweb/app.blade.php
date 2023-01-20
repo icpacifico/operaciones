@@ -112,6 +112,7 @@
 									</a>
 									<ul class="b-none dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
 										<li><a class="dropdown-item {{ request()->path() == "proyectos/distrito-verde-etapa-1" ? 'active' : '' }}" href="{{route('proyectos.distrito-verde-etapa-1')}}">Distrito Verde | Etapa I</a></li>
+										<li><a class="dropdown-item {{ request()->path() == "proyectos/distrito-verde-etapa-1" ? 'active' : '' }}" href="{{route('proyectos.distrito-verde-etapa-1')}}">Distrito Verde | Etapa II</a></li>
 										<li><a class="dropdown-item {{ request()->path() == "proyectos/pacifico-3100-etapa-2" ? 'active' : '' }}" href="{{route('proyectos.pacifico-3100-etapa-2')}}">Pacífico 3100 | Etapa II</a></li>
 										<li class="vendido"><a class="dropdown-item {{ request()->path() == "proyectos/pacifico-3100-etapa-1" ? 'active' : '' }}" href="{{route('proyectos.pacifico-3100-etapa-1')}}">Pacífico 3100 | Etapa I</a></li>								
 										<li class="vendido"><a class="dropdown-item disabled" aria-disabled="true" title="100% VENIDO">Pacífico 2800 | Etapa II</a></li>
