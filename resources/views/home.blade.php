@@ -308,25 +308,16 @@
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
 						</div>             
 					</div>				
-						<button class="carousel-control-prev" type="button" data-bs-target="#slider4" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#slider4" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>	
+					<div class="swiper-pagination only-desktop swiper-pagination-clickable swiper-pagination-bullets">
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+						<span class="swiper-pagination-bullet"></span>
+					</div>		
 				</div>
 						       
 			</section>    
 	    </div>
     </div>
-	<div class="swiper-pagination only-desktop swiper-pagination-clickable swiper-pagination-bullets">
-		<span class="swiper-pagination-bullet"></span>
-		<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-		<span class="swiper-pagination-bullet"></span>
-	</div>	
-
 <div id="home">
     <div class="container">
     	<div class="row align-items-center" id="cotizacion">
