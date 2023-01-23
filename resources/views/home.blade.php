@@ -317,14 +317,15 @@
 							<span class="visually-hidden">Next</span>
 						</button>	
 				</div>
-				<div class="swiper-pagination only-desktop swiper-pagination-clickable swiper-pagination-bullets">
-					<span class="swiper-pagination-bullet"></span>
-					<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-					<span class="swiper-pagination-bullet"></span>
-				</div>			       
+						       
 			</section>    
 	    </div>
     </div>
+	<div class="swiper-pagination only-desktop swiper-pagination-clickable swiper-pagination-bullets">
+		<span class="swiper-pagination-bullet"></span>
+		<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+		<span class="swiper-pagination-bullet"></span>
+	</div>	
 
 <div id="home">
     <div class="container">
