@@ -315,13 +315,13 @@
 						<button class="carousel-control-next" type="button" data-bs-target="#slider4" data-bs-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Next</span>
-						</button>
-					<div class="swiper-pagination only-desktop swiper-pagination-clickable swiper-pagination-bullets">
-						<span class="swiper-pagination-bullet"></span>
-						<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-						<span class="swiper-pagination-bullet"></span>
-					</div>			
-				</div>       
+						</button>	
+				</div>
+				<div class="swiper-pagination only-desktop swiper-pagination-clickable swiper-pagination-bullets">
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+					<span class="swiper-pagination-bullet"></span>
+				</div>			       
 			</section>    
 	    </div>
     </div>
