@@ -306,18 +306,7 @@
 							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_pies.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
 							<img src="{{ Vite::asset('resources/img/slide/banner_mobile_pies.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
-						</div>
-						<div class="carousel-item unico">                    
-							<img src="{{ Vite::asset('resources/img/slide/bwdistrito.png') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
-							<img src="{{ Vite::asset('resources/img/slide/bmdistrito.png') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
-							<div class="bs-slider-overlay d-none d-md-block"></div>                    
-						</div>
-						<div class="carousel-item unico">                    
-							<img src="{{ Vite::asset('resources/img/slide/bwdistrito2.png') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
-							<img src="{{ Vite::asset('resources/img/slide/bmdistrito2.png') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
-							<div class="bs-slider-overlay d-none d-md-block"></div>                    
-						</div>                
-						
+						</div>             
 					</div>				
 						<button class="carousel-control-prev" type="button" data-bs-target="#slider4" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -327,7 +316,11 @@
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Next</span>
 						</button>
-						
+					<div class="swiper-pagination only-desktop swiper-pagination-clickable swiper-pagination-bullets">
+						<span class="swiper-pagination-bullet"></span>
+						<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+						<span class="swiper-pagination-bullet"></span>
+					</div>			
 				</div>       
 			</section>    
 	    </div>
