@@ -680,8 +680,8 @@
             <div class="carousel-inner" role="listbox">
             	<div class="carousel-item active unico">
                     <!-- Slide Background -->
-                    <img style="" src="{{Vite::asset('resources/img/proyectos/distritoverde/bdistrito.png')}}" alt="ICpacifico" class="slide-image d-none d-md-block" />
-                    <img style="height: 100%;" src="{{Vite::asset('resources/img/portada2_proyectodv_xs.jpg')}}" alt="ICpacifico" class="slide-image d-block d-md-none" />                                
+                    <img style="" src="{{Vite::asset('resources/img/proyectos/distritoverde/banner-distrito-verde-desktop.jpg')}}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+                    <img style="height: 100%;" src="{{Vite::asset('resources/img/banner-distrito-verde-mobile.jpg')}}" alt="ICpacifico" class="slide-image d-block d-md-none" />                                
                     
                         
                     
