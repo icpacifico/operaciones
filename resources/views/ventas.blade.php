@@ -255,7 +255,7 @@
 				<div class="col-12 col-lg-2 caja1">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/ernesto.jpeg')}}" class="img-thumbnail">
+							<img src="{{Vite::asset('resources/img/equipo/osvaldo.png')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Ernesto</span><br>
@@ -264,8 +264,8 @@
 							<p>+56 9 48596196</p>
 							<p>epereda@icpacifico.cl</p>
 							<p class="links">
-								<a href="https://www.facebook.com/Asesor.Osvaldo" target="_blank"><img src="{{Vite::asset('resources/img/equipo/facebook.png')}}" class="img-fluid"/></a>
-								<a href="https://www.instagram.com/Osvaldo_ICPacifico/" target="_blank"><img src="{{Vite::asset('resources/img/equipo/instagram.png')}}" class="img-fluid"/></a>
+								<a href="#" target="_blank"><img src="{{Vite::asset('resources/img/equipo/facebook.png')}}" class="img-fluid"/></a>
+								<a href="#" target="_blank"><img src="{{Vite::asset('resources/img/equipo/instagram.png')}}" class="img-fluid"/></a>
 								<a href="https://wa.me/56948596196" target="_blank"><img src="{{Vite::asset('resources/img/equipo/whatsapp.png')}}" class="img-fluid"/></a>
 							</p>
 						</div>
