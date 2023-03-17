@@ -255,7 +255,7 @@
 				<div class="col-12 col-lg-2 caja1">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/ernesto.png')}}" class="img-thumbnail">
+							<img src="{{Vite::asset('resources/img/equipo/osvaldo.png')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Ernesto</span><br>
