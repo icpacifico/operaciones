@@ -258,11 +258,11 @@
 							<img src="{{Vite::asset('resources/img/equipo/osvaldo.png')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
-							<h3><span>Osvaldo</span><br>
-							Velasquez Clavijo</h3>
+							<h3><span>Ernesto</span><br>
+							Pereda Pizarro</h3>
 							<p>Asesor inmobiliario</p>
 							<p>+56 9 48596196</p>
-							<p>ovelasquez@icpacifico.cl</p>
+							<p>epereda@icpacifico.cl</p>
 							<p class="links">
 								<a href="https://www.facebook.com/Asesor.Osvaldo" target="_blank"><img src="{{Vite::asset('resources/img/equipo/facebook.png')}}" class="img-fluid"/></a>
 								<a href="https://www.instagram.com/Osvaldo_ICPacifico/" target="_blank"><img src="{{Vite::asset('resources/img/equipo/instagram.png')}}" class="img-fluid"/></a>
