@@ -13,7 +13,7 @@ class Seccion extends Model
     protected $primaryKey = 'id_sec';
     protected $fillable = ['nombre_sec','descripcion_sec'];
     // timestamps esta en false cuando no hay created_at y updated_at en la tabla
-    public $timestamps = true;
+    public $timestamps = false;
 
     // public function forId(){
     //     return DB::table('seccion_seccion')
