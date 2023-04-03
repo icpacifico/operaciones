@@ -292,21 +292,31 @@
 			<section id="slider-sec" class="slider4">		
 				<div id="slider4" class="carousel slide carousel-fade" data-bs-ride="carousel">					
 					<div class="carousel-inner" role="listbox">
+
+						<div class="carousel-item active unico">                    
+							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_abril.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
+							<img src="{{ Vite::asset('resources/img/slide/banner_mobile_abril.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
+							<div class="bs-slider-overlay d-none d-md-block"></div>                    
+						</div>
+
 						<div class="carousel-item active unico">                    
 							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_bicicleta.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
 							<img src="{{ Vite::asset('resources/img/slide/banner_mobile_bicicleta.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
 						</div>
-						<div class="carousel-item unico">                    
+
+						<div class="carousel-item unico">
 							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_Yoga.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
 							<img src="{{ Vite::asset('resources/img/slide/banner_mobile_Yoga.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
 						</div>
-						<div class="carousel-item unico">                    
+
+						<div class="carousel-item unico">
 							<img src="{{ Vite::asset('resources/img/slide/banner_desktop_pies.jpg') }}" alt="ICpacifico" class="slide-image d-none d-md-block" />
 							<img src="{{ Vite::asset('resources/img/slide/banner_mobile_pies.jpg') }}" alt="ICpacifico" class="slide-image d-block d-md-none" />
 							<div class="bs-slider-overlay d-none d-md-block"></div>                    
-						</div>             
+						</div>   
+
 					</div>				
 						<button class="carousel-control-prev" type="button" data-bs-target="#slider4" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
