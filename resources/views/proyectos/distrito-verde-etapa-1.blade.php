@@ -653,7 +653,7 @@
                     <a class="nav-link sub" href="#ubicacion">Ubicación y Fotos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link sub cotice" href="#cotizacion">Cotiza Aquí !</a>
+                    <a class="nav-link sub cotice" href="https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true">Cotiza Aquí !</a>
                 </li>
                 <li class="nav-item ml-md-2">
                     <button class="nav-link sub agende videollamada" type="button"><i class="far fa-calendar-alt"></i> Agendar VideoLlamada</button>
