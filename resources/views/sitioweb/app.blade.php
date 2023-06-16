@@ -277,7 +277,7 @@
 	    
 </script>
 <script>
-	var numeros = ['+56948596196','+56954126944','+56954130065','+56947960446','+56954126943']
+	var numeros = ['+56948596196','+56954126944','+56954130065','+56947960446']
 	var random = Math.floor((Math.random() * 5));
     var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?70491';
     var s = document.createElement('script');
