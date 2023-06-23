@@ -378,7 +378,7 @@
         </div>--}}
 
 		<!-- Inicio Relleno emporal-->
-		<div id="presenta">
+		
 			<div class="container">
 				<!-- row  -->
 				<div class="row">
@@ -470,7 +470,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		
 		<!-- Fin Relleno emporal-->
     </div>
 </div>
