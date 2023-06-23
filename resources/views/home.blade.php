@@ -378,99 +378,54 @@
         </div>--}}
 
 		<!-- Inicio Relleno emporal-->
-		
-			<div class="container">
-				<!-- row  -->
-				<div class="row">
-					<div class="col-md-12">
-						<img src="{{Vite::asset('resources/img/proyectos/distritoverde/Logotipo_DistritoVerde_ALTA.jpg')}}" width="210" class="img-fluid mb-2 mx-auto d-block d-md-none">
-						<h2 class="mb-4">Información</h2>
-						<div class="descripcion mb-4">
-							<p>Condominio Distrito Verde te entrega una excelente ubicaci&oacute;n. Emplazado en el coraz&oacute;n del Barrio Universitario, a minutos de la Avenida del Mar y Ruta 5; solo a pasos de los centros comerciales Mall Plaza y Puertas del Mar.</p>
-		
-		<p>Se emplaza en 20.000 m2 de los cuales 11.500 se destinan a bellos jardines, que te invitan a conectar con la naturaleza y el deporte. Conscientes con el medio ambiente, podr&aacute;s reciclar, economizar recursos h&iacute;dricos y energ&iacute;a.</p>
-						</div>
-					</div>
-					<div class="col-md-6 mt-md-4">
-						<ul class="nav nav-tabs" role="tablist">
-							<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true"><span class="">Departamentos</span></a> </li>
-							<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false"><span class="">El Condominio</span></a> </li>
-							<li class="nav-item"> <a class="nav-link verde" data-bs-toggle="tab" data-bs-target="#ecology" role="tab" aria-controls="ecology" aria-selected="false"><span class="">Sustentabilidad y Atributos</span></a> </li>
-											</ul>
-						<!-- Tab panes -->
-						<div class="tab-content tabcontent-border">
-							<div class="tab-pane active tab_describe" id="home" role="tabpanel">
-								<div class="p-30 detalles">
-									<div class="row">
-										<div class="col-sm-12">
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 1 y 2 dormitorios <br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Cocina americana amoblada y equipada con encimeras, horno y campana<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Conexión para lavadora<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piso vinílico<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Estacionamiento y bodega
-		
-											<!-- <hr> -->
-											<!-- <b>Precio Desde: UF 2.637.-</b> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						<div class="tab-pane tab_describe" id="profile" role="tabpanel">
-								<div class="p-30 detalles">
-									<div class="row">
-										<div class="col-sm-12">
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 8 edificios <br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Un ascensor por edificio<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Acceso controlado las 24 horas<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Sistema de seguridad con cámaras de vigilancia<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piscina adultos<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Piscina niños<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Juegos Infantiles<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> 2 salones de uso múltiple y coworking<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Lavanderia<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Cicloparking<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Motoparking<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Zona de quinchos
-											
-											
-											
-										</div>
-									</div>
-								</div>
-						</div>
-						<div class="tab-pane tab_describe" id="ecology" role="tabpanel">
-								<div class="p-30 detalles">
-									<div class="row">
-										<div class="col-sm-12">
-											<!--<h4 class="mb-3" style="color: #a3bd33;">Atributos</h4>-->
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Circuito de Pump Track<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Sector para yoga y calistenia<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Circuito de trote con variaciones<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Punto limpio<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Generación EERR alimentando zonas comunes<br>
-											<img src="{{Vite::asset('resources/img/tick_verde.png')}}" class="img-fluid" width="20"> Eficiencia hídrica
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-						
-						<!-- <a href="/Informativo_p2800.pdf" target="_blank"><img src="/images/avance_obra.jpg" class="img-fluid"></a> -->
-					<div class="col-md-6 mt-md-4">
-						<div id="gallery">
-							<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Circuito Pump Track.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Circuito Pump Track.png')}}" alt="Circuito Pump Track">
-							<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector piscina.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector piscina.png')}}" alt="Sector piscina">
-							<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector practica yoga.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector practica yoga.png')}}" alt="Sector practica yoga">
-							<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Zona de Quinchos.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Zona de Quinchos.png')}}" alt="Zona de Quinchos">
-							<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso -.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso -.png')}}" alt="Acceso -">
-							<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Emplazamiento.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Emplazamiento.png')}}" alt="Emplazamiento">
-							<img alt="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso.png')}}" alt="Acceso">
-						</div>
-					</div>
+
+		<section id="ubicacion">	
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-12 pl-md-0 pt-md-4">
+				<div id="entorno" style="display:none;">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Circuito Pump Track.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Circuito Pump Track.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector piscina.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector piscina.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Sector practica yoga.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Sector practica yoga.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Zona de Quinchos.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Zona de Quinchos.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso -.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso -.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Emplazamiento.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Emplazamiento.png')}}" alt="">
+							<img data-title="" src="{{Vite::asset('resources/img/proyectos/distritoverde/thumbnail/Acceso.png')}}" data-image="{{Vite::asset('resources/img/proyectos/distritoverde/Acceso.png')}}" alt="">
 				</div>
 			</div>
-		
+		</div>
+	</div>
+</section>
+
+<section id="sectionmap">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="map">
+					<img  id="map" class="img-fluid rounded mx-auto d-block" src="{{Vite::asset('resources/img/MapaDV.png')}}">                   
+                </div>
+			</div>
+			<div class="col-md-4 sala">
+				<div class="contiene p-3">
+					<h2 class="mb-md-2">Sala de Ventas</h2>
+					<h4>Ubicación:</h4>
+					<p>Emilio Apey #405 - La Serena &nbsp;&nbsp;
+
+						<!--<a target="_blank" href="https://waze.com/ul?ll=-29.90714907906146,-71.26393357313296&amp;navigate=yes" class="btn btn-outline-info btn-sm"><i class="fas fa-map-marked-alt"></i> Ir Waze</a>--></p>
+					
+					<h4>Teléfono:</h4>
+					<p><a class="link" href="tel://+56954115863" target="_blank">+56 9 5411 5863</a></p>
+					<h4>Email:</h4>
+					<p><a class="link" href="mailto:contactoventas@icpacifico.cl">contactoventas@icpacifico.cl</a></p>
+					<h4>Horario Atención:</h4>
+					<p>Lunes a Viernes de 09:00 a 19:00.</p>
+					<p>Sábado y Domingo de 11:00 a 14:00 y de 15:00 a 19:00.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 		<!-- Fin Relleno emporal-->
     </div>
 </div>
