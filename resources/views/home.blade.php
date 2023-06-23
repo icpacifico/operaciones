@@ -355,7 +355,7 @@
 				<img src="{{ Vite::asset('resources/img/imgwp1.png') }}" class="img-fluid" />
 			</div>
 	    </div>        
-        <div class="row virtuales align-items-center">
+        {{--<div class="row virtuales align-items-center">
         	<div class="col-md-6 cols">
 				<div class="ratio ratio-1x1">
   	              <iframe class="frames" width = "100%" src = "{{url('https://my.matterport.com/show/?m=DmtQBSUXc2U')}}" frameborder = "0" allowfullscreen allowvr="yes"> </iframe>
@@ -368,14 +368,14 @@
         	</div>
 
 			
-			{{-- <div class="flotante_virtual click_caja"><p>Visita nuestros pilotos virtuales desde cualquier parte del mundo</p></div> --}}
+			<!--<div class="flotante_virtual click_caja"><p>Visita nuestros pilotos virtuales desde cualquier parte del mundo</p></div>-->
         	<div class="col-md-12 d-flex justify-content-center" style="margin-top:-425px;">
 				
         		<div class="ver_recor d-flex align-items-center"><p>Ver Recorrido Virtual</p></div>
         		<div class="verde_360"><img src="{{ Vite::asset('resources/img/360n.png') }}" width="96" class="img-fluid"></div>
         		<div class="ver_recor d-none d-md-flex align-items-center"><p>Ver Recorrido Virtual</p></div>
         	</div>
-        </div>
+        </div>--}}
     </div>
 </div>
 
