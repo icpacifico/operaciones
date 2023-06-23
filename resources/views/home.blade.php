@@ -379,7 +379,7 @@
     </div>
 </div>
 
-<div id="bienve" style="overflow: hidden;">
+{{--<div id="bienve" style="overflow: hidden;">
     <div class="container">
         <!-- row  -->
         <div class="row">
@@ -392,6 +392,6 @@
 			</div>
         </div>
     </div>    
-</div>
+</div>--}}
 @endsection
 @include('facebook-pixel::body')
