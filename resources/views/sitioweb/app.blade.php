@@ -195,20 +195,18 @@
 </div>
 </footer>
 
-<script>
-    new WOW().init();
-    var url = window.location.href;
-    var urlcompuesta = url.split('?');
-    if (urlcompuesta[1]) {
-        console.log('entre');
-        var urlUTM = urlcompuesta[1].split('&');
-        var urlFinal = new Object();
-        for (var i = 0; i < urlUTM.length; i++) {
-        urlfor = urlUTM[i].split('=');
-        urlFinal[urlfor[0]] = urlfor[1];
-        }
-        sessionStorage.setItem('datosURL', JSON.stringify(urlFinal));
-    }
+<script type="text/javascript">
+	var url = window.location.href;
+	var urlcompuesta = url.split('?');
+	if (urlcompuesta[1]) {
+		var urlUTM = urlcompuesta[1].split('&');
+		var urlFinal = new Object();
+		for (var i = 0; i < urlUTM.length; i++) {
+		urlfor = urlUTM[i].split('=');
+		urlFinal[urlfor[0]] = urlfor[1];
+		}
+		sessionStorage.setItem('datosURL', JSON.stringify(urlFinal));
+	}
 </script>
 
 <section id="last_pie">
