@@ -195,45 +195,45 @@
 </div>
 </footer>
 
-<script>
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-	var url = window.location.href;
-	var urlcompuesta = url.split('?');
-	if (urlcompuesta[1]) {
-		var urlUTM = urlcompuesta[1].split('&');
-		var urlFinal = new Object();
-		for (var i = 0; i < urlUTM.length; i++) {
-		urlfor = urlUTM[i].split('=');
-		urlFinal[urlfor[0]] = urlfor[1];
-		}
-		sessionStorage.setItem('datosURL', JSON.stringify(urlFinal));
-	}
-	jQuery(document).ready(function() {
-		let linkPlanok = 'https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true';
-		utm = returnUtm();
-		if(utm){
-			let valoresUtms = utm.substring(1);
-			jQuery('a.cotizacion').attr('href',`${linkPlanok}&${valoresUtms}`); 
-		}
-			else{
-				jQuery('a.cotizacion').attr('href', `${linkPlanok}`);
-			}
-		
-	});
-	function returnUtm() { 
-		if (typeof sessionStorage.getItem('datosURL') == 'undefined') { return; }
-			let utm_values = JSON.parse(sessionStorage.getItem('datosURL'));
-			let utm_final = "";
-			for (value in utm_values) {
-				utm_final = `${utm_final}&${value}=${utm_values[value]}`;
-			}
-		return utm_final
-	}
-</script>
+            var url = window.location.href;
+            var urlcompuesta = url.split('?');
+            if (urlcompuesta[1]) {
+                var urlUTM = urlcompuesta[1].split('&');
+                var urlFinal = new Object();
+                for (var i = 0; i < urlUTM.length; i++) {
+                urlfor = urlUTM[i].split('=');
+                urlFinal[urlfor[0]] = urlfor[1];
+                }
+                sessionStorage.setItem('datosURL', JSON.stringify(urlFinal));
+            }
+            jQuery(document).ready(function() {
+                let linkPlanok = 'https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true';
+                utm = returnUtm();
+                if(utm){
+                    let valoresUtms = utm.substring(1);
+                    jQuery('a.cotizacion').attr('href',`${linkPlanok}&${valoresUtms}`); 
+                }
+                    else{
+                        jQuery('a.cotizacion').attr('href', `${linkPlanok}`);
+                    }
+                
+            });
+            function returnUtm() { 
+                if (typeof sessionStorage.getItem('datosURL') == 'undefined') { return; }
+                    let utm_values = JSON.parse(sessionStorage.getItem('datosURL'));
+                    let utm_final = "";
+                    for (value in utm_values) {
+                        utm_final = `${utm_final}&${value}=${utm_values[value]}`;
+                    }
+                return utm_final
+            }
+        </script>
 
 <section id="last_pie">
 <div class="container">
@@ -244,6 +244,8 @@
     </div>
 </div>
 </section>
+
+
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" charset="utf-8"></script>
 <script>	
