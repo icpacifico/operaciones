@@ -207,6 +207,27 @@
 		}
 		sessionStorage.setItem('datosURL', JSON.stringify(urlFinal));
 	}
+	jQuery(document).ready(function() {
+		let linkPlanok = 'https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true';
+		utm = returnUtm();
+		if(utm){
+			let valoresUtms = utm.substring(1);
+			jQuery('a.cotizacion').attr('href',`${linkPlanok}&${valoresUtms}`); 
+		}
+			else{
+				jQuery('a.cotizacion').attr('href', `${linkPlanok}`);
+			}
+		
+	});
+	function returnUtm() { 
+		if (typeof sessionStorage.getItem('datosURL') == 'undefined') { return; }
+			let utm_values = JSON.parse(sessionStorage.getItem('datosURL'));
+			let utm_final = "";
+			for (value in utm_values) {
+				utm_final = `${utm_final}&${value}=${utm_values[value]}`;
+			}
+		return utm_final
+	}
 </script>
 
 <section id="last_pie">
