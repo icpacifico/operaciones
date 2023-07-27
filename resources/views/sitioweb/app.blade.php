@@ -195,6 +195,11 @@
 </div>
 </footer>
 
+<script>
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+
 <script type="text/javascript">
 	var url = window.location.href;
 	var urlcompuesta = url.split('?');
@@ -239,10 +244,7 @@
     </div>
 </div>
 </section>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" charset="utf-8"></script>
 <script>	
 // function onPixel() {
