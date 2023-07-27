@@ -198,14 +198,14 @@
 				<div class="col-12 col-lg-2 caja1">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/jeannisse2.jpg')}}" width="178" height="233" class="img-thumbnail">
+							<img src="{{Vite::asset('resources/img/equipo/Francisco_Lira.jpeg')}}" width="178" height="233" class="img-thumbnail">
 						</div>
 						<address class="info">
-							<h3><span>Jeannisse</span><br>
-							Medina Calderón</h3>
-							<p>Asesora inmobiliaria</p>
+							<h3><span>Francisco</span><br>
+							Lira Varas</h3>
+							<p>Asesor inmobiliaria</p>
 							<p>+56 9 54126944</p>
-							<p>jmedina@icpacifico.cl</p>
+							<p>flira@icpacifico.cl</p>
 							<p class="links">
 								<a href="https://www.facebook.com/jmedina.icpacifico/" target="_blank"><img src="{{Vite::asset('resources/img/equipo/facebook.png')}}" class="img-fluid"/></a>
 								<a href="https://www.instagram.com/jmedinaicpacifico/" target="_blank"><img src="{{Vite::asset('resources/img/equipo/instagram.png')}}" class="img-fluid"/></a>
@@ -217,7 +217,7 @@
 				<div class="col-12 col-lg-2 caja2">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/kriss.png')}}" class="img-thumbnail">
+							<img src="{{Vite::asset('resources/img/equipo/kriss_2.jpg')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Kriss</span><br>
@@ -236,7 +236,7 @@
 				<div class="col-12 col-lg-2 caja2">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/erica.png')}}" class="img-thumbnail">
+							<img src="{{Vite::asset('resources/img/equipo/erica_2.jpg')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Erica</span><br>
@@ -255,7 +255,7 @@
 				<div class="col-12 col-lg-2 caja1">
 					<div class="position-relative borde">
 						<div class="imagen">
-							<img src="{{Vite::asset('resources/img/equipo/ernersto_new.png')}}" class="img-thumbnail">
+							<img src="{{Vite::asset('resources/img/equipo/Ernesto_Pereda.jpeg')}}" class="img-thumbnail">
 						</div>
 						<div class="info">
 							<h3><span>Ernesto</span><br>
