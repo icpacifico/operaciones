@@ -653,7 +653,7 @@
                     <a class="nav-link sub" href="#ubicacion">Ubicación y Fotos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link sub cotice cotizacion" href="#">Cotiza Aquí !</a>
+                    <a class="nav-link sub cotice cotizacion" href="#" target="_blank">Cotiza Aquí !</a>
                 </li>
                 <li class="nav-item ml-md-2">
                     <button class="nav-link sub agende videollamada" type="button"><i class="far fa-calendar-alt"></i> Agendar VideoLlamada</button>
@@ -820,7 +820,7 @@
 									Sup. Municipal: 50,91&nbsp;m2<br />
 									Sup. Terraza: 9,61&nbsp;m2<br />
 									Sup. Total: 60,52&nbsp;m2</p>
-																		<a href="https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
+																		<a href="#" target="_blank" class="btn btn-info nav-link sub cotizacion" style="display: inline-block;">COTIZA AQUÍ !</a>
                             		<button  class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>
                             		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
                             	</div>
