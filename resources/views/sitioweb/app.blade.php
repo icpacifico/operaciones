@@ -137,7 +137,7 @@
 									<a class="nav-link" href="{{ route('nosotros') }}">Nosotros</a>
 								</li>
 								<li id="act_contacto" class="nav-item ml-md-2 {{ request()->path() == "contacto" ? 'active' : '' }}">
-									<a class="nav-link" href="{{ route('contacto') }}">Contáctenos</a>
+									<a class="nav-link" href="https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true">Contáctenos</a>
 								</li>
 								<li class="nav-item ml-md-2">
 									@if (Illuminate\Support\Facades\Auth::check())
