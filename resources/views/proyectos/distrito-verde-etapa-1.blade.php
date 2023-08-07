@@ -841,8 +841,8 @@
 										Sup. Municipal: 46,19&nbsp;m2<br />
 										Sup. Terraza: 4,95&nbsp;m2<br />
 										Sup. Total: 51,14&nbsp;m2</p>
-                            		<a href="https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
-                            		<button  class="btn btn-info sub ml-md-2 videollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>
+                            		<a href="https://cotizador.sal" class="btn btn-info nav-link sub" style="display: inline-block;">COTIZA AQUÍ !</a>
+                            		<button  class="btn btn-info sub ml-md-2 viadeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=truedeollamada"><i class="far fa-calendar-alt"></i> AGENDAR VIDEOLLAMADA</button>
                             		<!-- <div onclick="simularCredito()" class="btn btn-bci ml-md-2">OBTÉN TU APROBACIÓN EN LÍNEA</div> -->
                             	</div>
                             </div>

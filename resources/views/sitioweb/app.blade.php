@@ -178,7 +178,7 @@
                 <li><a href="{{route('proyectos.pacifico-3100-etapa-1')}}">Pacífico 3100</a></li>
     			<li><a href="{{ route('ais')}}">Ais ®</a></li>    			
     			<li><a href="{{ route('nosotros')}}">Nosotros</a></li>
-    			<li><a href="{{ route('contacto')}}">Contáctenos</a></li>
+    			<li><a href="https://cotizador.saladeventasdigital.com/cotizador/index.php?id_subagrupaciones=1,2,3,4&key=costanerapacifico&portal=&open_dialog=true">Contáctenos</a></li>
     		</ul>
     	</div>
     	<div class="col-md-3 sociales antialias text-md-start text-sm-center text-center">
