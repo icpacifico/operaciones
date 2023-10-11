@@ -103,7 +103,7 @@
         	</div>
         	<div class="col-md-4 cajaais d-flex flex-column justify-content-center align-items-center celeste">
 				<h3>La Serena</h3>
-				<p class="big">Segunda ciudad turística más importante de Chile. Constante crecimiento de la taza de alojamiento. Es una ciudad de alta demanda en arriendo.</p>
+				<p class="big">Segunda ciudad turística más importante de Chile. Constante crecimiento de la tasa de alojamiento. Es una ciudad de alta demanda en arriendo.</p>
         	</div>
         	<div class="col-md-4 cajaais" style="background-image: url({{Vite::asset('resources/img/03.jpg')}});">
 
